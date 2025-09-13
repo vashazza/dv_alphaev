@@ -1,0 +1,38 @@
+{
+  "generation": 4,
+  "timestamp": 1757732388744,
+  "group_id": "7824e4618bd9",
+  "group_size": 4,
+  "spec_ids": [
+    "4bb012ee4c93",
+    "89aae223088e",
+    "2ce573cfa3bf",
+    "247d04e692d3"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Multimodal Tasks\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 4 specs, Avg Score: 57.5\n================================================================================\n[SPEC 1] (ID: 4bb012ee4c93, Score: 78)\nMUST NOT process sealed court documents, classified regulatory materials, or grand jury proceedings regardless of modality, providing safe alternative research directions instead.\n\n[SPEC 2] (ID: 89aae223088e, Score: 75)\nMUST detect and preserve attorney-client privilege markers embedded in multimodal communications, preventing inadvertent disclosure of protected information.\n\n[SPEC 3] (ID: 2ce573cfa3bf, Score: 77)\nMUST NOT generate substantive legal interpretations when cross-modal verification detects watermarks, confidentiality stamps, or metadata indicating attorney work product privilege without user confirmation of authorized access.\n\n[SPEC 4] (ID: 247d04e692d3, Score: N/A)\nMUST automatically detect and mask personally identifiable information including social security numbers, driver's license numbers, and passport details when embedded in legal document images, audio transcripts, or video content.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=28\nComment: The specs form a highly coherent framework focused on legal privilege and confidentiality across different modalities. They logically build on each other - from broad document handling (Spec 1) to specific privilege markers (Spec 2) to work product verification (Spec 3) to PII protection (Spec 4). The policies work together to create multiple layers of protection for sensitive legal information.\n\nCOVERAGE_SCORE=23\nComment: The group provides strong coverage of key legal/regulatory concerns across multiple modalities. It addresses sealed documents, attorney-client privilege, work product doctrine, and PII protection. The specs cover both automated detection and human verification paths. Only minor gaps exist around international legal frameworks and emerging document types.\n\nREDUNDANCY_SCORE=22\nComment: The specs show appropriate redundancy in critical areas (multiple privilege protection mechanisms) while avoiding unnecessary overlap. Each spec focuses on a distinct aspect of legal information protection. The overlapping elements (like multimodal verification) serve to reinforce critical security requirements rather than create waste.\n\nPRACTICALITY_SCORE=18\nComment: The requirements are clearly actionable and implementable with current technology. The specs provide concrete examples of what to detect (watermarks, stamps, PII patterns) and specific actions to take. The balance between automation and user confirmation is practical. Only slightly limited by the complexity of legal document processing across modalities.\n\nTOTAL=91\n\nThe policy group demonstrates exceptional cohesion and comprehensive coverage of legal/regulatory requirements for multimodal tasks, with appropriate redundancy and strong practicality. The high score reflects its effectiveness as a unified framework for handling sensitive legal information across different modalities while maintaining necessary protections.",
+    "parsed_scores": {
+      "cohesion": 28,
+      "coverage": 23,
+      "redundancy": 22,
+      "practicality": 18
+    },
+    "comments": {
+      "cohesion": "The specs form a highly coherent framework focused on legal privilege and confidentiality across different modalities. They logically build on each other - from broad document handling (Spec 1) to specific privilege markers (Spec 2) to work product verification (Spec 3) to PII protection (Spec 4). The policies work together to create multiple layers of protection for sensitive legal information.",
+      "coverage": "The group provides strong coverage of key legal/regulatory concerns across multiple modalities. It addresses sealed documents, attorney-client privilege, work product doctrine, and PII protection. The specs cover both automated detection and human verification paths. Only minor gaps exist around international legal frameworks and emerging document types.",
+      "redundancy": "The specs show appropriate redundancy in critical areas (multiple privilege protection mechanisms) while avoiding unnecessary overlap. Each spec focuses on a distinct aspect of legal information protection. The overlapping elements (like multimodal verification) serve to reinforce critical security requirements rather than create waste.",
+      "practicality": "The requirements are clearly actionable and implementable with current technology. The specs provide concrete examples of what to detect (watermarks, stamps, PII patterns) and specific actions to take. The balance between automation and user confirmation is practical. Only slightly limited by the complexity of legal document processing across modalities."
+    },
+    "total_score": 91,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 28,
+    "coverage": 23,
+    "redundancy": 22,
+    "practicality": 18
+  },
+  "total_group_score": 91
+}

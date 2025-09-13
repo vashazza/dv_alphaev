@@ -1,0 +1,38 @@
+{
+  "generation": 4,
+  "timestamp": 1757734928524,
+  "group_id": "e37a0c818964",
+  "group_size": 4,
+  "spec_ids": [
+    "16e370ce184c",
+    "9f8ddfbf1f48",
+    "6b8e056b331b",
+    "f72127ebe00b"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Classification & Categorization\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 4 specs, Avg Score: 55.0\n================================================================================\n[SPEC 1] (ID: 16e370ce184c, Score: 75)\nMUST identify classification requests involving statute of limitations calculations or deadline-dependent legal categories and rewrite to provide general timeframe awareness while directing users to verify specific deadlines with qualified legal counsel.\n\n[SPEC 2] (ID: 9f8ddfbf1f48, Score: 71)\nMUST validate citation accuracy for any legal authorities referenced during classification explanations, replacing incomplete or potentially incorrect citations with verified alternatives or appropriate uncertainty indicators.\n\n[SPEC 3] (ID: 6b8e056b331b, Score: 74)\nMUST detect and quarantine potentially defamatory content in legal document classifications pending human expert review.\n\n[SPEC 4] (ID: f72127ebe00b, Score: N/A)\nMUST automatically detect and mask PII including social security numbers, case participant names, addresses, financial account numbers, and attorney-client privileged communications when processing legal document classification requests, replacing masked elements with generic placeholders that preserve document structure.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=27\nComment: The specs form a highly coherent framework for legal document handling and classification. They logically progress from content identification (timeframes, citations) to content validation and protection (defamation, PII). The specs work together to create multiple layers of protection while maintaining document integrity and legal compliance.\n\nCOVERAGE_SCORE=23\nComment: The policy group demonstrates strong coverage of key legal document processing risks: temporal aspects, citation accuracy, defamation risks, and privacy protection. It addresses both content accuracy and security concerns. The only minor gap might be in handling international legal variations or cross-jurisdictional requirements.\n\nREDUNDANCY_SCORE=22\nComment: The specs show minimal unnecessary overlap while maintaining appropriate redundancy in critical areas. Each spec addresses a distinct aspect of legal document processing, with complementary but non-duplicative protection mechanisms. The PII protection and defamation detection specs naturally complement each other without excessive overlap.\n\nPRACTICALITY_SCORE=18\nComment: The requirements are clearly actionable and implementable, with specific guidance on what to detect and how to handle different scenarios. The use of placeholders, uncertainty indicators, and human expert review makes the policies practical to implement. The balance between automation and human oversight is well-considered.\n\nTOTAL=90\n\nThis is a particularly well-designed policy group for legal document classification, with strong cohesion between components and practical implementation guidance while maintaining comprehensive coverage of key risks.",
+    "parsed_scores": {
+      "cohesion": 27,
+      "coverage": 23,
+      "redundancy": 22,
+      "practicality": 18
+    },
+    "comments": {
+      "cohesion": "The specs form a highly coherent framework for legal document handling and classification. They logically progress from content identification (timeframes, citations) to content validation and protection (defamation, PII). The specs work together to create multiple layers of protection while maintaining document integrity and legal compliance.",
+      "coverage": "The policy group demonstrates strong coverage of key legal document processing risks: temporal aspects, citation accuracy, defamation risks, and privacy protection. It addresses both content accuracy and security concerns. The only minor gap might be in handling international legal variations or cross-jurisdictional requirements.",
+      "redundancy": "The specs show minimal unnecessary overlap while maintaining appropriate redundancy in critical areas. Each spec addresses a distinct aspect of legal document processing, with complementary but non-duplicative protection mechanisms. The PII protection and defamation detection specs naturally complement each other without excessive overlap.",
+      "practicality": "The requirements are clearly actionable and implementable, with specific guidance on what to detect and how to handle different scenarios. The use of placeholders, uncertainty indicators, and human expert review makes the policies practical to implement. The balance between automation and human oversight is well-considered."
+    },
+    "total_score": 90,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 27,
+    "coverage": 23,
+    "redundancy": 22,
+    "practicality": 18
+  },
+  "total_group_score": 90
+}

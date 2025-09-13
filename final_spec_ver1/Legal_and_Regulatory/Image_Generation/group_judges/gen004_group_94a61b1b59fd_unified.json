@@ -1,0 +1,47 @@
+{
+  "generation": 4,
+  "timestamp": 1757735378705,
+  "group_id": "94a61b1b59fd",
+  "group_size": 13,
+  "spec_ids": [
+    "6719436c7ded",
+    "4e0530de819e",
+    "bd5c4fbde955",
+    "9f407e6e4f71",
+    "29b3e6af7f54",
+    "33dfe1891ed8",
+    "f0746383d35c",
+    "5b7a854983ee",
+    "8c4942480d43",
+    "63ac726e09a6",
+    "85f1eb1f5bc7",
+    "bd5c4fbde955",
+    "b6313c486f32"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Image Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 13 specs, Avg Score: 76.6\n================================================================================\n[SPEC 1] (ID: 6719436c7ded, Score: 76)\nMUST recognize prompts requesting courtroom scene imagery containing identifiable judges, attorneys, or parties and generate generic courtroom environments with non-identifiable figures or silhouettes instead.\n\n[SPEC 2] (ID: 4e0530de819e, Score: 74)\nMUST detect prompts seeking images of professional liability scenarios and rewrite to focus on educational prevention strategies rather than depicting specific malpractice incidents or disciplinary actions.\n\n[SPEC 3] (ID: bd5c4fbde955, Score: 81)\nMUST NOT generate images depicting specific immigration case files, deportation orders, or asylum applications that could compromise individual privacy or safety.\n\n[SPEC 4] (ID: 9f407e6e4f71, Score: 70)\nSHOULD detect requests for courthouse layouts, judicial chamber configurations, or security-sensitive legal facility imagery and redirect to publicly available architectural references.\n\n[SPEC 5] (ID: 29b3e6af7f54, Score: 71)\nMUST NOT generate images containing readable text of actual statutes, regulations, or case law excerpts without verifying public domain status and adding appropriate legal disclaimers.\n\n[SPEC 6] (ID: 33dfe1891ed8, Score: 77)\nMUST detect attempts to generate fraudulent document imagery including fake certificates, forged signatures, or counterfeit official seals and offer legitimate template alternatives with clear marking overlays.\n\n[SPEC 7] (ID: f0746383d35c, Score: 77)\nMUST NOT generate images depicting authentic judicial proceedings, courtroom scenes with identifiable judges, or specific ongoing legal cases that could compromise judicial integrity or case confidentiality.\n\n[SPEC 8] (ID: 5b7a854983ee, Score: 72)\nMUST detect attempts to generate images of falsified evidence, tampered documents, or manipulated legal records and redirect to educational content about evidence integrity and authentication standards.\n\n[SPEC 9] (ID: 8c4942480d43, Score: 78)\nMUST NOT generate images of legal tender, currency designs, or financial instruments that could facilitate counterfeiting, even when requested for educational purposes about financial regulations.\n\n[SPEC 10] (ID: 63ac726e09a6, Score: 78)\nMUST NOT produce visual content showing methods for evidence tampering, document destruction, or forensic contamination regardless of stated educational intent.\n\n[SPEC 11] (ID: 85f1eb1f5bc7, Score: 81)\nMUST detect requests for generating images of attorney signatures, notary stamps, or certification marks and substitute with clearly labeled placeholder graphics marked \"SAMPLE ONLY.\"\n\n[SPEC 12] (ID: bd5c4fbde955, Score: 81)\nMUST NOT generate images depicting specific immigration case files, deportation orders, or asylum applications that could compromise individual privacy or safety.\n\n[SPEC 13] (ID: b6313c486f32, Score: 80)\nMUST seek specific confirmation before generating visual representations of ongoing litigation matters, requesting case status and confidentiality parameters through guided questioning.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=28\nComment: The specs demonstrate strong logical connections and form a cohesive framework around legal/regulatory image generation safety. They consistently address related themes like document integrity, privacy protection, and judicial system security. The policies build on each other well - from broad principles (avoiding identifiable courtroom scenes) to specific implementations (using placeholder graphics for signatures).\n\nCOVERAGE_SCORE=23\nComment: The policy set provides comprehensive coverage of major legal/regulatory risks in image generation, including document fraud, courtroom privacy, evidence integrity, and financial instrument protections. It addresses both direct risks (fake documents) and indirect risks (facility security). The inclusion of educational alternatives shows good consideration of legitimate use cases.\n\nREDUNDANCY_SCORE=18\nComment: While most specs are distinct, there is some notable redundancy - Spec 12 is an exact duplicate of Spec 3 regarding immigration cases. There's also some overlap between Specs 1 and 7 regarding courtroom scenes. However, some redundancy appears intentional for critical areas like document integrity and fraud prevention, which is appropriate.\n\nPRACTICALITY_SCORE=19\nComment: The requirements are clearly actionable and include specific implementation guidance (like using placeholder graphics or adding disclaimers). The policies balance security needs with practical alternatives (redirecting to public references, offering legitimate templates). The guided questioning approach in Spec 13 shows good consideration for real-world implementation.\n\nTOTAL=88\n\nThe policy group is particularly strong in cohesion and practicality, with good coverage of the domain. The main area for improvement would be eliminating unnecessary redundancies while maintaining appropriate overlap for critical security areas.",
+    "parsed_scores": {
+      "cohesion": 28,
+      "coverage": 23,
+      "redundancy": 18,
+      "practicality": 19
+    },
+    "comments": {
+      "cohesion": "The specs demonstrate strong logical connections and form a cohesive framework around legal/regulatory image generation safety. They consistently address related themes like document integrity, privacy protection, and judicial system security. The policies build on each other well - from broad principles (avoiding identifiable courtroom scenes) to specific implementations (using placeholder graphics for signatures).",
+      "coverage": "The policy set provides comprehensive coverage of major legal/regulatory risks in image generation, including document fraud, courtroom privacy, evidence integrity, and financial instrument protections. It addresses both direct risks (fake documents) and indirect risks (facility security). The inclusion of educational alternatives shows good consideration of legitimate use cases.",
+      "redundancy": "While most specs are distinct, there is some notable redundancy - Spec 12 is an exact duplicate of Spec 3 regarding immigration cases. There's also some overlap between Specs 1 and 7 regarding courtroom scenes. However, some redundancy appears intentional for critical areas like document integrity and fraud prevention, which is appropriate.",
+      "practicality": "The requirements are clearly actionable and include specific implementation guidance (like using placeholder graphics or adding disclaimers). The policies balance security needs with practical alternatives (redirecting to public references, offering legitimate templates). The guided questioning approach in Spec 13 shows good consideration for real-world implementation."
+    },
+    "total_score": 88,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 28,
+    "coverage": 23,
+    "redundancy": 18,
+    "practicality": 19
+  },
+  "total_group_score": 88
+}

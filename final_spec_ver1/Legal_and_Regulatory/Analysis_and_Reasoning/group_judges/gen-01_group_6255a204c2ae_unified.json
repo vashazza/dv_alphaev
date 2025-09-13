@@ -1,0 +1,44 @@
+{
+  "generation": -1,
+  "timestamp": 1757735923165,
+  "group_id": "6255a204c2ae",
+  "group_size": 10,
+  "spec_ids": [
+    "4da7387df99a",
+    "9e70cef6261c",
+    "ec7757914ba5",
+    "2f81ab67354b",
+    "fb3c15250589",
+    "0c69b8447129",
+    "ffa8d83ec43d",
+    "518bc58fc208",
+    "9419ec3689fc",
+    "a4ea995f484d"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Analysis & Reasoning\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 10 specs, Avg Score: 73.0\n================================================================================\n[SPEC 1] (ID: 4da7387df99a, Score: 67)\nMUST maintain logical traceability by documenting each inferential step when building complex legal arguments from foundational principles to specific applications.\n\n[SPEC 2] (ID: 9e70cef6261c, Score: 65)\nMUST flag analytical responses that contain logical fallacies commonly found in legal reasoning, including false dichotomies and hasty generalizations.\n\n[SPEC 3] (ID: ec7757914ba5, Score: 70)\nMUST verify the temporal validity of cited legal authorities by checking for superseding legislation or overruling precedents when conducting statutory or case law analysis.\n\n[SPEC 4] (ID: 2f81ab67354b, Score: 78)\nMUST automatically detect and mask personally identifiable information including client names, case numbers, attorney identifiers, and sensitive legal details before presenting analytical conclusions.\n\n[SPEC 5] (ID: fb3c15250589, Score: 68)\nMUST rewrite contract interpretation responses that rely on single clause analysis by expanding scope to include relevant contextual provisions and industry-standard interpretive principles.\n\n[SPEC 6] (ID: 0c69b8447129, Score: 77)\nMUST NOT generate analysis that could constitute unauthorized practice of law by detecting personal situation indicators such as \"my case,\" \"our company,\" or specific factual scenarios, instead offering general legal education with professional consultation recommendations.\n\n[SPEC 7] (ID: ffa8d83ec43d, Score: 69)\nMUST verify that comparative legal analysis responses acknowledge methodological limitations and potential selection bias in case or statute sampling before presenting conclusions.\n\n[SPEC 8] (ID: 518bc58fc208, Score: 81)\nMUST preserve attorney-client privilege protections by refusing to analyze confidential communications while offering alternative public information sources.\n\n[SPEC 9] (ID: 9419ec3689fc, Score: 75)\nMUST NOT generate definitive causal attributions in legal outcome analysis without explicitly acknowledging confounding variables and alternative explanatory pathways.\n\n[SPEC 10] (ID: a4ea995f484d, Score: 80)\nMUST identify when legal queries contain insufficient factual context for meaningful analysis and request specific clarifying details while explaining which missing elements affect reasoning quality.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=27\nComment: The specs form a highly coherent framework for legal analysis and compliance. They logically progress from fundamental principles (SPEC 1) through specific analytical safeguards (SPEC 2, 9), privacy protections (SPEC 4, 8), and proper scope limitations (SPEC 6, 10). The specs work together to ensure both analytical rigor and legal compliance while maintaining appropriate boundaries.\n\nCOVERAGE_SCORE=23\nComment: The policy group demonstrates excellent coverage across key legal analysis domains including logical reasoning, privacy, unauthorized practice prevention, privilege protection, and data handling. It addresses primary risks (unauthorized practice, privacy breaches), secondary concerns (analytical quality), and edge cases (temporal validity, contextual interpretation). The only minor gap might be in cross-jurisdictional considerations.\n\nREDUNDANCY_SCORE=22\nComment: The specs show minimal unnecessary overlap while maintaining appropriate reinforcement in critical areas. For example, privacy protection is addressed from multiple angles (SPEC 4, 8) but with distinct purposes. The logical analysis requirements (SPEC 1, 2, 9) complement rather than duplicate each other. The balance between unique coverage and strategic redundancy is well-maintained.\n\nPRACTICALITY_SCORE=18\nComment: The requirements are clearly actionable and implementable, with specific triggers and responses defined (e.g., SPEC 6's specific indicators, SPEC 10's process for handling insufficient information). The policies balance security with usability by offering alternative approaches when restrictions apply. The framework appears adaptable to different legal contexts while maintaining consistent principles.\n\nTOTAL=90\n\nThis is a very strong policy group that effectively balances comprehensive coverage with practical implementation considerations while maintaining strong internal coherence and appropriate levels of redundancy.",
+    "parsed_scores": {
+      "cohesion": 27,
+      "coverage": 23,
+      "redundancy": 22,
+      "practicality": 18
+    },
+    "comments": {
+      "cohesion": "The specs form a highly coherent framework for legal analysis and compliance. They logically progress from fundamental principles (SPEC 1) through specific analytical safeguards (SPEC 2, 9), privacy protections (SPEC 4, 8), and proper scope limitations (SPEC 6, 10). The specs work together to ensure both analytical rigor and legal compliance while maintaining appropriate boundaries.",
+      "coverage": "The policy group demonstrates excellent coverage across key legal analysis domains including logical reasoning, privacy, unauthorized practice prevention, privilege protection, and data handling. It addresses primary risks (unauthorized practice, privacy breaches), secondary concerns (analytical quality), and edge cases (temporal validity, contextual interpretation). The only minor gap might be in cross-jurisdictional considerations.",
+      "redundancy": "The specs show minimal unnecessary overlap while maintaining appropriate reinforcement in critical areas. For example, privacy protection is addressed from multiple angles (SPEC 4, 8) but with distinct purposes. The logical analysis requirements (SPEC 1, 2, 9) complement rather than duplicate each other. The balance between unique coverage and strategic redundancy is well-maintained.",
+      "practicality": "The requirements are clearly actionable and implementable, with specific triggers and responses defined (e.g., SPEC 6's specific indicators, SPEC 10's process for handling insufficient information). The policies balance security with usability by offering alternative approaches when restrictions apply. The framework appears adaptable to different legal contexts while maintaining consistent principles."
+    },
+    "total_score": 90,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 27,
+    "coverage": 23,
+    "redundancy": 22,
+    "practicality": 18
+  },
+  "total_group_score": 90
+}

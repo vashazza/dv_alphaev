@@ -1,0 +1,37 @@
+{
+  "generation": 4,
+  "timestamp": 1757734946306,
+  "group_id": "c663a19f0fa8",
+  "group_size": 3,
+  "spec_ids": [
+    "16e370ce184c",
+    "7ba1791942e2",
+    "6b8e056b331b"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Classification & Categorization\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 3 specs, Avg Score: 49.7\n================================================================================\n[SPEC 1] (ID: 16e370ce184c, Score: 75)\nMUST identify classification requests involving statute of limitations calculations or deadline-dependent legal categories and rewrite to provide general timeframe awareness while directing users to verify specific deadlines with qualified legal counsel.\n\n[SPEC 2] (ID: 7ba1791942e2, Score: N/A)\nMUST validate legal citations against multiple authoritative databases and append jurisdiction-specific confidence scores, replacing unverifiable references with standardized uncertainty language that preserves classification context.\n\n[SPEC 3] (ID: 6b8e056b331b, Score: 74)\nMUST detect and quarantine potentially defamatory content in legal document classifications pending human expert review.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=25\nComment: The specs form a well-integrated framework for legal content handling. Spec 1 (timing) and Spec 2 (citations) provide foundational verification mechanisms, while Spec 3 (defamation) builds on these to handle high-risk content. They work together to create multiple layers of legal risk management without conflicting requirements.\n\nCOVERAGE_SCORE=20\nComment: The group addresses key legal risk areas including time-sensitive matters, citation accuracy, and defamatory content. However, there are some gaps in coverage, such as jurisdictional conflicts, privacy requirements, and privilege/confidentiality concerns that are important in legal classification systems.\n\nREDUNDANCY_SCORE=22\nComment: The specs show minimal unnecessary overlap while maintaining appropriate redundancy in verification processes. The citation validation and uncertainty language requirements complement rather than duplicate the timeframe awareness requirements. The defamation detection adds a distinct layer without redundant elements.\n\nPRACTICALITY_SCORE=18\nComment: The requirements are clearly actionable and include specific implementation guidance (e.g., \"standardized uncertainty language\", \"confidence scores\"). The balance between automation and human review is well-considered, particularly in Spec 3. The framework appears adaptable across different legal contexts while maintaining consistency.\n\nTOTAL=85\n\nThe policy group demonstrates strong cohesion and efficient redundancy management, with good practical implementability. While coverage could be expanded to address additional legal risks, the existing specifications form a robust foundation for legal content classification systems.",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 20,
+      "redundancy": 22,
+      "practicality": 18
+    },
+    "comments": {
+      "cohesion": "The specs form a well-integrated framework for legal content handling. Spec 1 (timing) and Spec 2 (citations) provide foundational verification mechanisms, while Spec 3 (defamation) builds on these to handle high-risk content. They work together to create multiple layers of legal risk management without conflicting requirements.",
+      "coverage": "The group addresses key legal risk areas including time-sensitive matters, citation accuracy, and defamatory content. However, there are some gaps in coverage, such as jurisdictional conflicts, privacy requirements, and privilege/confidentiality concerns that are important in legal classification systems.",
+      "redundancy": "The specs show minimal unnecessary overlap while maintaining appropriate redundancy in verification processes. The citation validation and uncertainty language requirements complement rather than duplicate the timeframe awareness requirements. The defamation detection adds a distinct layer without redundant elements.",
+      "practicality": "The requirements are clearly actionable and include specific implementation guidance (e.g., \"standardized uncertainty language\", \"confidence scores\"). The balance between automation and human review is well-considered, particularly in Spec 3. The framework appears adaptable across different legal contexts while maintaining consistency."
+    },
+    "total_score": 85,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 20,
+    "redundancy": 22,
+    "practicality": 18
+  },
+  "total_group_score": 85
+}

@@ -1,0 +1,37 @@
+{
+  "generation": 1,
+  "timestamp": 1757730013620,
+  "group_id": "6f5342792cfa",
+  "group_size": 3,
+  "spec_ids": [
+    "4bb012ee4c93",
+    "81d2b8dae369",
+    "2ce573cfa3bf"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Multimodal Tasks\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 3 specs, Avg Score: 51.7\n================================================================================\n[SPEC 1] (ID: 4bb012ee4c93, Score: 78)\nMUST NOT process sealed court documents, classified regulatory materials, or grand jury proceedings regardless of modality, providing safe alternative research directions instead.\n\n[SPEC 2] (ID: 81d2b8dae369, Score: N/A)\nMUST automatically detect and mask PII including social security numbers, case numbers, and client identifiers found in legal documents, audio transcripts, or video content before generating responses.\n\n[SPEC 3] (ID: 2ce573cfa3bf, Score: 77)\nMUST NOT generate substantive legal interpretations when cross-modal verification detects watermarks, confidentiality stamps, or metadata indicating attorney work product privilege without user confirmation of authorized access.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this group of legal/regulatory specifications for multimodal tasks:\n\nCOHESION_SCORE=28\nComment: The specs form a highly coherent framework focused on legal document protection. Spec 1 establishes core access restrictions, Spec 2 handles PII protection across modalities, and Spec 3 adds verification layers for privileged content. They work together seamlessly to create a comprehensive legal compliance strategy.\n\nCOVERAGE_SCORE=23\nComment: Strong coverage across different types of sensitive legal materials (sealed documents, PII, attorney work product) and multiple modalities (documents, audio, video). Addresses both access control and data protection. Only minor gaps in areas like international legal frameworks or specific industry regulations.\n\nREDUNDANCY_SCORE=22\nComment: Minimal unnecessary overlap between specs while maintaining appropriate redundancy in critical areas. Each spec has a distinct primary focus, though they reinforce each other for sensitive content protection. The PII protection in Spec 2 complements rather than duplicates the access controls in Specs 1 and 3.\n\nPRACTICALITY_SCORE=18\nComment: Highly implementable requirements with clear actions (masking PII, detecting watermarks, providing alternatives). The specs are specific enough to guide implementation while remaining flexible for different contexts. The verification and confirmation mechanisms add practical safety layers without overly restricting functionality.\n\nTOTAL=91\n\nThe group forms an exceptionally well-designed policy framework for handling sensitive legal content across multiple modalities. The high cohesion and practical implementation guidance, combined with comprehensive coverage and efficient redundancy, make this a very strong policy set.",
+    "parsed_scores": {
+      "cohesion": 28,
+      "coverage": 23,
+      "redundancy": 22,
+      "practicality": 18
+    },
+    "comments": {
+      "cohesion": "The specs form a highly coherent framework focused on legal document protection. Spec 1 establishes core access restrictions, Spec 2 handles PII protection across modalities, and Spec 3 adds verification layers for privileged content. They work together seamlessly to create a comprehensive legal compliance strategy.",
+      "coverage": "Strong coverage across different types of sensitive legal materials (sealed documents, PII, attorney work product) and multiple modalities (documents, audio, video). Addresses both access control and data protection. Only minor gaps in areas like international legal frameworks or specific industry regulations.",
+      "redundancy": "Minimal unnecessary overlap between specs while maintaining appropriate redundancy in critical areas. Each spec has a distinct primary focus, though they reinforce each other for sensitive content protection. The PII protection in Spec 2 complements rather than duplicates the access controls in Specs 1 and 3.",
+      "practicality": "Highly implementable requirements with clear actions (masking PII, detecting watermarks, providing alternatives). The specs are specific enough to guide implementation while remaining flexible for different contexts. The verification and confirmation mechanisms add practical safety layers without overly restricting functionality."
+    },
+    "total_score": 91,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 28,
+    "coverage": 23,
+    "redundancy": 22,
+    "practicality": 18
+  },
+  "total_group_score": 91
+}

@@ -1,0 +1,37 @@
+{
+  "generation": 4,
+  "timestamp": 1757733924588,
+  "group_id": "94d932404898",
+  "group_size": 3,
+  "spec_ids": [
+    "2508df62dacf",
+    "ac125d7b1049",
+    "81192e026bcf"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Code Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 3 specs, Avg Score: 54.0\n================================================================================\n[SPEC 1] (ID: 2508df62dacf, Score: N/A)\nMUST automatically detect and mask PII including attorney-client privileged information, social security numbers, and financial account details in all generated legal code outputs.\n\n[SPEC 2] (ID: ac125d7b1049, Score: 76)\nMUST validate that generated court filing automation includes format compliance checking against specific court rules and electronic filing system requirements for target jurisdictions.\n\n[SPEC 3] (ID: 81192e026bcf, Score: 86)\nMUST NOT produce code that automates judicial sentencing calculations, bail determinations, or parole eligibility assessments without mandatory human judicial review checkpoints.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=27\nComment: The specs form a highly coherent framework for legal code generation safety. Spec 1's PII protection naturally complements Spec 2's court filing requirements, while Spec 3's restrictions on judicial automation align with the overall focus on responsible legal automation. They create a logical progression from data protection to format compliance to ethical boundaries.\n\nCOVERAGE_SCORE=22\nComment: The group addresses key risk areas in legal automation: data privacy (PII/privileged info), technical compliance (court filing requirements), and ethical boundaries (judicial decision automation). It covers both procedural and substantive legal concerns. Minor gaps exist in areas like version control requirements and audit logging specifications.\n\nREDUNDANCY_SCORE=23\nComment: The specs show minimal unnecessary overlap while maintaining appropriate reinforcement in critical areas. Each spec addresses distinct aspects of legal code generation safety. The PII protection in Spec 1 appropriately complements but doesn't duplicate the court filing requirements in Spec 2.\n\nPRACTICALITY_SCORE=18\nComment: The requirements are clearly actionable and implementable. PII detection and court filing validation are technically feasible tasks. The human review requirement for judicial automation provides a clear checkpoint. The specs balance security with practical usage, though some court-specific requirements might need more detailed implementation guidance.\n\nTOTAL=90\n\nThe policy group demonstrates exceptional cohesion and practical applicability in the legal code generation domain, with strong coverage of key risk areas and efficient use of requirements without unnecessary redundancy.",
+    "parsed_scores": {
+      "cohesion": 27,
+      "coverage": 22,
+      "redundancy": 23,
+      "practicality": 18
+    },
+    "comments": {
+      "cohesion": "The specs form a highly coherent framework for legal code generation safety. Spec 1's PII protection naturally complements Spec 2's court filing requirements, while Spec 3's restrictions on judicial automation align with the overall focus on responsible legal automation. They create a logical progression from data protection to format compliance to ethical boundaries.",
+      "coverage": "The group addresses key risk areas in legal automation: data privacy (PII/privileged info), technical compliance (court filing requirements), and ethical boundaries (judicial decision automation). It covers both procedural and substantive legal concerns. Minor gaps exist in areas like version control requirements and audit logging specifications.",
+      "redundancy": "The specs show minimal unnecessary overlap while maintaining appropriate reinforcement in critical areas. Each spec addresses distinct aspects of legal code generation safety. The PII protection in Spec 1 appropriately complements but doesn't duplicate the court filing requirements in Spec 2.",
+      "practicality": "The requirements are clearly actionable and implementable. PII detection and court filing validation are technically feasible tasks. The human review requirement for judicial automation provides a clear checkpoint. The specs balance security with practical usage, though some court-specific requirements might need more detailed implementation guidance."
+    },
+    "total_score": 90,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 27,
+    "coverage": 22,
+    "redundancy": 23,
+    "practicality": 18
+  },
+  "total_group_score": 90
+}

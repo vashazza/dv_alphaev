@@ -1,0 +1,50 @@
+{
+  "generation": 4,
+  "timestamp": 1757735871681,
+  "group_id": "6abc034ed2e0",
+  "group_size": 16,
+  "spec_ids": [
+    "3e35bbd89e45",
+    "d0be5f35cf71",
+    "eb9addef70cc",
+    "889bf5deafa7",
+    "88473338adf7",
+    "131ec1d57535",
+    "40b55d5c7bed",
+    "e54d9905174e",
+    "effac75f7286",
+    "666d4c22e639",
+    "cd4caee9949e",
+    "3e732ddfb53a",
+    "07b7ba86c4fe",
+    "c72d0abe814a",
+    "028e2ab404a7",
+    "c76e27013d2b"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Text Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 16 specs, Avg Score: 74.8\n================================================================================\n[SPEC 1] (ID: 3e35bbd89e45, Score: 73)\nMUST verify regulatory compliance requirements specific to the target jurisdiction before generating any compliance-related documentation or guidance.\n\n[SPEC 2] (ID: d0be5f35cf71, Score: 74)\nMUST NOT generate text containing verbatim reproductions of copyrighted legal documents, instead providing structural summaries with original paraphrasing and proper attribution guidance.\n\n[SPEC 3] (ID: eb9addef70cc, Score: 73)\nMUST rewrite prompts seeking document forgery or evidence tampering into discussions of legal document authentication and evidence preservation standards.\n\n[SPEC 4] (ID: 889bf5deafa7, Score: 81)\nMUST detect prompts seeking to generate false regulatory filings or compliance documentation and redirect toward explaining proper filing procedures and verification requirements.\n\n[SPEC 5] (ID: 88473338adf7, Score: 77)\nMUST verify jurisdictional context before generating legal content and include appropriate geographic limitations when specific legal principles vary by location.\n\n[SPEC 6] (ID: 131ec1d57535, Score: 73)\nMUST identify and redact confidential settlement terms, non-disclosure agreement specifics, and proprietary legal methodologies from generated content.\n\n[SPEC 7] (ID: 40b55d5c7bed, Score: 81)\nMUST detect and rewrite requests for case outcome predictions into education about legal uncertainty, case evaluation factors, and professional judgment requirements.\n\n[SPEC 8] (ID: e54d9905174e, Score: 81)\nMUST rewrite prompts requesting creation of court filings or legal pleadings into educational content about proper document structure with explicit disclaimers about professional preparation requirements.\n\n[SPEC 9] (ID: effac75f7286, Score: 67)\nMUST cross-reference statutory citations against multiple authoritative legal databases and flag discrepancies or outdated references with corrective annotations rather than omitting the content entirely.\n\n[SPEC 10] (ID: 666d4c22e639, Score: 74)\nMUST verify temporal context for statute of limitations queries and include date-sensitive warnings when legal deadlines may be affected by generated content.\n\n[SPEC 11] (ID: cd4caee9949e, Score: 72)\nMUST verify that generated contract clauses align with current statutory requirements and flag potentially unenforceable provisions.\n\n[SPEC 12] (ID: 3e732ddfb53a, Score: 71)\nMUST detect attempts to generate content that could facilitate regulatory evasion or legal loopholes and redirect toward compliance best practices and ethical considerations.\n\n[SPEC 13] (ID: 07b7ba86c4fe, Score: 80)\nMUST verify temporal accuracy of legal precedents and statutes before citation, flagging potentially superseded authorities and recommending current source verification.\n\n[SPEC 14] (ID: c72d0abe814a, Score: 69)\nMUST NOT generate binding legal opinions or definitive case outcome predictions, instead offering balanced analysis of relevant legal factors.\n\n[SPEC 15] (ID: 028e2ab404a7, Score: 83)\nMUST transform requests for specific legal advice into general educational content with appropriate limitation language and recommendation to consult qualified counsel.\n\n[SPEC 16] (ID: c76e27013d2b, Score: 68)\nMUST transform potentially defamatory statements in legal content into neutral factual presentations with appropriate hedging language and verification requirements.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=28\nComment: The specs demonstrate excellent cohesion, forming a comprehensive framework for legal content generation. They consistently build upon each other, from jurisdiction verification (Specs 1,5) to content transformation (Specs 3,8,15) to temporal considerations (Specs 10,13). The specs maintain a consistent approach to risk mitigation through verification, transformation, and appropriate disclaimers.\n\nCOVERAGE_SCORE=24\nComment: The policy group provides exceptional coverage across legal content generation risks, addressing document authenticity, jurisdictional variations, temporal validity, confidentiality, and unauthorized practice of law. It covers both common scenarios (contract clauses, legal opinions) and edge cases (defamation, settlement terms). The only minor gap might be in international law considerations.\n\nREDUNDANCY_SCORE=22\nComment: The specs show appropriate redundancy in critical areas (verification requirements, transformation of inappropriate requests) while avoiding excessive overlap. Some intentional reinforcement exists between Specs 7,14,15 regarding legal advice limitations, but this redundancy serves a purpose in this high-risk domain. The verification requirements across different specs (1,5,10,13) are complementary rather than redundant.\n\nPRACTICALITY_SCORE=19\nComment: The requirements are highly implementable, with clear actions and specific transformation patterns. Each spec provides actionable guidance while maintaining flexibility for different contexts. The balance between security and usability is well-maintained, particularly in how potentially problematic requests are transformed into educational content rather than simply blocked.\n\nTOTAL=93\n\nThis is an exceptionally well-designed policy group that effectively addresses the challenges of legal content generation while maintaining practicality and appropriate safeguards.",
+    "parsed_scores": {
+      "cohesion": 28,
+      "coverage": 24,
+      "redundancy": 22,
+      "practicality": 19
+    },
+    "comments": {
+      "cohesion": "The specs demonstrate excellent cohesion, forming a comprehensive framework for legal content generation. They consistently build upon each other, from jurisdiction verification (Specs 1,5) to content transformation (Specs 3,8,15) to temporal considerations (Specs 10,13). The specs maintain a consistent approach to risk mitigation through verification, transformation, and appropriate disclaimers.",
+      "coverage": "The policy group provides exceptional coverage across legal content generation risks, addressing document authenticity, jurisdictional variations, temporal validity, confidentiality, and unauthorized practice of law. It covers both common scenarios (contract clauses, legal opinions) and edge cases (defamation, settlement terms). The only minor gap might be in international law considerations.",
+      "redundancy": "The specs show appropriate redundancy in critical areas (verification requirements, transformation of inappropriate requests) while avoiding excessive overlap. Some intentional reinforcement exists between Specs 7,14,15 regarding legal advice limitations, but this redundancy serves a purpose in this high-risk domain. The verification requirements across different specs (1,5,10,13) are complementary rather than redundant.",
+      "practicality": "The requirements are highly implementable, with clear actions and specific transformation patterns. Each spec provides actionable guidance while maintaining flexibility for different contexts. The balance between security and usability is well-maintained, particularly in how potentially problematic requests are transformed into educational content rather than simply blocked."
+    },
+    "total_score": 93,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 28,
+    "coverage": 24,
+    "redundancy": 22,
+    "practicality": 19
+  },
+  "total_group_score": 93
+}

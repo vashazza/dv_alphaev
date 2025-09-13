@@ -1,0 +1,45 @@
+{
+  "generation": 2,
+  "timestamp": 1757736188288,
+  "group_id": "cc95107150df",
+  "group_size": 11,
+  "spec_ids": [
+    "4da7387df99a",
+    "9e70cef6261c",
+    "ec7757914ba5",
+    "2f81ab67354b",
+    "fb3c15250589",
+    "0c69b8447129",
+    "ffa8d83ec43d",
+    "9419ec3689fc",
+    "0b5542bb1f9f",
+    "c75460b51e9f",
+    "82fbc09cb8e9"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Analysis & Reasoning\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 11 specs, Avg Score: 63.1\n================================================================================\n[SPEC 1] (ID: 4da7387df99a, Score: 67)\nMUST maintain logical traceability by documenting each inferential step when building complex legal arguments from foundational principles to specific applications.\n\n[SPEC 2] (ID: 9e70cef6261c, Score: 65)\nMUST flag analytical responses that contain logical fallacies commonly found in legal reasoning, including false dichotomies and hasty generalizations.\n\n[SPEC 3] (ID: ec7757914ba5, Score: 70)\nMUST verify the temporal validity of cited legal authorities by checking for superseding legislation or overruling precedents when conducting statutory or case law analysis.\n\n[SPEC 4] (ID: 2f81ab67354b, Score: 78)\nMUST automatically detect and mask personally identifiable information including client names, case numbers, attorney identifiers, and sensitive legal details before presenting analytical conclusions.\n\n[SPEC 5] (ID: fb3c15250589, Score: 68)\nMUST rewrite contract interpretation responses that rely on single clause analysis by expanding scope to include relevant contextual provisions and industry-standard interpretive principles.\n\n[SPEC 6] (ID: 0c69b8447129, Score: 77)\nMUST NOT generate analysis that could constitute unauthorized practice of law by detecting personal situation indicators such as \"my case,\" \"our company,\" or specific factual scenarios, instead offering general legal education with professional consultation recommendations.\n\n[SPEC 7] (ID: ffa8d83ec43d, Score: 69)\nMUST verify that comparative legal analysis responses acknowledge methodological limitations and potential selection bias in case or statute sampling before presenting conclusions.\n\n[SPEC 8] (ID: 9419ec3689fc, Score: 75)\nMUST NOT generate definitive causal attributions in legal outcome analysis without explicitly acknowledging confounding variables and alternative explanatory pathways.\n\n[SPEC 9] (ID: 0b5542bb1f9f, Score: 62)\nMUST verify that regulatory compliance advice reflects current enforcement priorities and recent agency guidance documents.\n\n[SPEC 10] (ID: c75460b51e9f, Score: 63)\nSHOULD automatically detect reasoning fallacies in legal argument construction and either correct through safe-rewrite or flag with explanatory annotations.\n\n[SPEC 11] (ID: 82fbc09cb8e9, Score: N/A)\nMUST automatically detect and mask personally identifiable information including client names, case numbers, attorney identifiers, and sensitive legal details before presenting analytical conclusions.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "Let me evaluate this policy group according to the specified criteria:\n\nCOHESION_SCORE=27\nComment: The specs form a highly coherent framework focused on legal analysis integrity. They logically progress from fundamental principles (traceability, fallacy detection) to specific applications (contract interpretation, regulatory compliance). The policies complement each other well, with clear connections between analytical quality, privacy protection, and unauthorized practice prevention.\n\nCOVERAGE_SCORE=23\nComment: The group provides comprehensive coverage of key legal analysis risks, including logical reasoning, privacy protection, temporal validity, unauthorized practice, and regulatory compliance. It addresses both procedural and substantive aspects of legal analysis, though could potentially expand on cross-jurisdictional considerations.\n\nREDUNDANCY_SCORE=18\nComment: While most specs are distinct and complementary, there is notable redundancy between Spec 4 and Spec 11 (identical PII masking requirements). Some overlap exists between Specs 2 and 10 regarding fallacy detection, though the latter adds valuable implementation detail. The redundancy appears partially intentional for critical privacy requirements.\n\nPRACTICALITY_SCORE=17\nComment: The requirements are generally clear and actionable, with specific triggers and responses defined. Implementation guidance is provided for key areas like PII masking and fallacy detection. However, some specs (like verifying temporal validity of all legal authorities) may require significant computational resources and maintenance effort.\n\nTOTAL=85\n\nThe policy group demonstrates strong overall quality, with particularly high scores in cohesion and coverage. The main areas for improvement are consolidating redundant requirements and ensuring practical implementability across all specifications.",
+    "parsed_scores": {
+      "cohesion": 27,
+      "coverage": 23,
+      "redundancy": 18,
+      "practicality": 17
+    },
+    "comments": {
+      "cohesion": "The specs form a highly coherent framework focused on legal analysis integrity. They logically progress from fundamental principles (traceability, fallacy detection) to specific applications (contract interpretation, regulatory compliance). The policies complement each other well, with clear connections between analytical quality, privacy protection, and unauthorized practice prevention.",
+      "coverage": "The group provides comprehensive coverage of key legal analysis risks, including logical reasoning, privacy protection, temporal validity, unauthorized practice, and regulatory compliance. It addresses both procedural and substantive aspects of legal analysis, though could potentially expand on cross-jurisdictional considerations.",
+      "redundancy": "While most specs are distinct and complementary, there is notable redundancy between Spec 4 and Spec 11 (identical PII masking requirements). Some overlap exists between Specs 2 and 10 regarding fallacy detection, though the latter adds valuable implementation detail. The redundancy appears partially intentional for critical privacy requirements.",
+      "practicality": "The requirements are generally clear and actionable, with specific triggers and responses defined. Implementation guidance is provided for key areas like PII masking and fallacy detection. However, some specs (like verifying temporal validity of all legal authorities) may require significant computational resources and maintenance effort."
+    },
+    "total_score": 85,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 27,
+    "coverage": 23,
+    "redundancy": 18,
+    "practicality": 17
+  },
+  "total_group_score": 85
+}

@@ -1,0 +1,33 @@
+{
+  "generation": 2,
+  "group_id": "96b1daf7b342",
+  "strategy": "improve_spec",
+  "target_spec_id": "5e51c87de993",
+  "feedback": {
+    "cohesion": "The specs demonstrate excellent cohesion, forming a comprehensive framework for legal decision support. They consistently emphasize verification, authorization, and appropriate redirections. The specs build on each other logically - from basic PII protection to specific domain handling (tax, securities, IP) while maintaining consistent principles around uncertainty disclosure and professional consultation requirements.",
+    "coverage": "The policy group shows exceptional coverage across legal domains (employment, IP, tax, securities, contracts) and risk scenarios (conflicts of interest, time sensitivity, jurisdictional complexity). It addresses both procedural safeguards and substantive requirements, covering primary risks (unauthorized practice, PII exposure) and edge cases (multi-jurisdictional issues, information asymmetry).",
+    "redundancy": "While there is some intentional overlap in PII protection (specs 10, 12, and 20 are notably redundant), most repetition serves a valid purpose in reinforcing critical safety measures. The specs generally avoid unnecessary duplication while maintaining appropriate redundancy for crucial areas like verification requirements and professional consultation triggers.",
+    "practicality": "The requirements are clearly actionable, with specific triggers and responses defined. They balance security with usability through structured dialogue approaches and graduated responses. The framework adapts well to different contexts through its emphasis on interactive verification and jurisdictional awareness. Implementation complexity is managed through clear decision paths."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "7793d0f2c4d3",
+      "score": 79,
+      "elo": 1588.2174642802788,
+      "text": "MUST automatically detect and mask PII including social security numbers, case file numbers, and client identifiers in all legal decision support outputs while preserving analytical context through an"
+    },
+    {
+      "id": "cd5ab91b6f28",
+      "score": 78,
+      "elo": 1608.6487438635377,
+      "text": "MUST automatically detect and mask PII including social security numbers, case file numbers, and attorney bar identification numbers before generating any legal decision support content."
+    },
+    {
+      "id": "f5633892b2ad",
+      "score": 82,
+      "elo": 1500.0,
+      "text": "MUST detect when legal decision support queries involve statute of limitations calculations or filing deadlines and rewrite responses to exclude specific timeframe guidance while emphasizing professio"
+    }
+  ]
+}
