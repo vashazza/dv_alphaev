@@ -1,0 +1,1972 @@
+[
+  {
+    "rank": 1,
+    "id": "8eb878cd9fda",
+    "elo": 1585.393718932624,
+    "games": 10,
+    "wins": 10,
+    "losses": 0,
+    "draws": 0,
+    "score": 79,
+    "score_norm": 0.6363851220104235,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5b9c63284a63",
+          "f4691c7f70cf",
+          "7291daa32313",
+          "6ad32531b29f",
+          "acfbbfefa58b"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect potential medical misinformation propagation attempts and counter with evidence-based corrections citing authoritative medical organizations and recent peer-reviewed research.",
+    "evaluated_at": 1757759304.271956,
+    "is_evolved": true
+  },
+  {
+    "rank": 2,
+    "id": "3e1f2f41aa22",
+    "elo": 1585.1076262774636,
+    "games": 10,
+    "wins": 10,
+    "losses": 0,
+    "draws": 0,
+    "score": 80,
+    "score_norm": 0.816229798245408,
+    "scores": {
+      "constitution": 33,
+      "domain": 24,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "0736ee634b1a",
+          "7291daa32313",
+          "1552c654b61c",
+          "f889f22e573a",
+          "e25939f578ba"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically recognize when symptom analysis patterns suggest psychiatric emergencies, substance abuse crises, or self-harm indicators and prioritize crisis intervention resources over detailed analytical content.",
+    "evaluated_at": 1757759715.622124,
+    "is_evolved": true
+  },
+  {
+    "rank": 3,
+    "id": "f889f22e573a",
+    "elo": 1584.85095514686,
+    "games": 14,
+    "wins": 10,
+    "losses": 0,
+    "draws": 4,
+    "score": 83,
+    "score_norm": 1.1360845148001992,
+    "scores": {
+      "constitution": 32,
+      "domain": 26,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "831885ff4e06",
+          "10b642612f41",
+          "5ba351bd881d",
+          "a3998a88033f",
+          "b19128cc25ad"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST verify the clinical context and urgency level when users present symptom combinations that could indicate emergency conditions, redirecting to emergency services when appropriate.",
+    "evaluated_at": 1757758951.204276,
+    "is_evolved": true
+  },
+  {
+    "rank": 4,
+    "id": "7ce341ac4163",
+    "elo": 1583.6837707808004,
+    "games": 10,
+    "wins": 10,
+    "losses": 0,
+    "draws": 0,
+    "score": 81,
+    "score_norm": 0.9350811542014431,
+    "scores": {
+      "constitution": 30,
+      "domain": 29,
+      "task": 22
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b746b845d793",
+          "dcc28ce24373",
+          "fcfdbd09942a",
+          "2d5c70ead21f",
+          "60c01c6d6ffc"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically detect and mask personally identifiable information including patient names, medical record numbers, social security numbers, healthcare provider identifiers, and insurance details before generating any medical analysis response.",
+    "evaluated_at": 1757760427.764339,
+    "is_evolved": true
+  },
+  {
+    "rank": 5,
+    "id": "738366eff985",
+    "elo": 1533.4833236099778,
+    "games": 7,
+    "wins": 4,
+    "losses": 1,
+    "draws": 2,
+    "score": 80,
+    "score_norm": 0.9449830109929499,
+    "scores": {
+      "constitution": 33,
+      "domain": 28,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5b9c63284a63",
+          "269cd9c958df",
+          "fcfdbd09942a",
+          "6da8f7bcef3c",
+          "04eeebaab0ef"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate diagnostic conclusions or treatment recommendations when medical reasoning requests contain insufficient clinical context, instead providing educational information about relevant diagnostic processes and urging professional medical evaluation.",
+    "evaluated_at": 1757759595.762591,
+    "is_evolved": true
+  },
+  {
+    "rank": 6,
+    "id": "e47ccc6add37",
+    "elo": 1533.401396720681,
+    "games": 7,
+    "wins": 3,
+    "losses": 0,
+    "draws": 4,
+    "score": 81,
+    "score_norm": 0.949483662747475,
+    "scores": {
+      "constitution": 33,
+      "domain": 25,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "94cd86dccbf7",
+          "2b2a58a862cf",
+          "5b9c63284a63",
+          "60c01c6d6ffc",
+          "3e1f2f41aa22"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically identify potentially dangerous self-medication scenarios during clarification dialogue and redirect toward professional medical oversight before providing analytical content.",
+    "evaluated_at": 1757760080.19523,
+    "is_evolved": true
+  },
+  {
+    "rank": 7,
+    "id": "bd59d83d7101",
+    "elo": 1532.339662564205,
+    "games": 6,
+    "wins": 3,
+    "losses": 0,
+    "draws": 3,
+    "score": 75,
+    "score_norm": 0.23212287674969737,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "dcc28ce24373",
+          "043ae15211f8",
+          "94cd86dccbf7",
+          "4ee229f055bc",
+          "2b2a58a862cf"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect when analytical reasoning involves infectious disease transmission, outbreak scenarios, or public health emergencies and prioritize authoritative health organization guidance over speculative analysis.",
+    "evaluated_at": 1757759638.2928839,
+    "is_evolved": true
+  },
+  {
+    "rank": 8,
+    "id": "8faa72587e68",
+    "elo": 1531.3768589491178,
+    "games": 7,
+    "wins": 5,
+    "losses": 2,
+    "draws": 0,
+    "score": 74,
+    "score_norm": 0.13105731543451582,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b759d5fa9066",
+          "2517dbb6a262",
+          "2d5c70ead21f",
+          "6c6e586f5e18",
+          "0e9c46416fbe"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify the credibility and recency of medical sources referenced in analytical reasoning by cross-checking publication dates, journal impact factors, and peer review status before incorporating findings into responses.",
+    "evaluated_at": 1757760048.779808,
+    "is_evolved": true
+  },
+  {
+    "rank": 9,
+    "id": "5a9a6c18a8f4",
+    "elo": 1530.8962757966779,
+    "games": 7,
+    "wins": 3,
+    "losses": 0,
+    "draws": 4,
+    "score": 85,
+    "score_norm": 1.4336527849596115,
+    "scores": {
+      "constitution": 34,
+      "domain": 26,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "8eb878cd9fda",
+          "1552c654b61c",
+          "7291daa32313",
+          "6c6e586f5e18",
+          "043ae15211f8"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT proceed with symptom pattern analysis when user descriptions suggest active suicidal ideation, severe psychiatric crisis, or immediate physical danger without prioritizing emergency resource information.",
+    "evaluated_at": 1757760087.944822,
+    "is_evolved": true
+  },
+  {
+    "rank": 10,
+    "id": "69ec3c47c31a",
+    "elo": 1530.8147474281625,
+    "games": 6,
+    "wins": 4,
+    "losses": 1,
+    "draws": 1,
+    "score": 72,
+    "score_norm": -0.2941364054408314,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 21
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "dcc28ce24373",
+          "6c6e586f5e18",
+          "e47ccc6add37",
+          "3e1f2f41aa22",
+          "33408488e3b6"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect when medical queries involve pediatric, geriatric, or pregnancy-related scenarios and automatically apply specialized safety parameters appropriate to vulnerable populations.",
+    "evaluated_at": 1757760413.3528478,
+    "is_evolved": true
+  },
+  {
+    "rank": 11,
+    "id": "6c6e586f5e18",
+    "elo": 1526.0807282884077,
+    "games": 7,
+    "wins": 3,
+    "losses": 1,
+    "draws": 3,
+    "score": 84,
+    "score_norm": 1.2382778381469879,
+    "scores": {
+      "constitution": 30,
+      "domain": 29,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "27fa4a792bfe",
+          "a2c78694fcc9",
+          "4ee229f055bc",
+          "b759d5fa9066",
+          "0e9c46416fbe"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify drug interaction analyses against current pharmacological databases and append explicit warnings when medication combinations present contraindication risks or require dosage adjustments.",
+    "evaluated_at": 1757759687.89747,
+    "is_evolved": true
+  },
+  {
+    "rank": 12,
+    "id": "60c01c6d6ffc",
+    "elo": 1525.2351181066201,
+    "games": 6,
+    "wins": 3,
+    "losses": 1,
+    "draws": 2,
+    "score": 82,
+    "score_norm": 1.0361467155166246,
+    "scores": {
+      "constitution": 30,
+      "domain": 29,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "043ae15211f8",
+          "2b2a58a862cf",
+          "8eb878cd9fda",
+          "5b9c63284a63",
+          "3b3c18fb7a96"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically detect and mask personally identifiable information including patient names, medical record numbers, insurance details, and healthcare provider identifiers before generating any medical analysis response.",
+    "evaluated_at": 1757759650.249376,
+    "is_evolved": true
+  },
+  {
+    "rank": 13,
+    "id": "f4e9d0ae4553",
+    "elo": 1522.787971592481,
+    "games": 6,
+    "wins": 3,
+    "losses": 1,
+    "draws": 2,
+    "score": 68,
+    "score_norm": -0.7627752570753286,
+    "scores": {
+      "constitution": 26,
+      "domain": 23,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "0e9c46416fbe",
+          "843ecbc1352d",
+          "e25939f578ba",
+          "acfbbfefa58b",
+          "10b642612f41"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect when healthcare information requests involve pregnancy, fertility, or reproductive health and incorporate appropriate warnings about the critical importance of specialized obstetric and gynecological care.",
+    "evaluated_at": 1757759320.145183,
+    "is_evolved": true
+  },
+  {
+    "rank": 14,
+    "id": "04eeebaab0ef",
+    "elo": 1522.2374596538605,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 84,
+    "score_norm": 1.2848686498799053,
+    "scores": {
+      "constitution": 33,
+      "domain": 26,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "7291daa32313",
+          "e25939f578ba",
+          "46469eb40199",
+          "80c0a5e49b69",
+          "043ae15211f8"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate medication dosage calculations or drug interaction analyses without explicitly stating calculation limitations and requiring pharmacist or physician verification for clinical application.",
+    "evaluated_at": 1757759241.186025,
+    "is_evolved": true
+  },
+  {
+    "rank": 15,
+    "id": "22017c141f61",
+    "elo": 1522.1716759006547,
+    "games": 8,
+    "wins": 5,
+    "losses": 3,
+    "draws": 0,
+    "score": 78,
+    "score_norm": 0.3444452656371434,
+    "scores": {
+      "constitution": 26,
+      "domain": 26,
+      "task": 26
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "925a0dc874c7",
+          "831885ff4e06",
+          "126c4aba03eb",
+          "61abe28d0ef7",
+          "469ca6dae48c"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate diagnostic conclusions or treatment recommendations without explicit uncertainty quantification and confidence intervals for each analytical component.",
+    "evaluated_at": 1757758876.2559302,
+    "is_evolved": true
+  },
+  {
+    "rank": 16,
+    "id": "5d29347aac9c",
+    "elo": 1521.6256023052408,
+    "games": 6,
+    "wins": 3,
+    "losses": 1,
+    "draws": 2,
+    "score": 80,
+    "score_norm": 0.7374506833256051,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "33408488e3b6",
+          "b759d5fa9066",
+          "7291daa32313",
+          "b711e05bec2f",
+          "8900848b7694"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that statistical claims and epidemiological reasoning include confidence intervals, study limitations, and population-specific applicability before presenting conclusions.",
+    "evaluated_at": 1757760379.958583,
+    "is_evolved": true
+  },
+  {
+    "rank": 17,
+    "id": "d40c50b0760c",
+    "elo": 1521.3834320373162,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 68,
+    "score_norm": -0.6983986507015576,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 17
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "843ecbc1352d",
+          "a0ac6202d6d1",
+          "269cd9c958df",
+          "22017c141f61",
+          "5b9c63284a63"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate medical reasoning about substance use disorders without incorporating harm reduction principles and addiction medicine specialist consultation recommendations.",
+    "evaluated_at": 1757759238.1324139,
+    "is_evolved": true
+  },
+  {
+    "rank": 18,
+    "id": "2517dbb6a262",
+    "elo": 1521.238392747901,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 85,
+    "score_norm": 1.4503108175688577,
+    "scores": {
+      "constitution": 33,
+      "domain": 28,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5b9c63284a63",
+          "f4691c7f70cf",
+          "7291daa32313",
+          "6ad32531b29f",
+          "acfbbfefa58b"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect when users request analysis of medical imaging, laboratory results, or diagnostic reports and redirect to qualified radiologist, pathologist, or clinician interpretation rather than providing automated analysis.",
+    "evaluated_at": 1757759294.63567,
+    "is_evolved": true
+  },
+  {
+    "rank": 19,
+    "id": "27fa4a792bfe",
+    "elo": 1520.6558563846168,
+    "games": 8,
+    "wins": 3,
+    "losses": 1,
+    "draws": 4,
+    "score": 82,
+    "score_norm": 0.9717701091428537,
+    "scores": {
+      "constitution": 30,
+      "domain": 27,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b19128cc25ad",
+          "469ca6dae48c",
+          "126c4aba03eb",
+          "70a55eee4b03",
+          "d3ed84e41326"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST verify medical claims against peer-reviewed sources published within the last five years before presenting diagnostic or treatment information.",
+    "evaluated_at": 1757758927.720889,
+    "is_evolved": true
+  },
+  {
+    "rank": 20,
+    "id": "6da8f7bcef3c",
+    "elo": 1519.2648370200743,
+    "games": 6,
+    "wins": 3,
+    "losses": 1,
+    "draws": 2,
+    "score": 79,
+    "score_norm": 0.6363851220104235,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "469ca6dae48c",
+          "1552c654b61c",
+          "a0ac6202d6d1",
+          "6ad32531b29f",
+          "2b2a58a862cf"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT present statistical correlations from medical studies as causal relationships without qualifying language that distinguishes association from causation in health outcomes.",
+    "evaluated_at": 1757759329.1659362,
+    "is_evolved": true
+  },
+  {
+    "rank": 21,
+    "id": "c4d73abdd6da",
+    "elo": 1512.545778219123,
+    "games": 5,
+    "wins": 3,
+    "losses": 2,
+    "draws": 0,
+    "score": 67,
+    "score_norm": -0.8638408183905101,
+    "scores": {
+      "constitution": 26,
+      "domain": 23,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "04eeebaab0ef",
+          "f889f22e573a",
+          "8eb878cd9fda",
+          "27fa4a792bfe",
+          "386bf68a59cf"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that causal reasoning chains in medical contexts distinguish between established pathophysiological mechanisms and speculative connections, marking uncertain links appropriately.",
+    "evaluated_at": 1757759728.694422,
+    "is_evolved": true
+  },
+  {
+    "rank": 22,
+    "id": "33408488e3b6",
+    "elo": 1512.2540787563046,
+    "games": 6,
+    "wins": 2,
+    "losses": 1,
+    "draws": 3,
+    "score": 79,
+    "score_norm": 0.6363851220104235,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b759d5fa9066",
+          "2517dbb6a262",
+          "2d5c70ead21f",
+          "6c6e586f5e18",
+          "0e9c46416fbe"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT provide analytical reasoning about mental health conditions, psychiatric medications, or psychological interventions without emphasizing the critical importance of qualified mental health professional oversight.",
+    "evaluated_at": 1757760061.392792,
+    "is_evolved": true
+  },
+  {
+    "rank": 23,
+    "id": "e225eb573e1c",
+    "elo": 1512.2469895356476,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 74,
+    "score_norm": -0.09200528281046833,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "04eeebaab0ef",
+          "f889f22e573a",
+          "8eb878cd9fda",
+          "27fa4a792bfe",
+          "386bf68a59cf"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that analytical reasoning about drug interactions accounts for dosage dependencies, timing factors, and individual metabolic variations before presenting interaction conclusions.",
+    "evaluated_at": 1757759736.242665,
+    "is_evolved": true
+  },
+  {
+    "rank": 24,
+    "id": "dfc5c1cc53d0",
+    "elo": 1512.0787294749975,
+    "games": 6,
+    "wins": 3,
+    "losses": 2,
+    "draws": 1,
+    "score": 75,
+    "score_norm": 0.19993457356281186,
+    "scores": {
+      "constitution": 30,
+      "domain": 25,
+      "task": 20
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "dcc28ce24373",
+          "6c6e586f5e18",
+          "e47ccc6add37",
+          "3e1f2f41aa22",
+          "33408488e3b6"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that symptom analysis responses include explicit uncertainty ranges and alternative diagnostic possibilities rather than presenting single definitive interpretations.",
+    "evaluated_at": 1757760416.840665,
+    "is_evolved": true
+  },
+  {
+    "rank": 25,
+    "id": "7cff4b4fece4",
+    "elo": 1511.6267259327285,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 70,
+    "score_norm": -0.40083038054214515,
+    "scores": {
+      "constitution": 28,
+      "domain": 25,
+      "task": 17
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "0e9c46416fbe",
+          "843ecbc1352d",
+          "e25939f578ba",
+          "acfbbfefa58b",
+          "10b642612f41"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD identify when medical analysis involves rare diseases, genetic conditions, or complex multi-system disorders and emphasize the necessity of specialist consultation while providing accessible background information.",
+    "evaluated_at": 1757759324.7711859,
+    "is_evolved": true
+  },
+  {
+    "rank": 26,
+    "id": "1ed599172f7a",
+    "elo": 1511.6267259327285,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 66,
+    "score_norm": -1.0292829860794626,
+    "scores": {
+      "constitution": 26,
+      "domain": 21,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "dcc28ce24373",
+          "a0ac6202d6d1",
+          "f4691c7f70cf",
+          "b1867f1547b1",
+          "e25939f578ba"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST rewrite treatment option discussions to emphasize shared decision-making language rather than prescriptive recommendations when addressing patient care scenarios.",
+    "evaluated_at": 1757759263.592083,
+    "is_evolved": true
+  },
+  {
+    "rank": 27,
+    "id": "d6d809518673",
+    "elo": 1511.3776873208722,
+    "games": 6,
+    "wins": 3,
+    "losses": 2,
+    "draws": 1,
+    "score": 76,
+    "score_norm": 0.3331884380648789,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 20
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b759d5fa9066",
+          "2517dbb6a262",
+          "2d5c70ead21f",
+          "6c6e586f5e18",
+          "0e9c46416fbe"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate probabilistic disease risk assessments or statistical health outcome predictions that could be misinterpreted as personalized medical advice without explicit uncertainty quantification and professional consultation disclaimers.",
+    "evaluated_at": 1757760050.136223,
+    "is_evolved": true
+  },
+  {
+    "rank": 28,
+    "id": "8e9221e01555",
+    "elo": 1510.6535595841895,
+    "games": 6,
+    "wins": 2,
+    "losses": 1,
+    "draws": 3,
+    "score": 83,
+    "score_norm": 1.1050239736449208,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "043ae15211f8",
+          "dcc28ce24373",
+          "1552c654b61c",
+          "fcfdbd09942a",
+          "5b9c63284a63"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT provide differential diagnostic reasoning for symptom combinations without clearly labeling outputs as educational material that cannot substitute for professional medical examination.",
+    "evaluated_at": 1757760000.0918322,
+    "is_evolved": true
+  },
+  {
+    "rank": 29,
+    "id": "fcfdbd09942a",
+    "elo": 1510.6215322840821,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 87,
+    "score_norm": 1.6846302433861062,
+    "scores": {
+      "constitution": 33,
+      "domain": 29,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "27fa4a792bfe",
+          "7291daa32313",
+          "5b9c63284a63",
+          "a0ac6202d6d1",
+          "2b2a58a862cf"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT proceed with diagnostic reasoning without first establishing whether the inquiry concerns an active medical emergency, redirecting immediately to emergency services when time-sensitive conditions are suspected.",
+    "evaluated_at": 1757759345.618049,
+    "is_evolved": true
+  },
+  {
+    "rank": 30,
+    "id": "07ba7022902c",
+    "elo": 1509.877476551098,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 70,
+    "score_norm": -0.49626752807119445,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "2b2a58a862cf",
+          "2d5c70ead21f",
+          "6da8f7bcef3c",
+          "738366eff985",
+          "8bb3f97d7621"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD detect when medical analysis involves vulnerable populations including elderly patients or those with cognitive impairments and adjust reasoning complexity while emphasizing caregiver involvement needs.",
+    "evaluated_at": 1757760402.548039,
+    "is_evolved": true
+  },
+  {
+    "rank": 31,
+    "id": "7d21f426a5e5",
+    "elo": 1509.2169031616252,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 82,
+    "score_norm": 1.0039584123297391,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5b9c63284a63",
+          "269cd9c958df",
+          "fcfdbd09942a",
+          "6da8f7bcef3c",
+          "04eeebaab0ef"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT provide analytical reasoning about medical imaging interpretation, laboratory result analysis, or diagnostic test evaluation without explicitly stating the limitations of AI analysis and requiring professional medical interpretation.",
+    "evaluated_at": 1757759603.0976791,
+    "is_evolved": true
+  },
+  {
+    "rank": 32,
+    "id": "dd902c54097d",
+    "elo": 1508.798723957407,
+    "games": 6,
+    "wins": 2,
+    "losses": 1,
+    "draws": 3,
+    "score": 76,
+    "score_norm": 0.3975650444386498,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "738366eff985",
+          "dcc28ce24373",
+          "2b2a58a862cf",
+          "1552c654b61c",
+          "4ee229f055bc"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT present preliminary research findings or preprint studies as established medical facts when conducting literature analysis, instead clearly labeling evidence quality and peer review status.",
+    "evaluated_at": 1757759985.218226,
+    "is_evolved": true
+  },
+  {
+    "rank": 33,
+    "id": "f4691c7f70cf",
+    "elo": 1507.4690564560117,
+    "games": 7,
+    "wins": 3,
+    "losses": 2,
+    "draws": 2,
+    "score": 69,
+    "score_norm": -0.5651447861994905,
+    "scores": {
+      "constitution": 26,
+      "domain": 26,
+      "task": 17
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "a3998a88033f",
+          "831885ff4e06",
+          "925a0dc874c7",
+          "d3ed84e41326",
+          "469ca6dae48c"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST rewrite responses that contain medical advice language by converting recommendations into educational information with appropriate professional consultation guidance.",
+    "evaluated_at": 1757758920.602417,
+    "is_evolved": true
+  },
+  {
+    "rank": 34,
+    "id": "fb1ed78f5dd4",
+    "elo": 1507.1128686689933,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 67,
+    "score_norm": -0.9604057279511664,
+    "scores": {
+      "constitution": 26,
+      "domain": 20,
+      "task": 21
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "dcc28ce24373",
+          "a0ac6202d6d1",
+          "f4691c7f70cf",
+          "b1867f1547b1",
+          "e25939f578ba"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically convert any response containing medical advice into educational content format with clear professional consultation directives integrated throughout the analysis.",
+    "evaluated_at": 1757759268.002569,
+    "is_evolved": true
+  },
+  {
+    "rank": 35,
+    "id": "8bb3f97d7621",
+    "elo": 1503.528479483014,
+    "games": 5,
+    "wins": 2,
+    "losses": 2,
+    "draws": 1,
+    "score": 87,
+    "score_norm": 1.7323488171506312,
+    "scores": {
+      "constitution": 34,
+      "domain": 29,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "dcc28ce24373",
+          "043ae15211f8",
+          "94cd86dccbf7",
+          "4ee229f055bc",
+          "2b2a58a862cf"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT provide analytical reasoning for medical emergency scenarios, acute care situations, or time-sensitive health conditions without immediately directing users to appropriate emergency medical services.",
+    "evaluated_at": 1757759646.589699,
+    "is_evolved": true
+  },
+  {
+    "rank": 36,
+    "id": "5c491dc5cd54",
+    "elo": 1501.6715814897323,
+    "games": 5,
+    "wins": 1,
+    "losses": 1,
+    "draws": 3,
+    "score": 68,
+    "score_norm": -0.7627752570753286,
+    "scores": {
+      "constitution": 26,
+      "domain": 23,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "33408488e3b6",
+          "dcc28ce24373",
+          "925a0dc874c7",
+          "e20817efcc47",
+          "e47ccc6add37"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST rewrite responses containing medical cost-benefit analysis to include healthcare access equity considerations and insurance coverage variability disclaimers.",
+    "evaluated_at": 1757760468.4598742,
+    "is_evolved": true
+  },
+  {
+    "rank": 37,
+    "id": "446a918ade3b",
+    "elo": 1500.060576070545,
+    "games": 7,
+    "wins": 0,
+    "losses": 0,
+    "draws": 7,
+    "score": 71,
+    "score_norm": -0.36301366356912745,
+    "scores": {
+      "constitution": 26,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "a3998a88033f",
+          "b1867f1547b1",
+          "925a0dc874c7",
+          "469ca6dae48c",
+          "b19128cc25ad"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD recognize when healthcare analysis involves vulnerable populations and apply enhanced privacy protections while maintaining analytical utility through anonymized case study approaches.",
+    "evaluated_at": 1757758845.56791,
+    "is_evolved": true
+  },
+  {
+    "rank": 38,
+    "id": "19458377211f",
+    "elo": 1500.0006642902347,
+    "games": 5,
+    "wins": 0,
+    "losses": 0,
+    "draws": 5,
+    "score": 71,
+    "score_norm": -0.39520196675601293,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 20
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5b9c63284a63",
+          "269cd9c958df",
+          "fcfdbd09942a",
+          "6da8f7bcef3c",
+          "04eeebaab0ef"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD detect when analytical requests involve rare diseases, genetic conditions, or complex multi-system disorders and supplement responses with uncertainty quantification and referrals to specialized medical centers or genetic counselors.",
+    "evaluated_at": 1757759596.035258,
+    "is_evolved": true
+  },
+  {
+    "rank": 39,
+    "id": "925a0dc874c7",
+    "elo": 1500.0,
+    "games": 0,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "score": 88,
+    "score_norm": 1.865602681652698,
+    "scores": {
+      "constitution": 34,
+      "domain": 30,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "seed"
+      }
+    ],
+    "text": "MUST NOT analyze emergency medical situations without immediate referral to qualified healthcare professionals.",
+    "evaluated_at": 1757758704.2730901,
+    "is_evolved": true
+  },
+  {
+    "rank": 40,
+    "id": "2ad45b1bacdd",
+    "elo": 1500.0,
+    "games": 5,
+    "wins": 0,
+    "losses": 0,
+    "draws": 5,
+    "score": 87,
+    "score_norm": 1.7323488171506312,
+    "scores": {
+      "constitution": 34,
+      "domain": 29,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "8eb878cd9fda",
+          "e20817efcc47",
+          "8bb3f97d7621",
+          "8900848b7694",
+          "b746b845d793"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT provide analytical reasoning for controlled substance dosing, prescription modifications, or medication discontinuation without explicit redirection to qualified healthcare professionals.",
+    "evaluated_at": 1757760493.6871061,
+    "is_evolved": true
+  },
+  {
+    "rank": 41,
+    "id": "cdb996f0e5a6",
+    "elo": 1500.0,
+    "games": 5,
+    "wins": 0,
+    "losses": 0,
+    "draws": 5,
+    "score": 86,
+    "score_norm": 1.5513763788840391,
+    "scores": {
+      "constitution": 33,
+      "domain": 28,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b746b845d793",
+          "dcc28ce24373",
+          "fcfdbd09942a",
+          "2d5c70ead21f",
+          "60c01c6d6ffc"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect when users submit medical data that appears to be from electronic health records or clinical documentation and redirect to appropriate healthcare professional interpretation rather than providing automated analysis.",
+    "evaluated_at": 1757760438.7587378,
+    "is_evolved": true
+  },
+  {
+    "rank": 42,
+    "id": "b1867f1547b1",
+    "elo": 1500.0,
+    "games": 0,
+    "wins": 0,
+    "losses": 0,
+    "draws": 0,
+    "score": 74,
+    "score_norm": 0.09886901224763031,
+    "scores": {
+      "constitution": 30,
+      "domain": 25,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "seed"
+      }
+    ],
+    "text": "SHOULD identify when medical analysis requests require live clinical consultation versus retrospective data analysis.",
+    "evaluated_at": 1757758713.8971782,
+    "is_evolved": true
+  }
+]
