@@ -1080,7 +1080,7 @@ def run_domain_group_evolution(target_domain: str = "Legal_and_Regulatory"):
 
         try:
             group_archive = run_group_evolution_from_archive(
-                test_archive, f"{domain_name}_{task_name}", constitution, domain_profile, task_profile,
+                test_archive, task_name, constitution, domain_profile, task_profile,
                 config, unified_judge, domain_name=target_domain
             )
             print(f"  🏆 {task_name} 진화 완료! 총 {len(group_archive.all_groups())}개 그룹 생성")
@@ -1196,7 +1196,7 @@ def run_single_task_group_evolution(target_domain: str, target_task: str):
 
     try:
         group_archive = run_group_evolution_from_archive(
-            test_archive, f"{domain_name}_{task_name}", constitution, domain_profile, task_profile,
+            test_archive, task_name, constitution, domain_profile, task_profile,
             config, unified_judge, domain_name=target_domain
         )
         print(f"🏆 {task_name} 진화 완료! 총 {len(group_archive.all_groups())}개 그룹 생성")

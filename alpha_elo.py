@@ -1714,24 +1714,24 @@ def run_domain_tasks_auto_load(cfg: EvolverConfig, target_domain: str = "Legal_a
                 for i, spec in enumerate(elites):
                     elo = spec.get('elo', cfg.elo_initial)
                     gap_flag = ""
-                if prev_elo is not None and (prev_elo - elo) < cfg.significance_gap:
-                    gap_flag = " (≈tie)"
-                prev_elo = elo
-                f.write(f"{'='*60}\n")
-                f.write(f"RANK #{i+1}{gap_flag}\n")
-                f.write(f"ID: {spec['id']}\n")
-                f.write(f"ELO: {elo:.1f} (W-D-L: {spec.get('wins',0)}-{spec.get('draws',0)}-{spec.get('losses',0)}, Games: {spec.get('games',0)})\n")
-                f.write(f"SCORE(REF): {spec.get('score',0)}/100  |  SCORE(NORM): {spec.get('score_norm', 0.0):+.2f}\n")
-                f.write(f"  - Constitution: {spec.get('scores',{}).get('constitution',0)}/40\n")
-                f.write(f"  - Domain: {spec.get('scores',{}).get('domain',0)}/30\n")
-                f.write(f"  - Task: {spec.get('scores',{}).get('task',0)}/30\n")
-                provenance = spec.get('provenance', [])
-                if provenance:
-                    f.write(f"EVOLUTION: {' → '.join([p['op'] for p in provenance])}\n")
-                else:
-                    f.write(f"EVOLUTION: [Original Seed]\n")
-                f.write(f"\nSPEC TEXT:\n")
-                f.write(f"{strip_leading_numbering(spec['text'])}\n\n")
+                    if prev_elo is not None and (prev_elo - elo) < cfg.significance_gap:
+                        gap_flag = " (≈tie)"
+                    prev_elo = elo
+                    f.write(f"{'='*60}\n")
+                    f.write(f"RANK #{i+1}{gap_flag}\n")
+                    f.write(f"ID: {spec['id']}\n")
+                    f.write(f"ELO: {elo:.1f} (W-D-L: {spec.get('wins',0)}-{spec.get('draws',0)}-{spec.get('losses',0)}, Games: {spec.get('games',0)})\n")
+                    f.write(f"SCORE(REF): {spec.get('score',0)}/100  |  SCORE(NORM): {spec.get('score_norm', 0.0):+.2f}\n")
+                    f.write(f"  - Constitution: {spec.get('scores',{}).get('constitution',0)}/40\n")
+                    f.write(f"  - Domain: {spec.get('scores',{}).get('domain',0)}/30\n")
+                    f.write(f"  - Task: {spec.get('scores',{}).get('task',0)}/30\n")
+                    provenance = spec.get('provenance', [])
+                    if provenance:
+                        f.write(f"EVOLUTION: {' → '.join([p['op'] for p in provenance])}\n")
+                    else:
+                        f.write(f"EVOLUTION: [Original Seed]\n")
+                    f.write(f"\nSPEC TEXT:\n")
+                    f.write(f"{strip_leading_numbering(spec['text'])}\n\n")
         print(f"📁 Archive 저장 완료:")
         print(f"  - JSON: {archive_file_json}")
         print(f"  - TXT: {archive_file_txt}")
