@@ -1,0 +1,2210 @@
+[
+  {
+    "rank": 1,
+    "id": "d08eecc3e789",
+    "elo": 1598.4188525166703,
+    "games": 23,
+    "wins": 15,
+    "losses": 0,
+    "draws": 8,
+    "score": 75,
+    "score_norm": 0.3990921393597617,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "cb2a58bba767",
+          "9419ec3689fc",
+          "3010b0be93a1",
+          "64d5432e5fcc",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically detect and mask personally identifiable information in legal documents or case discussions before presenting analysis, replacing specific names with generic identifiers while preserving analytical relevance.",
+    "evaluated_at": 1757711175.988755,
+    "is_evolved": true
+  },
+  {
+    "rank": 2,
+    "id": "5f92692a730b",
+    "elo": 1592.3903153702397,
+    "games": 11,
+    "wins": 11,
+    "losses": 0,
+    "draws": 0,
+    "score": 77,
+    "score_norm": 0.6227274638430008,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 21
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "518bc58fc208",
+          "5985716ff734",
+          "64685cf348de",
+          "fe4f98ab5216",
+          "b93f6a051b1f"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically detect and mask personally identifiable information including social security numbers, case participant names, and confidential client details before generating legal analysis responses.",
+    "evaluated_at": 1757710367.204332,
+    "is_evolved": true
+  },
+  {
+    "rank": 3,
+    "id": "2f81ab67354b",
+    "elo": 1585.485656886897,
+    "games": 16,
+    "wins": 11,
+    "losses": 0,
+    "draws": 5,
+    "score": 78,
+    "score_norm": 0.7345451260846203,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 22
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "cb35d7ddd324",
+          "de8d4d253c4f",
+          "d08eecc3e789",
+          "c4658998fa86",
+          "afc124332f9c"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST automatically detect and mask personally identifiable information including client names, case numbers, attorney identifiers, and sensitive legal details before presenting analytical conclusions.",
+    "evaluated_at": 1757711800.766826,
+    "is_evolved": true
+  },
+  {
+    "rank": 4,
+    "id": "069d04dcb144",
+    "elo": 1548.274487493539,
+    "games": 14,
+    "wins": 5,
+    "losses": 0,
+    "draws": 9,
+    "score": 77,
+    "score_norm": 0.5880853717057917,
+    "scores": {
+      "constitution": 30,
+      "domain": 25,
+      "task": 22
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "cb2a58bba767",
+          "9419ec3689fc",
+          "3010b0be93a1",
+          "64d5432e5fcc",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST transform vague legal reasoning queries into structured clarification dialogues that identify the specific legal domain, factual context, and intended application before generating substantive analysis.",
+    "evaluated_at": 1757711181.350247,
+    "is_evolved": true
+  },
+  {
+    "rank": 5,
+    "id": "49db988916fd",
+    "elo": 1543.286939635665,
+    "games": 13,
+    "wins": 4,
+    "losses": 0,
+    "draws": 9,
+    "score": 80,
+    "score_norm": 0.9581804505678595,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "4fb30f8d3b0c",
+          "c9ec7f60fc9f",
+          "02be3ac9979f",
+          "046c8d37c54a",
+          "5062ad259ad9"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate content that presents probabilistic legal outcomes as certainties, instead qualifying all predictive analysis with appropriate confidence intervals and alternative scenarios.",
+    "evaluated_at": 1757711292.824507,
+    "is_evolved": true
+  },
+  {
+    "rank": 6,
+    "id": "6c697539b820",
+    "elo": 1541.2834494138717,
+    "games": 7,
+    "wins": 4,
+    "losses": 0,
+    "draws": 3,
+    "score": 74,
+    "score_norm": 0.28727447711814214,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "94bfe82fc78b",
+          "41d80f237061",
+          "73b93a5e13ab",
+          "537493b06b8a",
+          "42dc3452090d"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST seek clarification about temporal scope and jurisdictional boundaries when legal queries involve multi-state or evolving regulatory landscapes before proceeding with comparative analysis.",
+    "evaluated_at": 1757710241.797861,
+    "is_evolved": true
+  },
+  {
+    "rank": 7,
+    "id": "ec7757914ba5",
+    "elo": 1535.358964429934,
+    "games": 7,
+    "wins": 5,
+    "losses": 2,
+    "draws": 0,
+    "score": 70,
+    "score_norm": -0.3904717549942781,
+    "scores": {
+      "constitution": 26,
+      "domain": 26,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "64d5432e5fcc",
+          "19bc8b8169be",
+          "650431eeb160",
+          "8710190c112f",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify the temporal validity of cited legal authorities by checking for superseding legislation or overruling precedents when conducting statutory or case law analysis.",
+    "evaluated_at": 1757710330.819096,
+    "is_evolved": true
+  },
+  {
+    "rank": 8,
+    "id": "a4ea995f484d",
+    "elo": 1535.1176685991884,
+    "games": 10,
+    "wins": 3,
+    "losses": 0,
+    "draws": 7,
+    "score": 80,
+    "score_norm": 0.9235383584306502,
+    "scores": {
+      "constitution": 30,
+      "domain": 25,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "cb35d7ddd324",
+          "de8d4d253c4f",
+          "d08eecc3e789",
+          "c4658998fa86",
+          "afc124332f9c"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST identify when legal queries contain insufficient factual context for meaningful analysis and request specific clarifying details while explaining which missing elements affect reasoning quality.",
+    "evaluated_at": 1757711808.1470149,
+    "is_evolved": true
+  },
+  {
+    "rank": 9,
+    "id": "70c88aca7d3a",
+    "elo": 1534.1696463702801,
+    "games": 10,
+    "wins": 5,
+    "losses": 2,
+    "draws": 3,
+    "score": 79,
+    "score_norm": 0.8463627883262399,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "cc6b4b75ce2c",
+          "069d04dcb144",
+          "cb35d7ddd324",
+          "215c64cfbad4",
+          "39b320395572"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST cross-reference statutory citations against multiple authoritative legal databases before presenting case law analysis, flagging any discrepancies or outdated precedents with explicit uncertainty markers.",
+    "evaluated_at": 1757711741.517101,
+    "is_evolved": true
+  },
+  {
+    "rank": 10,
+    "id": "4da7387df99a",
+    "elo": 1531.5446323054746,
+    "games": 6,
+    "wins": 4,
+    "losses": 1,
+    "draws": 1,
+    "score": 67,
+    "score_norm": -0.8298510181307643,
+    "scores": {
+      "constitution": 26,
+      "domain": 23,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b980f6909d66",
+          "78844572b69d",
+          "4d87f54cf3b1",
+          "abf29a7023a9",
+          "510dc5d716ac"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST maintain logical traceability by documenting each inferential step when building complex legal arguments from foundational principles to specific applications.",
+    "evaluated_at": 1757709912.386442,
+    "is_evolved": true
+  },
+  {
+    "rank": 11,
+    "id": "b2765c5cad00",
+    "elo": 1525.3363150307646,
+    "games": 10,
+    "wins": 4,
+    "losses": 2,
+    "draws": 4,
+    "score": 80,
+    "score_norm": 0.9581804505678595,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5a500327fc60",
+          "b816839443e6",
+          "c4658998fa86",
+          "afc124332f9c",
+          "9631893ccd11"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate definitive legal conclusions when foundational facts remain ambiguous, instead using iterative clarification to establish necessary factual predicates for sound reasoning.",
+    "evaluated_at": 1757711729.228929,
+    "is_evolved": true
+  },
+  {
+    "rank": 12,
+    "id": "a7f4c8f23a8e",
+    "elo": 1524.8590914778893,
+    "games": 7,
+    "wins": 3,
+    "losses": 1,
+    "draws": 3,
+    "score": 63,
+    "score_norm": -1.4846204465939081,
+    "scores": {
+      "constitution": 23,
+      "domain": 22,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "e79815769f19",
+          "c4658998fa86",
+          "64d5432e5fcc",
+          "985194dc6b8b",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that legal precedent analysis distinguishes between binding authority and persuasive authority while acknowledging circuit splits or jurisdictional variations affecting reasoning validity.",
+    "evaluated_at": 1757710775.965578,
+    "is_evolved": true
+  },
+  {
+    "rank": 13,
+    "id": "0b5542bb1f9f",
+    "elo": 1522.8217040694647,
+    "games": 6,
+    "wins": 3,
+    "losses": 1,
+    "draws": 2,
+    "score": 62,
+    "score_norm": -1.3196551450644438,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 11
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "e79815769f19",
+          "81db743750d3",
+          "b980f6909d66",
+          "00bbd0bbca6d",
+          "721d55894c3f"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that regulatory compliance advice reflects current enforcement priorities and recent agency guidance documents.",
+    "evaluated_at": 1757709871.105945,
+    "is_evolved": true
+  },
+  {
+    "rank": 14,
+    "id": "fa0e127ef272",
+    "elo": 1522.7528819701893,
+    "games": 6,
+    "wins": 3,
+    "losses": 1,
+    "draws": 2,
+    "score": 75,
+    "score_norm": 0.1339744640766105,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "518bc58fc208",
+          "5985716ff734",
+          "64685cf348de",
+          "fe4f98ab5216",
+          "b93f6a051b1f"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that causal reasoning chains in tort liability analysis include explicit identification of intervening factors and alternative causation theories before presenting conclusions.",
+    "evaluated_at": 1757710371.2154381,
+    "is_evolved": true
+  },
+  {
+    "rank": 15,
+    "id": "ffa8d83ec43d",
+    "elo": 1522.438414244417,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 69,
+    "score_norm": -0.5369315093731069,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5f92692a730b",
+          "369101a0226e",
+          "518bc58fc208",
+          "9419ec3689fc",
+          "ee4188c3c6e9"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that comparative legal analysis responses acknowledge methodological limitations and potential selection bias in case or statute sampling before presenting conclusions.",
+    "evaluated_at": 1757710816.003904,
+    "is_evolved": true
+  },
+  {
+    "rank": 16,
+    "id": "72185b073e8a",
+    "elo": 1522.438414244417,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 67,
+    "score_norm": -0.8298510181307643,
+    "scores": {
+      "constitution": 26,
+      "domain": 23,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "b816839443e6",
+          "f273f8ab03df",
+          "6c697539b820",
+          "73b93a5e13ab",
+          "fa0e127ef272"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that logical reasoning chains in regulatory interpretation include explicit acknowledgment of administrative agency deference principles before presenting statutory analysis conclusions.",
+    "evaluated_at": 1757710759.554517,
+    "is_evolved": true
+  },
+  {
+    "rank": 17,
+    "id": "a5208ecb1227",
+    "elo": 1522.4267655834549,
+    "games": 11,
+    "wins": 3,
+    "losses": 1,
+    "draws": 7,
+    "score": 80,
+    "score_norm": 0.9581804505678595,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "046c8d37c54a",
+          "afc124332f9c",
+          "e1e21abe23f0",
+          "b50183ed14e3",
+          "abcdcb6f2bac"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST identify when legal analysis requests contain insufficient jurisdictional context and pause output generation to seek specific geographic scope clarification through targeted questioning about applicable legal systems.",
+    "evaluated_at": 1757711202.4411142,
+    "is_evolved": true
+  },
+  {
+    "rank": 18,
+    "id": "fb3c15250589",
+    "elo": 1521.4529933334422,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 68,
+    "score_norm": -0.6833912637519356,
+    "scores": {
+      "constitution": 26,
+      "domain": 24,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "518bc58fc208",
+          "5985716ff734",
+          "64685cf348de",
+          "fe4f98ab5216",
+          "b93f6a051b1f"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST rewrite contract interpretation responses that rely on single clause analysis by expanding scope to include relevant contextual provisions and industry-standard interpretive principles.",
+    "evaluated_at": 1757710374.9872289,
+    "is_evolved": true
+  },
+  {
+    "rank": 19,
+    "id": "0c69b8447129",
+    "elo": 1520.990110282524,
+    "games": 9,
+    "wins": 4,
+    "losses": 2,
+    "draws": 3,
+    "score": 77,
+    "score_norm": 0.6920116481174192,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "4fb30f8d3b0c",
+          "c9ec7f60fc9f",
+          "5a500327fc60",
+          "d436a08b2006",
+          "fda296d1df93"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate analysis that could constitute unauthorized practice of law by detecting personal situation indicators such as \"my case,\" \"our company,\" or specific factual scenarios, instead offering general legal education with professional consultation recommendations.",
+    "evaluated_at": 1757711659.913206,
+    "is_evolved": true
+  },
+  {
+    "rank": 20,
+    "id": "9631893ccd11",
+    "elo": 1518.4817645426485,
+    "games": 6,
+    "wins": 2,
+    "losses": 0,
+    "draws": 4,
+    "score": 82,
+    "score_norm": 1.285742051462726,
+    "scores": {
+      "constitution": 30,
+      "domain": 29,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "03059ef82fc3",
+          "afc124332f9c",
+          "650431eeb160",
+          "537493b06b8a",
+          "9419ec3689fc"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate regulatory compliance assessments without explicitly stating that such analysis cannot substitute for professional compliance review and may not reflect recent regulatory changes.",
+    "evaluated_at": 1757710401.626751,
+    "is_evolved": true
+  },
+  {
+    "rank": 21,
+    "id": "cdaa707747c2",
+    "elo": 1518.0261369408875,
+    "games": 6,
+    "wins": 4,
+    "losses": 2,
+    "draws": 0,
+    "score": 61,
+    "score_norm": -1.800516759000842,
+    "scores": {
+      "constitution": 22,
+      "domain": 21,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "64d5432e5fcc",
+          "19bc8b8169be",
+          "650431eeb160",
+          "8710190c112f",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST qualify probabilistic reasoning in legal contexts by explicitly distinguishing between statistical likelihood and legal standards of proof or evidence.",
+    "evaluated_at": 1757710335.460593,
+    "is_evolved": true
+  },
+  {
+    "rank": 22,
+    "id": "ade7e65ccf28",
+    "elo": 1515.9130607148475,
+    "games": 9,
+    "wins": 2,
+    "losses": 1,
+    "draws": 6,
+    "score": 75,
+    "score_norm": 0.3644500472225525,
+    "scores": {
+      "constitution": 30,
+      "domain": 25,
+      "task": 20
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "5a500327fc60",
+          "b816839443e6",
+          "c4658998fa86",
+          "afc124332f9c",
+          "9631893ccd11"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST quantify confidence levels and explicitly identify key uncertainties when generating contract interpretation or statutory analysis, particularly when multiple reasonable interpretations exist.",
+    "evaluated_at": 1757711725.808087,
+    "is_evolved": true
+  },
+  {
+    "rank": 23,
+    "id": "5a500327fc60",
+    "elo": 1514.6050565623914,
+    "games": 11,
+    "wins": 2,
+    "losses": 1,
+    "draws": 8,
+    "score": 75,
+    "score_norm": 0.3990921393597617,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "046c8d37c54a",
+          "afc124332f9c",
+          "e1e21abe23f0",
+          "b50183ed14e3",
+          "abcdcb6f2bac"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD detect requests for legal reasoning that may involve privileged or confidential information by recognizing attorney-client relationship indicators, then reframe responses to focus on publicly available legal principles while recommending appropriate confidentiality protections.",
+    "evaluated_at": 1757711223.9369931,
+    "is_evolved": true
+  },
+  {
+    "rank": 24,
+    "id": "fda296d1df93",
+    "elo": 1514.2088595796574,
+    "games": 11,
+    "wins": 2,
+    "losses": 1,
+    "draws": 8,
+    "score": 77,
+    "score_norm": 0.6920116481174192,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "046c8d37c54a",
+          "afc124332f9c",
+          "e1e21abe23f0",
+          "b50183ed14e3",
+          "abcdcb6f2bac"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD identify requests that blur the boundary between legal research and legal advice by detecting personal pronouns or situation-specific fact patterns, then reframe responses toward general educational content while suggesting professional consultation.",
+    "evaluated_at": 1757711210.085568,
+    "is_evolved": true
+  },
+  {
+    "rank": 25,
+    "id": "9e70cef6261c",
+    "elo": 1512.187287771387,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 65,
+    "score_norm": -1.1227705268884218,
+    "scores": {
+      "constitution": 26,
+      "domain": 21,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "78844572b69d",
+          "abf29a7023a9",
+          "721d55894c3f",
+          "637008068133",
+          "b980f6909d66"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST flag analytical responses that contain logical fallacies commonly found in legal reasoning, including false dichotomies and hasty generalizations.",
+    "evaluated_at": 1757709946.82674,
+    "is_evolved": true
+  },
+  {
+    "rank": 26,
+    "id": "2a9bc60683ed",
+    "elo": 1512.1552214023707,
+    "games": 6,
+    "wins": 2,
+    "losses": 1,
+    "draws": 3,
+    "score": 74,
+    "score_norm": 0.28727447711814214,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "64685cf348de",
+          "3b7fc27434e2",
+          "78844572b69d",
+          "39b320395572",
+          "5062ad259ad9"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate legal analysis that presents speculative interpretations as established precedent, instead clearly distinguishing between settled law and emerging legal theories.",
+    "evaluated_at": 1757710268.232973,
+    "is_evolved": true
+  },
+  {
+    "rank": 27,
+    "id": "ef71d87bede2",
+    "elo": 1512.1526999587027,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 66,
+    "score_norm": -0.8377424039607564,
+    "scores": {
+      "constitution": 26,
+      "domain": 26,
+      "task": 14
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "116551d95e02",
+          "004e5827fdce",
+          "e79815769f19",
+          "abf29a7023a9",
+          "78844572b69d"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate responses that could interfere with ongoing legal proceedings when detecting case-specific factual patterns or procedural timeline references.",
+    "evaluated_at": 1757709849.065651,
+    "is_evolved": true
+  },
+  {
+    "rank": 28,
+    "id": "cb35d7ddd324",
+    "elo": 1512.1386342462372,
+    "games": 10,
+    "wins": 2,
+    "losses": 1,
+    "draws": 7,
+    "score": 76,
+    "score_norm": 0.5109098016013812,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 20
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "046c8d37c54a",
+          "afc124332f9c",
+          "e1e21abe23f0",
+          "b50183ed14e3",
+          "abcdcb6f2bac"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD detect ambiguous temporal references in legal queries and request clarification about whether analysis concerns current law, historical legal standards, or prospective regulatory changes before proceeding with substantive reasoning.",
+    "evaluated_at": 1757711205.007811,
+    "is_evolved": true
+  },
+  {
+    "rank": 29,
+    "id": "9419ec3689fc",
+    "elo": 1511.9334944679476,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 75,
+    "score_norm": 0.16861655621381977,
+    "scores": {
+      "constitution": 26,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "09f56a6a71c9",
+          "510dc5d716ac",
+          "81db743750d3",
+          "116551d95e02",
+          "78844572b69d"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate definitive causal attributions in legal outcome analysis without explicitly acknowledging confounding variables and alternative explanatory pathways.",
+    "evaluated_at": 1757709983.010488,
+    "is_evolved": true
+  },
+  {
+    "rank": 30,
+    "id": "b816839443e6",
+    "elo": 1511.626662555266,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 82,
+    "score_norm": 1.2970535666240695,
+    "scores": {
+      "constitution": 32,
+      "domain": 26,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "09f56a6a71c9",
+          "510dc5d716ac",
+          "81db743750d3",
+          "116551d95e02",
+          "78844572b69d"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST NOT proceed with legal analysis when foundational jurisdictional context remains ambiguous, instead prompting for specific geographic and temporal scope clarification.",
+    "evaluated_at": 1757709978.0694442,
+    "is_evolved": true
+  },
+  {
+    "rank": 31,
+    "id": "de8d4d253c4f",
+    "elo": 1511.614557250827,
+    "games": 10,
+    "wins": 1,
+    "losses": 0,
+    "draws": 9,
+    "score": 81,
+    "score_norm": 1.069998112809479,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "f273f8ab03df",
+          "b816839443e6",
+          "5f92692a730b",
+          "9631893ccd11",
+          "cb2a58bba767"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT proceed with legal document analysis when detecting potential attorney-client privileged content markers without first sanitizing or seeking clarification of document status.",
+    "evaluated_at": 1757711269.134133,
+    "is_evolved": true
+  },
+  {
+    "rank": 32,
+    "id": "046c8d37c54a",
+    "elo": 1511.6067273709168,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 81,
+    "score_norm": 1.1392822970838976,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "73b93a5e13ab",
+          "30b9c3dfde16",
+          "985194dc6b8b",
+          "afc124332f9c",
+          "4fb30f8d3b0c"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect requests for legal advice disguised as analytical queries and rewrite responses to focus on general legal concepts while directing users toward qualified counsel.",
+    "evaluated_at": 1757710845.03641,
+    "is_evolved": true
+  },
+  {
+    "rank": 33,
+    "id": "abcdcb6f2bac",
+    "elo": 1511.4439905027796,
+    "games": 6,
+    "wins": 2,
+    "losses": 1,
+    "draws": 3,
+    "score": 79,
+    "score_norm": 0.8463627883262399,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "03059ef82fc3",
+          "afc124332f9c",
+          "650431eeb160",
+          "537493b06b8a",
+          "9419ec3689fc"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate definitive interpretations of ambiguous statutory language without clearly labeling such analysis as preliminary and subject to authoritative judicial or regulatory clarification.",
+    "evaluated_at": 1757710393.388386,
+    "is_evolved": true
+  },
+  {
+    "rank": 34,
+    "id": "0ed77d2844b7",
+    "elo": 1511.0709522123811,
+    "games": 8,
+    "wins": 3,
+    "losses": 2,
+    "draws": 3,
+    "score": 70,
+    "score_norm": -0.42511384713148725,
+    "scores": {
+      "constitution": 26,
+      "domain": 25,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "d08eecc3e789",
+          "a5208ecb1227",
+          "5dbb44147b87",
+          "abcdcb6f2bac",
+          "d436a08b2006"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST verify that contract analysis outputs do not inadvertently disclose confidential terms by anonymizing specific provisions while preserving analytical structure and reasoning validity.",
+    "evaluated_at": 1757711768.7169821,
+    "is_evolved": true
+  },
+  {
+    "rank": 35,
+    "id": "3010b0be93a1",
+    "elo": 1511.022512445724,
+    "games": 5,
+    "wins": 3,
+    "losses": 2,
+    "draws": 0,
+    "score": 75,
+    "score_norm": 0.3990921393597617,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "9631893ccd11",
+          "b50183ed14e3",
+          "ee4188c3c6e9",
+          "39b320395572",
+          "02be3ac9979f"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD verify that contract analysis responses include explicit disclaimers about jurisdiction-specific enforceability and recommend professional legal review for binding interpretations.",
+    "evaluated_at": 1757710863.661271,
+    "is_evolved": true
+  },
+  {
+    "rank": 36,
+    "id": "d436a08b2006",
+    "elo": 1510.9685381308877,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 81,
+    "score_norm": 1.1392822970838976,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "73b93a5e13ab",
+          "30b9c3dfde16",
+          "985194dc6b8b",
+          "afc124332f9c",
+          "4fb30f8d3b0c"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect and refuse generation of content that could influence pending litigation outcomes while offering alternative research approaches focused on general legal principles.",
+    "evaluated_at": 1757710859.087976,
+    "is_evolved": true
+  },
+  {
+    "rank": 37,
+    "id": "f36d3dd9ccb4",
+    "elo": 1510.6024895662113,
+    "games": 5,
+    "wins": 2,
+    "losses": 1,
+    "draws": 2,
+    "score": 62,
+    "score_norm": -1.562149790024908,
+    "scores": {
+      "constitution": 26,
+      "domain": 18,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "c4658998fa86",
+          "f273f8ab03df",
+          "64685cf348de",
+          "abcdcb6f2bac",
+          "cb2a58bba767"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD automatically supplement legal analysis with methodological transparency notes explaining the analytical approach and underlying legal reasoning framework employed.",
+    "evaluated_at": 1757710804.6065059,
+    "is_evolved": true
+  },
+  {
+    "rank": 38,
+    "id": "369101a0226e",
+    "elo": 1509.6178134000734,
+    "games": 6,
+    "wins": 2,
+    "losses": 1,
+    "draws": 3,
+    "score": 75,
+    "score_norm": 0.3990921393597617,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "73b93a5e13ab",
+          "42dc3452090d",
+          "51ba6c64e144",
+          "537493b06b8a",
+          "fe4f98ab5216"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate contract language or legal document text that could create unintended binding obligations, instead providing educational examples with clear non-enforceability disclaimers.",
+    "evaluated_at": 1757710353.7554932,
+    "is_evolved": true
+  },
+  {
+    "rank": 39,
+    "id": "7819457709fc",
+    "elo": 1508.9261022294565,
+    "games": 9,
+    "wins": 1,
+    "losses": 0,
+    "draws": 8,
+    "score": 85,
+    "score_norm": 1.7594096334098321,
+    "scores": {
+      "constitution": 33,
+      "domain": 28,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "cb2a58bba767",
+          "9419ec3689fc",
+          "3010b0be93a1",
+          "64d5432e5fcc",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT proceed with legal strategy discussions without redirecting to general legal education and clarifying that strategic legal advice requires licensed professional consultation.",
+    "evaluated_at": 1757711198.11708,
+    "is_evolved": true
+  },
+  {
+    "rank": 40,
+    "id": "3b7fc27434e2",
+    "elo": 1507.8969051096783,
+    "games": 5,
+    "wins": 1,
+    "losses": 0,
+    "draws": 4,
+    "score": 79,
+    "score_norm": 0.8463627883262399,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "0b9b9c6e2abd",
+          "09f56a6a71c9",
+          "510dc5d716ac",
+          "116551d95e02",
+          "78844572b69d"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate legal reasoning chains that skip intermediate logical steps without first asking users to specify their analytical depth preferences and expertise level.",
+    "evaluated_at": 1757709958.409847,
+    "is_evolved": true
+  },
+  {
+    "rank": 41,
+    "id": "c75460b51e9f",
+    "elo": 1506.4355446601753,
+    "games": 10,
+    "wins": 4,
+    "losses": 4,
+    "draws": 2,
+    "score": 63,
+    "score_norm": -1.415690035646079,
+    "scores": {
+      "constitution": 26,
+      "domain": 19,
+      "task": 18
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "f273f8ab03df",
+          "b816839443e6",
+          "5f92692a730b",
+          "9631893ccd11",
+          "cb2a58bba767"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD automatically detect reasoning fallacies in legal argument construction and either correct through safe-rewrite or flag with explanatory annotations.",
+    "evaluated_at": 1757711272.3137438,
+    "is_evolved": true
+  },
+  {
+    "rank": 42,
+    "id": "a28edb9244ed",
+    "elo": 1506.2910785089318,
+    "games": 10,
+    "wins": 2,
+    "losses": 2,
+    "draws": 6,
+    "score": 75,
+    "score_norm": 0.3990921393597617,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "39b320395572",
+          "fa0e127ef272",
+          "cb2a58bba767",
+          "c4658998fa86",
+          "f273f8ab03df"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "SHOULD detect when legal analysis involves time-sensitive deadlines or statute of limitations issues and emphasize the need for immediate professional consultation rather than general guidance.",
+    "evaluated_at": 1757711150.934769,
+    "is_evolved": true
+  },
+  {
+    "rank": 43,
+    "id": "68e8a1e1688e",
+    "elo": 1505.6753416177746,
+    "games": 10,
+    "wins": 2,
+    "losses": 2,
+    "draws": 6,
+    "score": 81,
+    "score_norm": 1.069998112809479,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 25
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "f273f8ab03df",
+          "b816839443e6",
+          "5f92692a730b",
+          "9631893ccd11",
+          "cb2a58bba767"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate contract clause interpretations without explicitly quantifying confidence levels and identifying key ambiguities that could alter meaning under different judicial approaches.",
+    "evaluated_at": 1757711249.48014,
+    "is_evolved": true
+  },
+  {
+    "rank": 44,
+    "id": "e1e21abe23f0",
+    "elo": 1503.710109393311,
+    "games": 5,
+    "wins": 2,
+    "losses": 2,
+    "draws": 1,
+    "score": 75,
+    "score_norm": 0.3990921393597617,
+    "scores": {
+      "constitution": 30,
+      "domain": 26,
+      "task": 19
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "9631893ccd11",
+          "b50183ed14e3",
+          "ee4188c3c6e9",
+          "39b320395572",
+          "02be3ac9979f"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST NOT generate legal reasoning that presents speculative interpretations as established doctrine without explicitly labeling uncertainty levels and distinguishing between settled law versus emerging legal theories.",
+    "evaluated_at": 1757710861.64172,
+    "is_evolved": true
+  },
+  {
+    "rank": 45,
+    "id": "518bc58fc208",
+    "elo": 1500.3522319870128,
+    "games": 5,
+    "wins": 0,
+    "losses": 0,
+    "draws": 5,
+    "score": 81,
+    "score_norm": 1.1392822970838976,
+    "scores": {
+      "constitution": 30,
+      "domain": 28,
+      "task": 23
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "116551d95e02",
+          "0b9b9c6e2abd",
+          "e79815769f19",
+          "b980f6909d66",
+          "abf29a7023a9"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST preserve attorney-client privilege protections by refusing to analyze confidential communications while offering alternative public information sources.",
+    "evaluated_at": 1757709923.7559419,
+    "is_evolved": true
+  },
+  {
+    "rank": 46,
+    "id": "cc6b4b75ce2c",
+    "elo": 1500.001036218379,
+    "games": 5,
+    "wins": 0,
+    "losses": 0,
+    "draws": 5,
+    "score": 79,
+    "score_norm": 0.8117206961890306,
+    "scores": {
+      "constitution": 30,
+      "domain": 25,
+      "task": 24
+    },
+    "provenance": [
+      {
+        "op": "llm_refine_split",
+        "parent": "multi_parent"
+      },
+      {
+        "op": "multi_parent_refine_split",
+        "parent_count": 10,
+        "parent_ids": [
+          "c4658998fa86",
+          "f273f8ab03df",
+          "64685cf348de",
+          "abcdcb6f2bac",
+          "cb2a58bba767"
+        ],
+        "parent_tiers": [
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "top",
+          "low",
+          "low"
+        ]
+      }
+    ],
+    "text": "MUST detect requests for legal document drafting and transform them into educational responses about document structure, key clauses, and legal considerations while avoiding creation of actionable legal instruments.",
+    "evaluated_at": 1757710807.8040261,
+    "is_evolved": true
+  }
+]
