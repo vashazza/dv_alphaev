@@ -1425,7 +1425,7 @@ def run_task_evolution(task_name: str, initial_specs: List[Dict[str, Any]], cons
                         print(f'    ⚠️ 평가 오류: {e}')
             print(f"  ✅ 평가 완료! {len(evaluated_candidates)}개 spec 평가됨")
             
-            # === 이제 Judge 점수로 우선순위 기반 지배 관계 중복 제거 ===
+            # === Judge 점수로 우선순위 기반 지배 관계 중복 제거 ===
             before = len(evaluated_candidates)
             evaluated_candidates = priority_hierarchical_dedup(
                 evaluated_candidates, 
