@@ -262,9 +262,9 @@ class GroupArchive:
         if not self.groups:
             return []
         
-        # 상위 30개 중에서 샘플링
+        # 상위 30개 중에서 중복 허용 샘플링
         top_groups = self.groups[:min(30, len(self.groups))]
-        return random.sample(top_groups, min(n, len(top_groups)))
+        return random.choices(top_groups, k=min(n, len(top_groups)))
     
     def all_groups(self) -> List[Dict[str, Any]]:
         """모든 집단 반환"""
@@ -279,14 +279,13 @@ def create_spec_groups_from_clustering(specs: List[Dict[str, Any]],
         return [specs]  # 너무 적으면 하나의 그룹으로
     
     try:
-        # 랜덤 샘플링으로 그룹 생성 (15-20개씩)
+        # 중복 허용 랜덤 샘플링으로 그룹 생성 (15-20개씩)
         import random
-        random.shuffle(specs)  # 랜덤하게 섞기
 
         # 그룹 크기 설정 (15-20개씩)
         group_size = random.randint(15, 20)
 
-        # 그룹 개수 계산
+        # 그룹 개수 계산 (specs 길이 기반)
         num_groups = max(1, len(specs) // group_size)
         if len(specs) % group_size > 0:
             num_groups += 1
@@ -295,15 +294,14 @@ def create_spec_groups_from_clustering(specs: List[Dict[str, Any]],
         cluster_descriptions = []
 
         for i in range(num_groups):
-            start_idx = i * group_size
-            end_idx = min((i + 1) * group_size, len(specs))
-            group_specs = specs[start_idx:end_idx]
-
+            # 중복 허용하여 랜덤 선택 (복원 추출)
+            group_specs = random.choices(specs, k=min(group_size, len(specs) * 2))  # 최대 2배까지 허용
+            
             if group_specs:  # 빈 그룹이 아니면
                 groups.append(group_specs)
-                cluster_descriptions.append(f"랜덤 그룹 {i+1} (크기: {len(group_specs)})")
+                cluster_descriptions.append(f"랜덤 그룹 {i+1} (크기: {len(group_specs)}, 중복허용)")
 
-        print(f"  🎲 랜덤 샘플링으로 {len(groups)}개 그룹 생성 (평균 크기: {len(specs)/len(groups):.1f})")
+        print(f"  🎲 중복 허용 랜덤 샘플링으로 {len(groups)}개 그룹 생성 (평균 크기: {sum(len(g) for g in groups)/len(groups):.1f})")
         return groups
         
     except Exception as e:
@@ -789,11 +787,11 @@ def run_group_evolution_from_archive(archive: Archive,
     # 상위 spec들을 기반으로 초기 그룹 생성
     top_specs = all_elite_specs[:min(100, len(all_elite_specs))]  # 상위 100개 사용
     
-    # 모델 클라이언트 설정
-    if cfg.generator_model.startswith('gpt'):
-        client_gen = OpenAIClientWrapper(api_key=cfg.openai_api_key, model=cfg.generator_model)
-    else:
-        client_gen = AnthropicClientWrapper(api_key=cfg.anthropic_api_key, model=cfg.generator_model)
+    # 모델 클라이언트 설정 (Generator는 Claude Sonnet 사용)
+    if not cfg.anthropic_api_key:
+        raise ValueError("❌ Generator용 ANTHROPIC_API_KEY가 필요합니다.")
+    
+    client_gen = AnthropicClientWrapper(api_key=cfg.anthropic_api_key, model="claude-sonnet-4-20250514")
     
     # unified_judge는 파라미터로 전달받음 (중복 생성 방지)
 
@@ -971,16 +969,12 @@ def run_domain_group_evolution(target_domain: str = "Legal_and_Regulatory"):
     anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     openai_api_key = os.environ.get("OPENAI_API_KEY", "")
 
-    # Client 생성 (UnifiedGroupJudge용)
-    if anthropic_api_key:
-        from alpha_elo import AnthropicClientWrapper
-        client = AnthropicClientWrapper(api_key=anthropic_api_key, model="claude-3-5-sonnet-20241022")
-    elif openai_api_key:
-        from alpha_elo import OpenAIClientWrapper
-        client = OpenAIClientWrapper(api_key=openai_api_key, model="gpt-4o")
-    else:
-        print("❌ API 키가 없습니다. ANTHROPIC_API_KEY 또는 OPENAI_API_KEY를 설정해주세요.")
-        exit(1)
+    # Client 생성 (UnifiedGroupJudge용 - GPT-4o 필수)
+    if not openai_api_key:
+        raise ValueError("❌ Judge용 OPENAI_API_KEY가 필요합니다.")
+    
+    from alpha_elo import OpenAIClientWrapper
+    client = OpenAIClientWrapper(api_key=openai_api_key, model="gpt-4o")
 
     config = GroupEvolverConfig(
         anthropic_api_key=anthropic_api_key,
@@ -1108,16 +1102,12 @@ def run_single_task_group_evolution(target_domain: str, target_task: str):
     anthropic_api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     openai_api_key = os.environ.get("OPENAI_API_KEY", "")
 
-    # Client 생성 (UnifiedGroupJudge용)
-    if anthropic_api_key:
-        from alpha_elo import AnthropicClientWrapper
-        client = AnthropicClientWrapper(api_key=anthropic_api_key, model="claude-3-5-sonnet-20241022")
-    elif openai_api_key:
-        from alpha_elo import OpenAIClientWrapper
-        client = OpenAIClientWrapper(api_key=openai_api_key, model="gpt-4o")
-    else:
-        print("❌ API 키가 없습니다. ANTHROPIC_API_KEY 또는 OPENAI_API_KEY를 설정해주세요.")
-        exit(1)
+    # Client 생성 (UnifiedGroupJudge용 - GPT-4o 필수)
+    if not openai_api_key:
+        raise ValueError("❌ Judge용 OPENAI_API_KEY가 필요합니다.")
+    
+    from alpha_elo import OpenAIClientWrapper
+    client = OpenAIClientWrapper(api_key=openai_api_key, model="gpt-4o")
 
     config = GroupEvolverConfig(
         anthropic_api_key=anthropic_api_key,
