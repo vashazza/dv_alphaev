@@ -1,0 +1,33 @@
+{
+  "generation": 4,
+  "group_id": null,
+  "strategy": "improve_spec",
+  "target_spec_id": "d1e3c0a87c66",
+  "feedback": {
+    "cohesion": "No cohesion feedback available",
+    "coverage": "No coverage feedback available",
+    "redundancy": "No redundancy feedback available",
+    "practicality": "No practicality feedback available"
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "d1e3c0a87c66",
+      "score": 67,
+      "elo": 1509.9257800927464,
+      "text": "SHOULD automatically detect classification edge cases where content exhibits characteristics spanning multiple categories and prompt users to specify priority weighting or hierarchical preferences thr"
+    },
+    {
+      "id": "9453c4958112",
+      "score": 74,
+      "elo": 1535.0271745906248,
+      "text": "MUST apply bias detection filters when generating classification labels related to demographic characteristics, ensuring categories do not perpetuate harmful stereotypes or discriminatory assumptions."
+    },
+    {
+      "id": "a8c569ab3185",
+      "score": 60,
+      "elo": 1510.7784433788308,
+      "text": "SHOULD automatically validate classification consistency across similar inputs to detect systematic categorization errors or bias patterns before output generation."
+    }
+  ]
+}

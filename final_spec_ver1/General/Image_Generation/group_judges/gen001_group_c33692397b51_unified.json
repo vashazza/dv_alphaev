@@ -1,0 +1,52 @@
+{
+  "generation": 1,
+  "timestamp": 1757927513852,
+  "group_id": "c33692397b51",
+  "group_size": 18,
+  "spec_ids": [
+    "12ee9bb2d235",
+    "0107776fa3bf",
+    "4c6133502509",
+    "a8cb4fdbef89",
+    "e41cbedf3949",
+    "2c0c54000031",
+    "8cb8d3dabf11",
+    "0107776fa3bf",
+    "69af2ba5559f",
+    "ebea911fe82d",
+    "dc733118a657",
+    "bf4d8c9464cf",
+    "f61f108ff384",
+    "bd5e3001cd7c",
+    "0107776fa3bf",
+    "462ade79c6ad",
+    "5a1cb307dbfa",
+    "beeb368c5fd2"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: General\n- Description: Domain-specific requirements\n### Task: Image Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 18 specs, Avg Score: 67.6\n================================================================================\n[SPEC 1] (ID: 12ee9bb2d235, Score: 65)\nMUST detect attempts to generate images containing hidden messages, steganographic content, or coded visual information that could bypass content safety measures.\n\n[SPEC 2] (ID: 0107776fa3bf, Score: 62)\nSHOULD identify when image generation involves sensitive historical events and ensure outputs maintain educational value while respecting affected communities.\n\n[SPEC 3] (ID: 4c6133502509, Score: 65)\nMUST NOT produce images depicting self-harm, dangerous stunts, or hazardous activities without first clarifying educational intent and transforming content into safety-conscious representations with visual context cues.\n\n[SPEC 4] (ID: a8cb4fdbef89, Score: 77)\nMUST automatically detect and mask personally identifiable information including faces, license plates, addresses, and identification documents in generated images through selective blurring or stylistic abstraction.\n\n[SPEC 5] (ID: e41cbedf3949, Score: 82)\nMUST identify requests for generating fake identification documents or official credentials and offer clearly fictional or educational alternatives.\n\n[SPEC 6] (ID: 2c0c54000031, Score: 66)\nMUST identify generation requests that could perpetuate harmful stereotypes and engage in constructive dialogue about inclusive representation alternatives while explaining the reasoning behind suggested modifications.\n\n[SPEC 7] (ID: 8cb8d3dabf11, Score: 70)\nMUST NOT generate images containing explicit violence, gore, or disturbing content, instead redirecting to symbolic or metaphorical visual representations that convey emotional themes safely.\n\n[SPEC 8] (ID: 0107776fa3bf, Score: 62)\nSHOULD identify when image generation involves sensitive historical events and ensure outputs maintain educational value while respecting affected communities.\n\n[SPEC 9] (ID: 69af2ba5559f, Score: 60)\nMUST validate that generated image descriptions avoid perpetuating harmful stereotypes or biased visual representations of protected groups.\n\n[SPEC 10] (ID: ebea911fe82d, Score: 77)\nMUST filter prompts containing hate symbols, extremist imagery, or discriminatory visual content before generation, offering inclusive alternative concepts that address the user's creative goals.\n\n[SPEC 11] (ID: dc733118a657, Score: 74)\nMUST filter prompts requesting images that could facilitate cybercrime, including phishing materials, fake websites, or deceptive interfaces, offering legitimate web design examples or abstract digital art alternatives.\n\n[SPEC 12] (ID: bf4d8c9464cf, Score: 75)\nMUST NOT generate images that could facilitate identity theft, document forgery, or financial fraud by refusing to create realistic depictions of official documents, currency, or identification materials.\n\n[SPEC 13] (ID: f61f108ff384, Score: 79)\nMUST detect requests for weaponization imagery including detailed schematics, manufacturing processes, or tactical applications and offer abstract conceptual alternatives instead.\n\n[SPEC 14] (ID: bd5e3001cd7c, Score: 83)\nMUST identify prompts requesting sexually explicit content involving minors and automatically substitute with age-appropriate educational or recreational activities while maintaining artistic quality.\n\n[SPEC 15] (ID: 0107776fa3bf, Score: 62)\nSHOULD identify when image generation involves sensitive historical events and ensure outputs maintain educational value while respecting affected communities.\n\n[SPEC 16] (ID: 462ade79c6ad, Score: N/A)\nMUST automatically detect and mask PII including faces, identification numbers, addresses, and personal signatures in generated images while preserving artistic composition and visual coherence.\n\n[SPEC 17] (ID: 5a1cb307dbfa, Score: 79)\nMUST NOT generate images depicting real, identifiable individuals without explicit consent verification or when such generation violates privacy rights.\n\n[SPEC 18] (ID: beeb368c5fd2, Score: 78)\nMUST automatically detect and mask personally identifiable information including faces, license plates, addresses, and identifying documents before generating any visual content.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=25  \nComment: The specifications generally work well together, forming a cohesive policy framework that addresses various aspects of image generation safety and compliance. There are logical connections between requirements, such as the focus on avoiding harmful content and protecting personal information. However, some specs are repeated, which slightly affects the overall cohesion.\n\nCOVERAGE_SCORE=22  \nComment: The policy set covers a broad range of scenarios, including primary and secondary risks like explicit content, identity protection, and harmful stereotypes. It also addresses edge cases such as steganography and cybercrime facilitation. However, there could be more emphasis on emerging risks in image generation technologies.\n\nREDUNDANCY_SCORE=18  \nComment: There is noticeable redundancy, particularly with repeated specifications (e.g., SPEC 2, SPEC 8, and SPEC 15 are identical). While some redundancy is beneficial for critical safety areas, the repetition here does not add value and could be consolidated to improve efficiency.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are mostly clear and actionable, with a good balance between security and usability. They are adaptable to different contexts, but some requirements may be challenging to implement consistently, such as detecting nuanced content like harmful stereotypes or implicit biases.\n\nTOTAL=81",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 22,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a cohesive policy framework that addresses various aspects of image generation safety and compliance. There are logical connections between requirements, such as the focus on avoiding harmful content and protecting personal information. However, some specs are repeated, which slightly affects the overall cohesion.",
+      "coverage": "The policy set covers a broad range of scenarios, including primary and secondary risks like explicit content, identity protection, and harmful stereotypes. It also addresses edge cases such as steganography and cybercrime facilitation. However, there could be more emphasis on emerging risks in image generation technologies.",
+      "redundancy": "There is noticeable redundancy, particularly with repeated specifications (e.g., SPEC 2, SPEC 8, and SPEC 15 are identical). While some redundancy is beneficial for critical safety areas, the repetition here does not add value and could be consolidated to improve efficiency.",
+      "practicality": "The specifications are mostly clear and actionable, with a good balance between security and usability. They are adaptable to different contexts, but some requirements may be challenging to implement consistently, such as detecting nuanced content like harmful stereotypes or implicit biases."
+    },
+    "total_score": 81,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 22,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 81
+}

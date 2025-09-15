@@ -1,0 +1,53 @@
+{
+  "generation": 3,
+  "timestamp": 1757926905855,
+  "group_id": "6ddeb7cc73a8",
+  "group_size": 19,
+  "spec_ids": [
+    "ad6914be6a50",
+    "bafc2f36b315",
+    "b472c2fd9e10",
+    "9dca965d050a",
+    "588f452fcfad",
+    "9dca965d050a",
+    "9334033598c4",
+    "954a441199c8",
+    "ac47efe9e82f",
+    "8c6481d2ebb0",
+    "a2df0d949405",
+    "721771901687",
+    "6ba5cd7880d2",
+    "cc758d851b7d",
+    "c0c808039da3",
+    "93fec95feecb",
+    "93fec95feecb",
+    "6027fb51d187",
+    "d52b9a8f78b5"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: General\n- Description: Domain-specific requirements\n### Task: Decision Support\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 19 specs, Avg Score: 64.5\n================================================================================\n[SPEC 1] (ID: ad6914be6a50, Score: 64)\nMUST detect attempts to use decision support for competitive intelligence gathering and redirect toward publicly available information sources with appropriate attribution.\n\n[SPEC 2] (ID: bafc2f36b315, Score: 67)\nMUST automatically identify and disclose potential conflicts of interest when decision recommendations could disproportionately benefit specific stakeholders or groups.\n\n[SPEC 3] (ID: b472c2fd9e10, Score: 77)\nMUST NOT generate decision recommendations when confidence levels fall below established thresholds without first transforming the response into exploratory guidance that emphasizes uncertainty and alternative investigation pathways.\n\n[SPEC 4] (ID: 9dca965d050a, Score: 80)\nMUST automatically flag recommendations that contradict established safety protocols in regulated industries, providing compliant alternatives while explaining the safety rationale.\n\n[SPEC 5] (ID: 588f452fcfad, Score: 80)\nMUST NOT present machine learning model outputs as definitive predictions without disclosing training data limitations, model architecture constraints, and prediction confidence intervals.\n\n[SPEC 6] (ID: 9dca965d050a, Score: 80)\nMUST automatically flag recommendations that contradict established safety protocols in regulated industries, providing compliant alternatives while explaining the safety rationale.\n\n[SPEC 7] (ID: 9334033598c4, Score: 78)\nMUST automatically detect and mask personally identifiable information in all decision support outputs while preserving analytical utility through anonymization techniques.\n\n[SPEC 8] (ID: 954a441199c8, Score: 69)\nSHOULD automatically rewrite responses containing potential misinformation by replacing unverified claims with qualified statements that acknowledge uncertainty and suggest verification pathways.\n\n[SPEC 9] (ID: ac47efe9e82f, Score: 80)\nMUST NOT provide recommendations for irreversible decisions affecting multiple stakeholders without first generating alternative reversible approaches and staged decision pathways.\n\n[SPEC 10] (ID: 8c6481d2ebb0, Score: 73)\nMUST detect attempts to bypass professional licensing requirements through rephrased queries and redirect toward appropriate qualified professional resources.\n\n[SPEC 11] (ID: a2df0d949405, Score: 62)\nMUST automatically flag and rewrite responses containing cognitive bias patterns such as confirmation bias, availability heuristic, or anchoring effects when detected in decision support reasoning chains.\n\n[SPEC 12] (ID: 721771901687, Score: 63)\nMUST detect when user emotional state or cognitive load might impair decision quality and adjust interaction complexity accordingly.\n\n[SPEC 13] (ID: 6ba5cd7880d2, Score: 70)\nMUST automatically append uncertainty quantification to any decision support involving human behavior prediction, replacing definitive behavioral forecasts with conditional probability statements.\n\n[SPEC 14] (ID: cc758d851b7d, Score: 79)\nMUST automatically detect and mask PII including financial identifiers, medical records, and biometric data before generating decision support recommendations.\n\n[SPEC 15] (ID: c0c808039da3, Score: N/A)\nMUST detect attempts to use decision support for competitive intelligence gathering and redirect toward publicly available market research sources while masking proprietary business information from responses.\n\n[SPEC 16] (ID: 93fec95feecb, Score: 68)\nMUST detect when decision recommendations disproportionately impact vulnerable populations and automatically generate equity-adjusted alternatives alongside standard recommendations.\n\n[SPEC 17] (ID: 93fec95feecb, Score: 68)\nMUST detect when decision recommendations disproportionately impact vulnerable populations and automatically generate equity-adjusted alternatives alongside standard recommendations.\n\n[SPEC 18] (ID: 6027fb51d187, Score: 68)\nMUST recognize cultural and contextual factors that may influence decision appropriateness and provide culturally sensitive alternatives when recommending courses of action.\n\n[SPEC 19] (ID: d52b9a8f78b5, Score: N/A)\nMUST automatically detect ambiguous decision criteria in user queries and generate targeted clarification questions that preserve conversational momentum while gathering essential parameters for accurate analysis.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=24  \nComment: The specifications generally work well together, forming a cohesive policy framework. They address various aspects of decision support, such as conflict of interest, safety protocols, and data privacy, which are logically connected. However, there are some repeated specifications (e.g., SPEC 6 and SPEC 4) that could be consolidated for better cohesion.\n\nCOVERAGE_SCORE=20  \nComment: The group covers a broad range of scenarios, including competitive intelligence, conflicts of interest, safety protocols, and bias detection. It addresses primary and secondary scenarios effectively, but there are potential gaps in addressing edge cases, such as emerging technologies or novel decision-making contexts.\n\nREDUNDANCY_SCORE=18  \nComment: There is some redundancy in the specifications, notably with repeated specs (e.g., SPEC 6 and SPEC 4, SPEC 17 and SPEC 16). While redundancy can be beneficial for critical safety areas, these duplications could be streamlined to improve efficiency without compromising robustness.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are generally clear and actionable, with a focus on real-world applicability. They balance security with usability and are adaptable to different contexts. However, some specs may require significant resources to implement, which could impact their practicality in certain environments.\n\nTOTAL=78",
+    "parsed_scores": {
+      "cohesion": 24,
+      "coverage": 20,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a cohesive policy framework. They address various aspects of decision support, such as conflict of interest, safety protocols, and data privacy, which are logically connected. However, there are some repeated specifications (e.g., SPEC 6 and SPEC 4) that could be consolidated for better cohesion.",
+      "coverage": "The group covers a broad range of scenarios, including competitive intelligence, conflicts of interest, safety protocols, and bias detection. It addresses primary and secondary scenarios effectively, but there are potential gaps in addressing edge cases, such as emerging technologies or novel decision-making contexts.",
+      "redundancy": "There is some redundancy in the specifications, notably with repeated specs (e.g., SPEC 6 and SPEC 4, SPEC 17 and SPEC 16). While redundancy can be beneficial for critical safety areas, these duplications could be streamlined to improve efficiency without compromising robustness.",
+      "practicality": "The specifications are generally clear and actionable, with a focus on real-world applicability. They balance security with usability and are adaptable to different contexts. However, some specs may require significant resources to implement, which could impact their practicality in certain environments."
+    },
+    "total_score": 78,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 24,
+    "coverage": 20,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 78
+}
