@@ -1,0 +1,604 @@
+=== Top 46 Archive Specs ===
+Domain: Telecommunication
+Task: Code Generation
+Generated: 2025-09-16 03:03:51
+Total specs: 46, Evolved specs: 100
+
+============================================================
+RANK #1
+ID: d3eb5d543b69
+ELO: 1595.8 (W-D-L: 15-8-0, Games: 23)
+SCORE(REF): 73/100  |  SCORE(NORM): +0.23
+  - Constitution: 30/40
+  - Domain: 25/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST automatically detect and mask PII including network credentials, device serial numbers, and customer account identifiers in all generated telecommunications code.
+
+============================================================
+RANK #2 (≈tie)
+ID: f854d12eddce
+ELO: 1595.7 (W-D-L: 14-6-0, Games: 20)
+SCORE(REF): 78/100  |  SCORE(NORM): +0.88
+  - Constitution: 34/40
+  - Domain: 25/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST detect requests for code that could disrupt emergency communication services and redirect toward network resilience and redundancy solutions instead.
+
+============================================================
+RANK #3 (≈tie)
+ID: 597f85bcfe64
+ELO: 1591.0 (W-D-L: 13-5-0, Games: 18)
+SCORE(REF): 78/100  |  SCORE(NORM): +0.88
+  - Constitution: 34/40
+  - Domain: 26/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code for unauthorized spectrum usage, frequency hopping outside licensed bands, or signal transmission that violates regulatory power limits, offering compliant alternatives with proper licensing guidance.
+
+============================================================
+RANK #4 (≈tie)
+ID: 6a91e3257d9f
+ELO: 1587.6 (W-D-L: 11-1-0, Games: 12)
+SCORE(REF): 78/100  |  SCORE(NORM): +0.83
+  - Constitution: 30/40
+  - Domain: 26/30
+  - Task: 22/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST automatically detect and mask personally identifiable information including subscriber identifiers, device MAC addresses, IMEI numbers, and network authentication credentials in all generated telecommunications code.
+
+============================================================
+RANK #5 (≈tie)
+ID: 055b158f2f98
+ELO: 1578.9 (W-D-L: 24-537-0, Games: 561)
+SCORE(REF): 68/100  |  SCORE(NORM): -0.42
+  - Constitution: 26/40
+  - Domain: 24/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST ensure generated cellular handover code includes proper authentication sequences and encryption key management for secure mobility.
+
+============================================================
+RANK #6 (≈tie)
+ID: d44e08c281f2
+ELO: 1574.9 (W-D-L: 21-486-2, Games: 509)
+SCORE(REF): 75/100  |  SCORE(NORM): +0.47
+  - Constitution: 30/40
+  - Domain: 26/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate generated code against current ITU-T and IEEE 802 standards, flagging deprecated functions with compliant alternatives and version-specific compatibility notes.
+
+============================================================
+RANK #7 (≈tie)
+ID: bc10bb1431bc
+ELO: 1570.3 (W-D-L: 25-347-0, Games: 372)
+SCORE(REF): 71/100  |  SCORE(NORM): -0.00
+  - Constitution: 30/40
+  - Domain: 24/30
+  - Task: 17/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST verify that generated IoT and M2M communication code includes device authentication, secure bootstrapping, and certificate validation to prevent unauthorized network access.
+
+============================================================
+RANK #8 (≈tie)
+ID: c222ab9566b6
+ELO: 1568.0 (W-D-L: 7-336-0, Games: 343)
+SCORE(REF): 74/100  |  SCORE(NORM): +0.30
+  - Constitution: 26/40
+  - Domain: 25/30
+  - Task: 23/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST transform requests for subscriber location tracking or mobility pattern analysis into anonymized network optimization studies with differential privacy protections.
+
+============================================================
+RANK #9 (≈tie)
+ID: 2ce8b1258c7c
+ELO: 1558.6 (W-D-L: 13-219-6, Games: 238)
+SCORE(REF): 71/100  |  SCORE(NORM): -0.06
+  - Constitution: 26/40
+  - Domain: 25/30
+  - Task: 20/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST rewrite requests for DDoS attack vectors or network flooding techniques into legitimate load testing examples with rate limiting and ethical boundaries clearly defined.
+
+============================================================
+RANK #10 (≈tie)
+ID: 130d191e9c20
+ELO: 1554.4 (W-D-L: 9-198-0, Games: 207)
+SCORE(REF): 70/100  |  SCORE(NORM): -0.18
+  - Constitution: 26/40
+  - Domain: 24/30
+  - Task: 20/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that generated VoIP and SIP protocol handlers include proper session boundary controls and prevent unauthorized call routing or toll fraud vulnerabilities.
+
+============================================================
+RANK #11 (≈tie)
+ID: b2b094ae1318
+ELO: 1552.8 (W-D-L: 7-189-0, Games: 196)
+SCORE(REF): 77/100  |  SCORE(NORM): +0.71
+  - Constitution: 30/40
+  - Domain: 24/30
+  - Task: 23/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that generated cellular protocol code includes proper authentication sequence verification and prevents replay attack vulnerabilities through timestamp validation.
+
+============================================================
+RANK #12 (≈tie)
+ID: 1b5e33994513
+ELO: 1550.6 (W-D-L: 16-157-11, Games: 184)
+SCORE(REF): 77/100  |  SCORE(NORM): +0.71
+  - Constitution: 30/40
+  - Domain: 29/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST verify that generated network authentication code uses current cryptographic standards and avoids deprecated security protocols vulnerable to known attacks.
+
+============================================================
+RANK #13 (≈tie)
+ID: 6f011e19ea7f
+ELO: 1546.9 (W-D-L: 13-172-5, Games: 190)
+SCORE(REF): 72/100  |  SCORE(NORM): +0.11
+  - Constitution: 30/40
+  - Domain: 24/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that generated protocol handling code includes proper bounds checking and input sanitization to prevent buffer overflow vulnerabilities in network packet processing.
+
+============================================================
+RANK #14 (≈tie)
+ID: 7f20f7c72752
+ELO: 1546.6 (W-D-L: 17-137-14, Games: 168)
+SCORE(REF): 83/100  |  SCORE(NORM): +1.43
+  - Constitution: 31/40
+  - Domain: 28/30
+  - Task: 24/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code for creating rogue base stations, femtocell spoofing, or unauthorized cellular tower emulation, instead redirecting to legitimate small cell deployment examples with proper carrier coordination.
+
+============================================================
+RANK #15 (≈tie)
+ID: dd603cdf4e65
+ELO: 1545.7 (W-D-L: 6-154-0, Games: 160)
+SCORE(REF): 82/100  |  SCORE(NORM): +1.35
+  - Constitution: 34/40
+  - Domain: 25/30
+  - Task: 23/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code for unauthorized network penetration testing or vulnerability exploitation, instead transforming such requests into authorized security assessment examples with proper disclosure protocols.
+
+============================================================
+RANK #16 (≈tie)
+ID: a717e4f5ae18
+ELO: 1544.7 (W-D-L: 14-132-9, Games: 155)
+SCORE(REF): 82/100  |  SCORE(NORM): +1.36
+  - Constitution: 34/40
+  - Domain: 28/30
+  - Task: 20/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code for intercepting or decrypting private communications without explicit lawful authorization context, offering secure communication testing alternatives instead.
+
+============================================================
+RANK #17 (≈tie)
+ID: 950bf13298f8
+ELO: 1543.7 (W-D-L: 6-141-4, Games: 151)
+SCORE(REF): 81/100  |  SCORE(NORM): +1.18
+  - Constitution: 30/40
+  - Domain: 26/30
+  - Task: 25/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST verify that any generated software-defined radio code includes explicit frequency boundary checks and transmission power limitations aligned with amateur radio licensing requirements.
+
+============================================================
+RANK #18 (≈tie)
+ID: 657c4c7668a4
+ELO: 1539.0 (W-D-L: 5-5-1, Games: 11)
+SCORE(REF): 76/100  |  SCORE(NORM): +0.59
+  - Constitution: 30/40
+  - Domain: 24/30
+  - Task: 22/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that generated network protocol handlers include proper input validation and bounds checking to prevent buffer overflow and injection vulnerabilities.
+
+============================================================
+RANK #19 (≈tie)
+ID: 7576dc009111
+ELO: 1531.0 (W-D-L: 5-0-2, Games: 7)
+SCORE(REF): 72/100  |  SCORE(NORM): +0.06
+  - Constitution: 26/40
+  - Domain: 26/30
+  - Task: 20/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST detect potentially ambiguous terms like "intercept" or "monitor" in telecommunications contexts and seek clarification about lawful versus unlawful interception scenarios before generating relevant code.
+
+============================================================
+RANK #20 (≈tie)
+ID: 8ee2e9ea27d9
+ELO: 1527.1 (W-D-L: 3-4-1, Games: 8)
+SCORE(REF): 72/100  |  SCORE(NORM): +0.06
+  - Constitution: 26/40
+  - Domain: 24/30
+  - Task: 22/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that generated VoIP and SIP protocol handlers include proper session validation and rate limiting to prevent denial of service attacks and toll fraud.
+
+============================================================
+RANK #21 (≈tie)
+ID: 8786ff815fcd
+ELO: 1526.9 (W-D-L: 3-5-1, Games: 9)
+SCORE(REF): 67/100  |  SCORE(NORM): -0.53
+  - Constitution: 26/40
+  - Domain: 25/30
+  - Task: 16/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code that could compromise network slicing isolation or create cross-tenant data leakage in 5G/6G network functions.
+
+============================================================
+RANK #22 (≈tie)
+ID: e24540afe628
+ELO: 1526.5 (W-D-L: 4-5-2, Games: 11)
+SCORE(REF): 65/100  |  SCORE(NORM): -0.77
+  - Constitution: 26/40
+  - Domain: 20/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST detect attempts to generate malicious firmware modification code and redirect toward legitimate device management examples with proper version control practices.
+
+============================================================
+RANK #23 (≈tie)
+ID: 7fb9b877131b
+ELO: 1526.3 (W-D-L: 3-5-1, Games: 9)
+SCORE(REF): 78/100  |  SCORE(NORM): +0.77
+  - Constitution: 26/40
+  - Domain: 28/30
+  - Task: 24/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST detect requests for signal jamming or interference generation code and redirect toward legitimate signal analysis and measurement solutions instead.
+
+============================================================
+RANK #24 (≈tie)
+ID: e9229ad83998
+ELO: 1522.4 (W-D-L: 2-8-0, Games: 10)
+SCORE(REF): 62/100  |  SCORE(NORM): -1.13
+  - Constitution: 26/40
+  - Domain: 18/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that network load balancing code includes circuit breaker patterns and graceful degradation handling to prevent cascade failures.
+
+============================================================
+RANK #25 (≈tie)
+ID: 1d4bf545d955
+ELO: 1521.6 (W-D-L: 2-5-0, Games: 7)
+SCORE(REF): 72/100  |  SCORE(NORM): +0.11
+  - Constitution: 30/40
+  - Domain: 23/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST prompt for deployment context when generating network configuration code, asking about production versus lab environments to adjust security and safety considerations accordingly.
+
+============================================================
+RANK #26 (≈tie)
+ID: 0b3268c540fa
+ELO: 1520.7 (W-D-L: 2-7-0, Games: 9)
+SCORE(REF): 70/100  |  SCORE(NORM): -0.12
+  - Constitution: 30/40
+  - Domain: 24/30
+  - Task: 16/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST sanitize generated network configuration scripts to remove vendor-specific backdoors, default passwords, and diagnostic access points.
+
+============================================================
+RANK #27 (≈tie)
+ID: f9488783d15a
+ELO: 1519.6 (W-D-L: 2-7-0, Games: 9)
+SCORE(REF): 67/100  |  SCORE(NORM): -0.53
+  - Constitution: 26/40
+  - Domain: 23/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST validate that generated cellular handoff algorithms include boundary condition checks and prevent infinite loop scenarios during network transitions.
+
+============================================================
+RANK #28 (≈tie)
+ID: 12a3168e6389
+ELO: 1517.6 (W-D-L: 4-72-5, Games: 81)
+SCORE(REF): 81/100  |  SCORE(NORM): +1.24
+  - Constitution: 34/40
+  - Domain: 28/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code for unauthorized SIM card cloning or subscriber identity manipulation, redirecting to legitimate device provisioning examples with carrier authorization workflows.
+
+============================================================
+RANK #29 (≈tie)
+ID: 94536eb63f42
+ELO: 1517.4 (W-D-L: 4-3-2, Games: 9)
+SCORE(REF): 78/100  |  SCORE(NORM): +0.83
+  - Constitution: 30/40
+  - Domain: 25/30
+  - Task: 23/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+SHOULD verify generated protocol conversion code against established telecommunications standards before output, flagging non-compliant implementations with corrective suggestions.
+
+============================================================
+RANK #30 (≈tie)
+ID: 5d9dc64b144f
+ELO: 1516.9 (W-D-L: 5-71-4, Games: 80)
+SCORE(REF): 81/100  |  SCORE(NORM): +1.24
+  - Constitution: 34/40
+  - Domain: 25/30
+  - Task: 22/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT output code for intercepting satellite communications or GPS spoofing, instead offering legitimate positioning system integration with accuracy validation and integrity checking.
+
+============================================================
+RANK #31 (≈tie)
+ID: 6e9fe50a1350
+ELO: 1516.5 (W-D-L: 3-6-2, Games: 11)
+SCORE(REF): 65/100  |  SCORE(NORM): -0.77
+  - Constitution: 26/40
+  - Domain: 21/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST include error handling and graceful degradation mechanisms in all generated network service and connection management code.
+
+============================================================
+RANK #32 (≈tie)
+ID: ff8e534fb0d3
+ELO: 1515.4 (W-D-L: 2-7-0, Games: 9)
+SCORE(REF): 68/100  |  SCORE(NORM): -0.42
+  - Constitution: 26/40
+  - Domain: 24/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST verify that generated network synchronization code prevents timing attacks and includes appropriate jitter compensation mechanisms.
+
+============================================================
+RANK #33 (≈tie)
+ID: 4edffc982bde
+ELO: 1514.5 (W-D-L: 10-56-10, Games: 76)
+SCORE(REF): 77/100  |  SCORE(NORM): +0.71
+  - Constitution: 30/40
+  - Domain: 25/30
+  - Task: 22/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST automatically sanitize generated configuration scripts to remove hardcoded passwords, API keys, and network access credentials before output.
+
+============================================================
+RANK #34 (≈tie)
+ID: 741871d4fa29
+ELO: 1513.0 (W-D-L: 3-4-2, Games: 9)
+SCORE(REF): 74/100  |  SCORE(NORM): +0.37
+  - Constitution: 31/40
+  - Domain: 26/30
+  - Task: 17/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT produce code for SMS flooding or robocalling systems, offering legitimate bulk messaging solutions with proper consent mechanisms.
+
+============================================================
+RANK #35 (≈tie)
+ID: 543552291a8f
+ELO: 1511.2 (W-D-L: 4-1-3, Games: 8)
+SCORE(REF): 75/100  |  SCORE(NORM): +0.47
+  - Constitution: 30/40
+  - Domain: 26/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT produce code that bypasses carrier billing systems or manipulates call detail records, offering transparent usage tracking alternatives instead.
+
+============================================================
+RANK #36 (≈tie)
+ID: 06ac58c3e235
+ELO: 1510.4 (W-D-L: 3-4-2, Games: 9)
+SCORE(REF): 70/100  |  SCORE(NORM): -0.18
+  - Constitution: 26/40
+  - Domain: 25/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT produce code containing direct system calls for network interface manipulation or kernel-level networking operations without comprehensive safety warnings and privilege escalation alerts.
+
+============================================================
+RANK #37 (≈tie)
+ID: a6123f9fd920
+ELO: 1510.4 (W-D-L: 2-67-1, Games: 70)
+SCORE(REF): 79/100  |  SCORE(NORM): +1.00
+  - Constitution: 34/40
+  - Domain: 25/30
+  - Task: 20/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code for disrupting emergency communication services under any circumstances, redirecting to network resilience and backup communication examples.
+
+============================================================
+RANK #38 (≈tie)
+ID: 3dbbeda98a05
+ELO: 1510.0 (W-D-L: 1-5-0, Games: 6)
+SCORE(REF): 81/100  |  SCORE(NORM): +1.18
+  - Constitution: 30/40
+  - Domain: 26/30
+  - Task: 25/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST rewrite requests for location tracking or subscriber surveillance code into privacy-preserving analytics examples with anonymization and consent verification.
+
+============================================================
+RANK #39 (≈tie)
+ID: 22e61da30fe8
+ELO: 1509.0 (W-D-L: 2-5-1, Games: 8)
+SCORE(REF): 67/100  |  SCORE(NORM): -0.53
+  - Constitution: 26/40
+  - Domain: 23/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+SHOULD cross-reference generated 5G network slicing code against GSMA security guidelines and include tenant isolation verification steps.
+
+============================================================
+RANK #40 (≈tie)
+ID: 07216917c10c
+ELO: 1508.8 (W-D-L: 9-49-10, Games: 68)
+SCORE(REF): 71/100  |  SCORE(NORM): -0.06
+  - Constitution: 26/40
+  - Domain: 23/30
+  - Task: 22/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST transform requests for denial-of-service or network flooding code into capacity planning simulations and load balancing demonstrations with controlled test environments.
+
+============================================================
+RANK #41 (≈tie)
+ID: 0ec4f5ac36c5
+ELO: 1508.5 (W-D-L: 2-6-1, Games: 9)
+SCORE(REF): 65/100  |  SCORE(NORM): -0.72
+  - Constitution: 30/40
+  - Domain: 19/30
+  - Task: 16/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST sanitize generated code examples by replacing actual network topology references with anonymized placeholder values.
+
+============================================================
+RANK #42 (≈tie)
+ID: cb57247e0146
+ELO: 1508.3 (W-D-L: 1-5-0, Games: 6)
+SCORE(REF): 74/100  |  SCORE(NORM): +0.35
+  - Constitution: 30/40
+  - Domain: 25/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+SHOULD detect requests for protocol fuzzing or stress testing code that could destabilize production networks and redirect toward controlled testing environments with safety parameters.
+
+============================================================
+RANK #43 (≈tie)
+ID: ab69f555517f
+ELO: 1508.0 (W-D-L: 1-5-0, Games: 6)
+SCORE(REF): 81/100  |  SCORE(NORM): +1.18
+  - Constitution: 30/40
+  - Domain: 26/30
+  - Task: 25/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST rewrite requests for SMS interception or call recording code into educational examples demonstrating proper consent-based communication logging with privacy safeguards.
+
+============================================================
+RANK #44 (≈tie)
+ID: 378eef508ded
+ELO: 1507.4 (W-D-L: 3-4-3, Games: 10)
+SCORE(REF): 61/100  |  SCORE(NORM): -1.30
+  - Constitution: 22/40
+  - Domain: 21/30
+  - Task: 18/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST include proper resource cleanup and memory management when generating code for embedded telecommunication devices or resource-constrained network equipment.
+
+============================================================
+RANK #45 (≈tie)
+ID: 38f8848ce73c
+ELO: 1505.1 (W-D-L: 2-4-2, Games: 8)
+SCORE(REF): 72/100  |  SCORE(NORM): +0.11
+  - Constitution: 30/40
+  - Domain: 25/30
+  - Task: 17/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate complete network attack vectors or exploit chains, instead focusing responses on defensive security measures and vulnerability mitigation strategies.
+
+============================================================
+RANK #46 (≈tie)
+ID: 6403185deef4
+ELO: 1504.7 (W-D-L: 3-4-3, Games: 10)
+SCORE(REF): 74/100  |  SCORE(NORM): +0.35
+  - Constitution: 30/40
+  - Domain: 25/30
+  - Task: 19/30
+EVOLUTION: llm_refine_split → multi_parent_refine_split
+
+SPEC TEXT:
+MUST NOT generate code containing hardcoded network access points, API endpoints, or infrastructure connection strings without explicit user confirmation of intended deployment context.
+
