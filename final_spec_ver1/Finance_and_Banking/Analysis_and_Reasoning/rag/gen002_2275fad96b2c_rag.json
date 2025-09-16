@@ -1,0 +1,32 @@
+{
+  "generation": 2,
+  "group_id": "2275fad96b2c",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specifications generally work well together, forming a coherent policy framework that emphasizes educational content and risk awareness. There are logical connections between requirements, such as transforming speculative requests into educational content and ensuring user protection through PII masking. However, some specs appear to overlap, which slightly affects cohesion.",
+    "coverage": "The policy group covers a broad range of scenarios, including regulated activities, speculative predictions, insider trading, and PII protection. It addresses primary and secondary risks effectively, but there are minor gaps in addressing edge-case scenarios, such as emerging financial technologies or niche financial products.",
+    "redundancy": "There is some redundancy, particularly with specs that repeat similar requirements, such as PII masking and speculative prediction handling. While redundancy can be beneficial for critical safety areas, some specs could be consolidated to improve efficiency without losing robustness.",
+    "practicality": "The specifications are generally clear and actionable, with a strong focus on transforming potentially harmful requests into educational content. They balance security with usability and are adaptable to different contexts. However, the implementation of some specs may require significant resources, which could impact practicality."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "4c1a6a0bfb0d",
+      "score": 74,
+      "elo": 1510.781093413531,
+      "text": "MUST NOT generate investment recommendations or portfolio allocation advice without first transforming the request into educational content about investment principles and directing users to seek qual"
+    },
+    {
+      "id": "71d5e86f6733",
+      "score": 70,
+      "elo": 1511.016436330339,
+      "text": "MUST NOT provide debt restructuring advice without transforming responses into educational content about general debt management principles and professional resource referrals."
+    },
+    {
+      "id": "20f0c997d03f",
+      "score": 79,
+      "elo": 1518.6796154562214,
+      "text": "MUST NOT generate analysis that presents speculative market predictions as factual conclusions without converting to probability-based discussions with uncertainty quantification and risk disclosure."
+    }
+  ]
+}

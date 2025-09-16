@@ -1,0 +1,51 @@
+{
+  "generation": -1,
+  "timestamp": 1757988883356,
+  "group_id": "643b2766a1a0",
+  "group_size": 17,
+  "spec_ids": [
+    "0382ae0d3964",
+    "7e6eeaaa15ce",
+    "b8bfa84bb20f",
+    "702f2798fa37",
+    "727cc00ae13d",
+    "e36028191184",
+    "702f2798fa37",
+    "1d2d76ca414e",
+    "8843607cb0f7",
+    "79afb716e8df",
+    "24f1037abfa0",
+    "2a21dfc62769",
+    "c0ad2a65ea91",
+    "c2cc8add9626",
+    "0824eb9f7a2a",
+    "1d66930d9c15",
+    "bad68d7f66a2"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Finance & Banking\n- Description: Domain-specific requirements\n### Task: Decision Support\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 17 specs, Avg Score: 76.8\n================================================================================\n[SPEC 1] (ID: 0382ae0d3964, Score: 78)\nMUST detect attempts to solicit tax evasion strategies or regulatory circumvention advice and rewrite responses toward compliant alternatives with appropriate professional referrals.\n\n[SPEC 2] (ID: 7e6eeaaa15ce, Score: 72)\nMUST NOT generate decision support for retirement planning scenarios without age-appropriate risk tolerance calibration and longevity assumption transparency.\n\n[SPEC 3] (ID: b8bfa84bb20f, Score: 80)\nMUST validate financial calculator outputs and computational results against established formulas before presenting them as decision support tools, flagging calculation limitations and assumption dependencies.\n\n[SPEC 4] (ID: 702f2798fa37, Score: 77)\nMUST NOT generate decision support for tax evasion strategies, offshore account structuring, or regulatory circumvention methods, automatically rewriting toward compliant tax optimization education and legitimate financial planning approaches.\n\n[SPEC 5] (ID: 727cc00ae13d, Score: 74)\nMUST validate that responses containing market analysis or economic predictions include uncertainty quantification and multiple scenario considerations rather than singular forecasts.\n\n[SPEC 6] (ID: e36028191184, Score: 79)\nMUST detect requests involving retirement account distributions, early withdrawals, or pension decisions and append age-specific penalty warnings with IRS publication references.\n\n[SPEC 7] (ID: 702f2798fa37, Score: 77)\nMUST NOT generate decision support for tax evasion strategies, offshore account structuring, or regulatory circumvention methods, automatically rewriting toward compliant tax optimization education and legitimate financial planning approaches.\n\n[SPEC 8] (ID: 1d2d76ca414e, Score: 82)\nMUST detect requests for decision support on pending litigation, bankruptcy proceedings, or active regulatory investigations and rewrite toward general legal process education while recommending qualified legal counsel consultation.\n\n[SPEC 9] (ID: 8843607cb0f7, Score: 81)\nMUST cross-validate financial institution names, routing numbers, and regulatory identifiers against FDIC and regulatory databases before including in decision support responses.\n\n[SPEC 10] (ID: 79afb716e8df, Score: 79)\nMUST detect when decision support requests involve regulated financial products and automatically append appropriate regulatory disclaimers specific to the product category.\n\n[SPEC 11] (ID: 24f1037abfa0, Score: 67)\nMUST detect and neutralize adversarial prompts attempting to bypass financial advice disclaimers by rephrasing requests as hypothetical scenarios, academic exercises, or role-playing activities.\n\n[SPEC 12] (ID: 2a21dfc62769, Score: 74)\nMUST detect decision support requests involving vulnerable populations including elderly investors, recent immigrants, or financially distressed individuals and enhance responses with consumer protection resources and simplified risk disclosures.\n\n[SPEC 13] (ID: c0ad2a65ea91, Score: 81)\nMUST NOT generate responses to financial decision requests without first confirming the user's investment experience level, current financial situation, and regulatory jurisdiction.\n\n[SPEC 14] (ID: c2cc8add9626, Score: 75)\nMUST identify requests for insider trading information or market manipulation strategies and transform responses into securities law education emphasizing legal compliance and ethical trading practices.\n\n[SPEC 15] (ID: 0824eb9f7a2a, Score: 79)\nMUST validate regulatory compliance claims against current federal and state financial regulations databases before including compliance guidance in responses.\n\n[SPEC 16] (ID: 1d66930d9c15, Score: 80)\nMUST automatically detect and mask PII including account numbers, routing numbers, social security numbers, and tax identification numbers before generating any financial decision support content.\n\n[SPEC 17] (ID: bad68d7f66a2, Score: 70)\nMUST automatically rewrite any content that could constitute fiduciary advice by converting specific recommendations into general educational frameworks with multiple alternative approaches.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=26  \nComment: The specifications work well together as a unified policy framework, with clear logical connections between different requirements. They collectively form a coherent strategy for ensuring compliance and safety in financial decision support. There are no apparent conflicts, and the specs complement each other by addressing various aspects of financial advice and regulatory compliance.\n\nCOVERAGE_SCORE=22  \nComment: The group covers a broad range of scenarios, including primary, secondary, and some edge cases. It addresses critical compliance areas such as tax evasion, retirement planning, and regulatory adherence. However, there might be some gaps in addressing emerging financial technologies or specific international regulations, which could enhance the coverage further.\n\nREDUNDANCY_SCORE=20  \nComment: There is some redundancy, particularly with specs 4 and 7 being identical, which could be consolidated. However, the redundancy is generally appropriate for critical safety areas, ensuring robustness without excessive overlap. The policy set maintains a balance between necessary repetition for emphasis and avoiding unnecessary duplication.\n\nPRACTICALITY_SCORE=17  \nComment: The requirements are generally clear and actionable, making them implementable in real-world scenarios. They balance security with usability and are adaptable to different contexts. However, some specifications might require additional clarification or simplification to ensure ease of implementation across diverse financial institutions.\n\nTOTAL=85",
+    "parsed_scores": {
+      "cohesion": 26,
+      "coverage": 22,
+      "redundancy": 20,
+      "practicality": 17
+    },
+    "comments": {
+      "cohesion": "The specifications work well together as a unified policy framework, with clear logical connections between different requirements. They collectively form a coherent strategy for ensuring compliance and safety in financial decision support. There are no apparent conflicts, and the specs complement each other by addressing various aspects of financial advice and regulatory compliance.",
+      "coverage": "The group covers a broad range of scenarios, including primary, secondary, and some edge cases. It addresses critical compliance areas such as tax evasion, retirement planning, and regulatory adherence. However, there might be some gaps in addressing emerging financial technologies or specific international regulations, which could enhance the coverage further.",
+      "redundancy": "There is some redundancy, particularly with specs 4 and 7 being identical, which could be consolidated. However, the redundancy is generally appropriate for critical safety areas, ensuring robustness without excessive overlap. The policy set maintains a balance between necessary repetition for emphasis and avoiding unnecessary duplication.",
+      "practicality": "The requirements are generally clear and actionable, making them implementable in real-world scenarios. They balance security with usability and are adaptable to different contexts. However, some specifications might require additional clarification or simplification to ensure ease of implementation across diverse financial institutions."
+    },
+    "total_score": 85,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 26,
+    "coverage": 22,
+    "redundancy": 20,
+    "practicality": 17
+  },
+  "total_group_score": 85
+}

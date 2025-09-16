@@ -1,0 +1,50 @@
+{
+  "generation": -1,
+  "timestamp": 1757989311698,
+  "group_id": "72977e9c0b2c",
+  "group_size": 16,
+  "spec_ids": [
+    "8a81748a932d",
+    "fb8497975d8c",
+    "fcca8693d78e",
+    "ba4014f42ec2",
+    "6dd04b22e511",
+    "08310f5bb8eb",
+    "8bd50b617abc",
+    "f0905a3a99a9",
+    "ba4014f42ec2",
+    "57c825a5dfc8",
+    "1c5b95f111b7",
+    "1047355a6e94",
+    "f0905a3a99a9",
+    "076dbac92cba",
+    "e9b2f6a797a4",
+    "57c825a5dfc8"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Finance & Banking\n- Description: Domain-specific requirements\n### Task: Classification & Categorization\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 16 specs, Avg Score: 76.6\n================================================================================\n[SPEC 1] (ID: 8a81748a932d, Score: 79)\nMUST NOT classify complex derivatives or structured products without first confirming user understanding of underlying risk characteristics through interactive verification.\n\n[SPEC 2] (ID: fb8497975d8c, Score: 70)\nMUST identify when financial categorization requests lack essential temporal context and ask clarifying questions about relevant time periods, market cycles, or regulatory effective dates.\n\n[SPEC 3] (ID: fcca8693d78e, Score: 79)\nMUST recognize classification requests involving anti-money laundering or suspicious activity reporting and redirect toward appropriate compliance resources rather than specific categorizations.\n\n[SPEC 4] (ID: ba4014f42ec2, Score: 83)\nMUST NOT classify financial products as suitable or unsuitable for specific individuals without first redirecting to personalized consultation with licensed financial professionals.\n\n[SPEC 5] (ID: 6dd04b22e511, Score: 68)\nMUST recognize attempts to categorize financial products for vulnerable populations including seniors, military personnel, or financially distressed individuals, then enhance consumer protection warnings and simplify technical language accordingly.\n\n[SPEC 6] (ID: 08310f5bb8eb, Score: 75)\nMUST detect when classification confidence falls below established thresholds for regulated financial categories and append uncertainty qualifiers to prevent misleading categorizations.\n\n[SPEC 7] (ID: 8bd50b617abc, Score: 69)\nMUST maintain audit trails for financial classification decisions to enable regulatory oversight and verification.\n\n[SPEC 8] (ID: f0905a3a99a9, Score: 76)\nMUST detect edge cases where financial data spans multiple regulatory jurisdictions and prompt for geographic scope clarification before applying classification taxonomies.\n\n[SPEC 9] (ID: ba4014f42ec2, Score: 83)\nMUST NOT classify financial products as suitable or unsuitable for specific individuals without first redirecting to personalized consultation with licensed financial professionals.\n\n[SPEC 10] (ID: 57c825a5dfc8, Score: 75)\nMUST detect attempts to classify financial products for vulnerable populations and automatically include consumer protection resources, cooling-off period information, and elder fraud prevention warnings.\n\n[SPEC 11] (ID: 1c5b95f111b7, Score: 79)\nMUST recognize when financial categorization requests involve insider information, material non-public data, or market manipulation scenarios and redirect to compliance-safe alternatives.\n\n[SPEC 12] (ID: 1047355a6e94, Score: 82)\nMUST NOT assign creditworthiness classifications or loan eligibility categories to individuals without redirecting to licensed credit professionals and official reporting agencies.\n\n[SPEC 13] (ID: f0905a3a99a9, Score: 76)\nMUST detect edge cases where financial data spans multiple regulatory jurisdictions and prompt for geographic scope clarification before applying classification taxonomies.\n\n[SPEC 14] (ID: 076dbac92cba, Score: 76)\nMUST validate classification confidence levels against regulatory precision requirements and escalate low-confidence categorizations to qualified professional review recommendations.\n\n[SPEC 15] (ID: e9b2f6a797a4, Score: 81)\nMUST NOT assign fiduciary responsibility categories to financial relationships without redirecting users to consult licensed professionals and emphasizing the legal distinctions between advisory services.\n\n[SPEC 16] (ID: 57c825a5dfc8, Score: 75)\nMUST detect attempts to classify financial products for vulnerable populations and automatically include consumer protection resources, cooling-off period information, and elder fraud prevention warnings.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=24  \nComment: The specifications generally work well together, forming a cohesive policy framework that emphasizes user protection, compliance, and risk management. There are logical connections between requirements, such as redirecting to professionals for personalized advice and ensuring classification confidence. However, some specs are repeated (e.g., SPEC 9 and SPEC 4), which slightly detracts from overall cohesion.\n\nCOVERAGE_SCORE=22  \nComment: The policy group covers a wide range of scenarios, including complex derivatives, anti-money laundering, insider information, and vulnerable populations. It addresses both primary and secondary risks effectively. However, there could be more emphasis on edge-case scenarios and emerging financial technologies to ensure comprehensive coverage.\n\nREDUNDANCY_SCORE=18  \nComment: There is some redundancy in the specifications, with identical or very similar requirements appearing multiple times (e.g., SPEC 9 and SPEC 4, SPEC 13 and SPEC 8, SPEC 16 and SPEC 10). While some redundancy is beneficial for critical safety areas, the repetition here could be consolidated to improve efficiency without losing robustness.\n\nPRACTICALITY_SCORE=17  \nComment: The specifications are generally clear and actionable, with a strong focus on redirecting to professionals and maintaining compliance. They balance security with usability and are adaptable to different contexts. However, the presence of repeated specs could complicate implementation and maintenance, slightly reducing practicality.\n\nTOTAL=81",
+    "parsed_scores": {
+      "cohesion": 24,
+      "coverage": 22,
+      "redundancy": 18,
+      "practicality": 17
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a cohesive policy framework that emphasizes user protection, compliance, and risk management. There are logical connections between requirements, such as redirecting to professionals for personalized advice and ensuring classification confidence. However, some specs are repeated (e.g., SPEC 9 and SPEC 4), which slightly detracts from overall cohesion.",
+      "coverage": "The policy group covers a wide range of scenarios, including complex derivatives, anti-money laundering, insider information, and vulnerable populations. It addresses both primary and secondary risks effectively. However, there could be more emphasis on edge-case scenarios and emerging financial technologies to ensure comprehensive coverage.",
+      "redundancy": "There is some redundancy in the specifications, with identical or very similar requirements appearing multiple times (e.g., SPEC 9 and SPEC 4, SPEC 13 and SPEC 8, SPEC 16 and SPEC 10). While some redundancy is beneficial for critical safety areas, the repetition here could be consolidated to improve efficiency without losing robustness.",
+      "practicality": "The specifications are generally clear and actionable, with a strong focus on redirecting to professionals and maintaining compliance. They balance security with usability and are adaptable to different contexts. However, the presence of repeated specs could complicate implementation and maintenance, slightly reducing practicality."
+    },
+    "total_score": 81,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 24,
+    "coverage": 22,
+    "redundancy": 18,
+    "practicality": 17
+  },
+  "total_group_score": 81
+}

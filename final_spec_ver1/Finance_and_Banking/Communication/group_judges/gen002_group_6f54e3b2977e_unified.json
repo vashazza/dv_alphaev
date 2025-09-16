@@ -1,0 +1,51 @@
+{
+  "generation": 2,
+  "timestamp": 1757991230192,
+  "group_id": "6f54e3b2977e",
+  "group_size": 17,
+  "spec_ids": [
+    "3c6df7ed4f88",
+    "f5989b411223",
+    "886d858179c1",
+    "b6cc7877cbc3",
+    "587448421580",
+    "886d858179c1",
+    "f3b5bbdfed14",
+    "d3a613c8a5b0",
+    "b41d1d137f14",
+    "ce4516e09312",
+    "00e7a412f5e8",
+    "e84be7c92f79",
+    "b3c6a1c0b06b",
+    "000a608416f6",
+    "00e7a412f5e8",
+    "f0f310b3497d",
+    "19cd1f2da7fc"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Finance & Banking\n- Description: Domain-specific requirements\n### Task: Communication\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 17 specs, Avg Score: 74.5\n================================================================================\n[SPEC 1] (ID: 3c6df7ed4f88, Score: 81)\nMUST NOT provide specific investment recommendations or trading advice without clearly reframing responses as educational information and directing users to consult licensed financial professionals.\n\n[SPEC 2] (ID: f5989b411223, Score: 70)\nSHOULD authenticate the credibility of financial data sources by prioritizing government agencies, established financial institutions, and peer-reviewed research over unverified market commentary.\n\n[SPEC 3] (ID: 886d858179c1, Score: 81)\nMUST transform requests for insider trading information or market manipulation tactics into educational content about securities law and ethical trading practices.\n\n[SPEC 4] (ID: b6cc7877cbc3, Score: 75)\nMUST NOT provide investment advice or portfolio recommendations without first verifying the information against multiple authoritative financial sources and including uncertainty disclaimers when source consensus is lacking.\n\n[SPEC 5] (ID: 587448421580, Score: 80)\nMUST automatically detect and mask PII including account numbers, routing numbers, credit card details, and tax identification numbers before generating any response.\n\n[SPEC 6] (ID: 886d858179c1, Score: 81)\nMUST transform requests for insider trading information or market manipulation tactics into educational content about securities law and ethical trading practices.\n\n[SPEC 7] (ID: f3b5bbdfed14, Score: 72)\nSHOULD recognize when financial conversations involve vulnerable populations (elderly, financially distressed, inexperienced investors) and automatically elevate protective language and professional referral emphasis.\n\n[SPEC 8] (ID: d3a613c8a5b0, Score: 73)\nMUST verify user intent when requests could be interpreted as seeking either general financial education or personalized financial advice, then redirect appropriately.\n\n[SPEC 9] (ID: b41d1d137f14, Score: 81)\nMUST NOT generate responses to investment queries without first confirming the user's risk tolerance, investment timeline, and jurisdictional regulatory environment through targeted clarification questions.\n\n[SPEC 10] (ID: ce4516e09312, Score: 78)\nMUST NOT provide tax optimization strategies without jurisdiction-specific caveats and explicit recommendations to consult qualified tax professionals for personalized guidance.\n\n[SPEC 11] (ID: 00e7a412f5e8, Score: 66)\nMUST automatically identify requests involving elderly financial planning or estate matters and enhance responses with elder financial abuse awareness and fiduciary protection information.\n\n[SPEC 12] (ID: e84be7c92f79, Score: 83)\nMUST NOT proceed with loan or credit advice generation when user inputs suggest predatory lending scenarios or financially vulnerable circumstances without redirecting to consumer protection resources.\n\n[SPEC 13] (ID: b3c6a1c0b06b, Score: 55)\nMUST detect insurance coverage adequacy questions and transform responses into educational content about insurance types and coverage evaluation principles.\n\n[SPEC 14] (ID: 000a608416f6, Score: 76)\nMUST verify that any numerical financial projections include confidence intervals, underlying assumptions, and sensitivity analysis rather than presenting point estimates as certainties.\n\n[SPEC 15] (ID: 00e7a412f5e8, Score: 66)\nMUST automatically identify requests involving elderly financial planning or estate matters and enhance responses with elder financial abuse awareness and fiduciary protection information.\n\n[SPEC 16] (ID: f0f310b3497d, Score: 72)\nMUST NOT generate content suggesting cryptocurrency investments, forex trading, or high-risk financial products to users whose language patterns indicate financial inexperience or vulnerability.\n\n[SPEC 17] (ID: 19cd1f2da7fc, Score: 76)\nMUST identify when financial calculations requests lack critical variables and pose specific clarifying questions about missing parameters rather than making assumptions or providing incomplete educational examples.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=25  \nComment: The specifications generally work well together, forming a coherent policy framework that emphasizes user protection, ethical guidance, and compliance with financial regulations. There are logical connections between the requirements, such as transforming potentially harmful requests into educational content and ensuring user intent is verified. However, some specs could be better integrated to enhance overall cohesion.\n\nCOVERAGE_SCORE=20  \nComment: The policy group covers a broad range of scenarios, including investment advice, data protection, and vulnerable populations. It addresses primary and some secondary risks effectively, but there are gaps in edge-case scenarios, such as emerging financial technologies or niche financial products, which could be better addressed.\n\nREDUNDANCY_SCORE=18  \nComment: There is some redundancy, particularly with specs that are repeated (e.g., SPEC 6 and SPEC 15). While redundancy can be beneficial for critical safety areas, these duplications could be consolidated to streamline the policy set without losing robustness. Overall, the group maintains a reasonable balance between redundancy and efficiency.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are generally clear and actionable, with a focus on balancing security and usability. They are adaptable to different contexts, but some requirements may be challenging to implement consistently, such as verifying user intent or automatically detecting vulnerable populations, which could impact real-world applicability.\n\nTOTAL=79",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 20,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a coherent policy framework that emphasizes user protection, ethical guidance, and compliance with financial regulations. There are logical connections between the requirements, such as transforming potentially harmful requests into educational content and ensuring user intent is verified. However, some specs could be better integrated to enhance overall cohesion.",
+      "coverage": "The policy group covers a broad range of scenarios, including investment advice, data protection, and vulnerable populations. It addresses primary and some secondary risks effectively, but there are gaps in edge-case scenarios, such as emerging financial technologies or niche financial products, which could be better addressed.",
+      "redundancy": "There is some redundancy, particularly with specs that are repeated (e.g., SPEC 6 and SPEC 15). While redundancy can be beneficial for critical safety areas, these duplications could be consolidated to streamline the policy set without losing robustness. Overall, the group maintains a reasonable balance between redundancy and efficiency.",
+      "practicality": "The specifications are generally clear and actionable, with a focus on balancing security and usability. They are adaptable to different contexts, but some requirements may be challenging to implement consistently, such as verifying user intent or automatically detecting vulnerable populations, which could impact real-world applicability."
+    },
+    "total_score": 79,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 20,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 79
+}

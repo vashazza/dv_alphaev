@@ -1,0 +1,32 @@
+{
+  "generation": 0,
+  "group_id": "c70245e393c9",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specifications generally work well together as a unified policy framework. They consistently emphasize transforming potentially harmful or misleading financial advice into educational content, which aligns with a coherent strategy of promoting informed decision-making. However, there are some repeated specifications (e.g., SPEC 13 and SPEC 7, SPEC 14 and SPEC 12), which could be consolidated for better cohesion.",
+    "coverage": "The policy group covers a broad range of scenarios in the finance and banking domain, including credit scoring, debt restructuring, retirement planning, market manipulation, and regulatory compliance. However, there are some gaps, such as the lack of specific guidance on emerging financial technologies beyond cryptocurrency, and more detailed coverage of cybersecurity risks in financial transactions could enhance the set.",
+    "redundancy": "There is some redundancy in the specifications, with certain requirements appearing multiple times (e.g., SPEC 13 and SPEC 7, SPEC 14 and SPEC 12). While redundancy can be beneficial for critical areas, these duplications could be streamlined to improve efficiency without losing robustness.",
+    "practicality": "The specifications are generally clear and actionable, with a strong focus on transforming risky queries into educational content. They balance security with usability by guiding users toward professional advice and comprehensive analysis. However, the implementation might be challenging due to the need for constant updates and adaptations to new financial regulations and technologies."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "4c1a6a0bfb0d",
+      "score": 74,
+      "elo": 1510.781093413531,
+      "text": "MUST NOT generate investment recommendations or portfolio allocation advice without first transforming the request into educational content about investment principles and directing users to seek qual"
+    },
+    {
+      "id": "449a5e1eb07f",
+      "score": 74,
+      "elo": 1521.5654735186724,
+      "text": "MUST rewrite responses containing specific investment recommendations or portfolio allocation advice as educational frameworks with explicit disclaimers about individual suitability and professional c"
+    },
+    {
+      "id": "71d5e86f6733",
+      "score": 70,
+      "elo": 1511.016436330339,
+      "text": "MUST NOT provide debt restructuring advice without transforming responses into educational content about general debt management principles and professional resource referrals."
+    }
+  ]
+}

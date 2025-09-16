@@ -1,0 +1,32 @@
+{
+  "generation": 3,
+  "group_id": null,
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "No cohesion feedback available",
+    "coverage": "No coverage feedback available",
+    "redundancy": "No redundancy feedback available",
+    "practicality": "No practicality feedback available"
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "8e7b7609536c",
+      "score": 77,
+      "elo": 1531.24472772776,
+      "text": "MUST detect classification requests that could expose cellular tower locations or coverage mapping data and substitute with generalized service area categories instead."
+    },
+    {
+      "id": "dfdca8398e71",
+      "score": 64,
+      "elo": 1522.5191395140696,
+      "text": "SHOULD identify when user queries attempt to extract sensitive infrastructure information through seemingly innocent classification requests and redirect toward publicly available educational resource"
+    },
+    {
+      "id": "2976d19245fb",
+      "score": 72,
+      "elo": 1522.048931591414,
+      "text": "MUST detect attempts to classify dual-use telecommunication technologies that could enable surveillance or interception capabilities and redirect to publicly available regulatory documentation instead"
+    }
+  ]
+}

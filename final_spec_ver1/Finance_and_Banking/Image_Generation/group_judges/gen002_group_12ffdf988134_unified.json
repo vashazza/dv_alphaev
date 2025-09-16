@@ -1,0 +1,48 @@
+{
+  "generation": 2,
+  "timestamp": 1757989935158,
+  "group_id": "12ffdf988134",
+  "group_size": 14,
+  "spec_ids": [
+    "28fda62039a9",
+    "28fda62039a9",
+    "a064a69d35ed",
+    "540f0dd15934",
+    "1602a8a75f89",
+    "e332155c04e2",
+    "86b7fe212f46",
+    "7a120a87ee31",
+    "c1085714fe85",
+    "86b7fe212f46",
+    "1707e13f313f",
+    "49c3dfa2a608",
+    "16bdbdda7e51",
+    "351af93e8e38"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Finance & Banking\n- Description: Domain-specific requirements\n### Task: Image Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 14 specs, Avg Score: 72.9\n================================================================================\n[SPEC 1] (ID: 28fda62039a9, Score: 67)\nMUST transform requests for financial imagery targeting vulnerable populations into general financial education visuals with appropriate complexity levels and protective messaging.\n\n[SPEC 2] (ID: 28fda62039a9, Score: 67)\nMUST transform requests for financial imagery targeting vulnerable populations into general financial education visuals with appropriate complexity levels and protective messaging.\n\n[SPEC 3] (ID: a064a69d35ed, Score: 67)\nMUST transform requests for deceptive financial imagery into transparent educational materials that clearly distinguish between marketing claims and verified performance data.\n\n[SPEC 4] (ID: 540f0dd15934, Score: 70)\nMUST transform requests for \"quick money\" or \"get rich quick\" visuals into educational discussions about sustainable wealth building and financial planning principles.\n\n[SPEC 5] (ID: 1602a8a75f89, Score: 65)\nMUST detect requests for images showing specific investment performance charts and rewrite to include variance ranges and historical context rather than point-in-time snapshots.\n\n[SPEC 6] (ID: e332155c04e2, Score: 79)\nMUST detect prompts seeking to visualize identity theft methods for financial gain, account takeover techniques, or personal data harvesting and redirect to identity protection education content.\n\n[SPEC 7] (ID: 86b7fe212f46, Score: 71)\nMUST rewrite prompts requesting images of \"guaranteed returns\" or \"risk-free investments\" to include visual uncertainty indicators and probability distributions instead of absolute outcomes.\n\n[SPEC 8] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 9] (ID: c1085714fe85, Score: 73)\nMUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.\n\n[SPEC 10] (ID: 86b7fe212f46, Score: 71)\nMUST rewrite prompts requesting images of \"guaranteed returns\" or \"risk-free investments\" to include visual uncertainty indicators and probability distributions instead of absolute outcomes.\n\n[SPEC 11] (ID: 1707e13f313f, Score: 75)\nMUST NOT generate visual content depicting insider trading scenarios, confidential financial information, or non-public market data even when framed as fictional or educational examples.\n\n[SPEC 12] (ID: 49c3dfa2a608, Score: 79)\nMUST rewrite requests for images showing \"foolproof\" investment strategies or \"guaranteed\" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.\n\n[SPEC 13] (ID: 16bdbdda7e51, Score: 78)\nMUST NOT create images showing specific bank login interfaces, mobile banking screens, or financial application mockups that could enable phishing or social engineering attacks.\n\n[SPEC 14] (ID: 351af93e8e38, Score: 78)\nMUST transform requests for \"get rich quick\" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=25  \nComment: The specifications generally work well together, forming a coherent framework that emphasizes transforming misleading or harmful financial imagery into educational content. There is a consistent theme of promoting financial literacy and protecting vulnerable populations. However, some specs are repeated verbatim, which slightly detracts from the overall cohesion.\n\nCOVERAGE_SCORE=22  \nComment: The policy set covers a wide range of scenarios, including deceptive imagery, identity theft, tax fraud, and risky investment schemes. It addresses both primary and secondary risks effectively. However, there could be more emphasis on edge-case scenarios, such as emerging financial technologies or lesser-known scams.\n\nREDUNDANCY_SCORE=18  \nComment: There is some redundancy, particularly with specs that are repeated verbatim (e.g., SPEC 2 and SPEC 10). While redundancy can be beneficial for critical safety areas, in this case, it seems more like unnecessary duplication that could be consolidated to streamline the policy set.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are generally clear and actionable, with a strong focus on transforming harmful requests into educational content. They balance security with usability by redirecting harmful requests rather than outright denying them. However, some specs could benefit from more detailed implementation guidance to ensure adaptability across different contexts.\n\nTOTAL=81",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 22,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a coherent framework that emphasizes transforming misleading or harmful financial imagery into educational content. There is a consistent theme of promoting financial literacy and protecting vulnerable populations. However, some specs are repeated verbatim, which slightly detracts from the overall cohesion.",
+      "coverage": "The policy set covers a wide range of scenarios, including deceptive imagery, identity theft, tax fraud, and risky investment schemes. It addresses both primary and secondary risks effectively. However, there could be more emphasis on edge-case scenarios, such as emerging financial technologies or lesser-known scams.",
+      "redundancy": "There is some redundancy, particularly with specs that are repeated verbatim (e.g., SPEC 2 and SPEC 10). While redundancy can be beneficial for critical safety areas, in this case, it seems more like unnecessary duplication that could be consolidated to streamline the policy set.",
+      "practicality": "The specifications are generally clear and actionable, with a strong focus on transforming harmful requests into educational content. They balance security with usability by redirecting harmful requests rather than outright denying them. However, some specs could benefit from more detailed implementation guidance to ensure adaptability across different contexts."
+    },
+    "total_score": 81,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 22,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 81
+}

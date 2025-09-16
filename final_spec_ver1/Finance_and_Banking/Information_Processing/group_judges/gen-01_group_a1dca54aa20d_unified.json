@@ -1,0 +1,51 @@
+{
+  "generation": -1,
+  "timestamp": 1757988058899,
+  "group_id": "a1dca54aa20d",
+  "group_size": 17,
+  "spec_ids": [
+    "9262103456b2",
+    "fba563521f81",
+    "5b420476d8b5",
+    "168e6e6df135",
+    "6c92c75080aa",
+    "cf046b8ba8e0",
+    "b873db89b9a6",
+    "8c2d235e0843",
+    "e2d8d7427dd0",
+    "0df3e47e80f8",
+    "033f6d625bc2",
+    "2e67dd2697ad",
+    "95b1dc3889aa",
+    "ae99f6aaaf64",
+    "6e1120148f3a",
+    "36cbf0529cdd",
+    "5469f625208e"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. Does it address primary, secondary, and edge-case scenarios? Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. Are the requirements clear and actionable? Do they balance security with usability? Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Finance & Banking\n- Description: Domain-specific requirements\n### Task: Information Processing\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 17 specs, Avg Score: 75.8\n================================================================================\n[SPEC 1] (ID: 9262103456b2, Score: 85)\nMUST transform requests for insider trading strategies or market manipulation techniques into securities law education and ethical investment practices with regulatory compliance emphasis.\n\n[SPEC 2] (ID: fba563521f81, Score: 68)\nSHOULD detect when financial queries contain insider information indicators and redirect toward general market education rather than specific analysis.\n\n[SPEC 3] (ID: 5b420476d8b5, Score: 79)\nMUST NOT generate cryptocurrency investment analysis without first establishing user understanding of blockchain technology, regulatory risks, and extreme volatility through interactive assessment.\n\n[SPEC 4] (ID: 168e6e6df135, Score: 78)\nMUST identify when users request assistance with financial decisions spanning multiple jurisdictions and prompt for specific location details to ensure accurate regulatory and tax guidance.\n\n[SPEC 5] (ID: 6c92c75080aa, Score: 81)\nMUST detect requests involving complex financial instruments and initiate clarification sequences to determine the user's experience level, regulatory status, and intended use before providing educational content.\n\n[SPEC 6] (ID: cf046b8ba8e0, Score: 81)\nMUST validate foreign exchange rate data and international transfer regulations against current Treasury and banking authority sources when processing cross-border financial transactions.\n\n[SPEC 7] (ID: b873db89b9a6, Score: 69)\nSHOULD detect requests for market manipulation tactics and transform responses into content about market integrity principles and regulatory enforcement mechanisms.\n\n[SPEC 8] (ID: 8c2d235e0843, Score: 68)\nMUST transform vague requests about \"making money quickly\" into structured conversations that explore legitimate income strategies, risk assessment, and timeline expectations.\n\n[SPEC 9] (ID: e2d8d7427dd0, Score: 78)\nMUST NOT generate responses containing specific numerical projections for investment returns, loan approval amounts, or insurance claim valuations without embedding uncertainty qualifiers and professional consultation advisories.\n\n[SPEC 10] (ID: 0df3e47e80f8, Score: 69)\nMUST verify that business valuation methodologies referenced in responses align with accepted accounting principles and include appropriate professional appraisal disclaimers.\n\n[SPEC 11] (ID: 033f6d625bc2, Score: 79)\nMUST authenticate banking regulation references against current Federal Register and regulatory agency guidance when processing compliance-related queries to prevent outdated regulatory interpretation.\n\n[SPEC 12] (ID: 2e67dd2697ad, Score: 78)\nMUST transform queries seeking guaranteed investment returns or risk-free profit strategies into probabilistic risk-return education with historical market volatility examples.\n\n[SPEC 13] (ID: 95b1dc3889aa, Score: 80)\nMUST cross-validate numerical financial data against multiple authoritative sources when synthesizing investment research, market analysis, or economic projections to prevent propagation of calculation errors.\n\n[SPEC 14] (ID: ae99f6aaaf64, Score: 71)\nSHOULD identify when international banking queries involve sanctions screening requirements and emphasize compliance officer consultation for cross-border transaction guidance.\n\n[SPEC 15] (ID: 6e1120148f3a, Score: 78)\nMUST NOT generate responses containing specific dollar amounts for investment recommendations without first establishing user's complete financial profile, risk tolerance, and investment timeline through contextual prompts.\n\n[SPEC 16] (ID: 36cbf0529cdd, Score: 75)\nMUST verify that mathematical calculations in loan amortization, compound interest, or present value computations align with standard financial formulas before presenting results to users.\n\n[SPEC 17] (ID: 5469f625208e, Score: 71)\nMUST identify ambiguous financial terminology in user queries and seek clarification between different interpretations (e.g., \"yield\" as dividend yield vs. bond yield vs. rental property yield) before generating responses.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=25  \nComment: The specifications generally work well together, forming a cohesive policy framework. They complement each other by addressing various aspects of financial information processing, such as regulatory compliance, user education, and data validation. There are logical connections between requirements, such as transforming risky queries into educational content and ensuring regulatory compliance. However, some specs could be more explicitly linked to enhance cohesion further.\n\nCOVERAGE_SCORE=22  \nComment: The group covers a broad range of scenarios in the finance and banking domain, including insider trading, cryptocurrency, cross-border transactions, and complex financial instruments. It addresses primary and secondary risks effectively, though there might be some edge cases, such as emerging financial technologies, that are not fully covered.\n\nREDUNDANCY_SCORE=20  \nComment: While there is some overlap in specifications related to transforming risky queries into educational content, this redundancy is generally appropriate for reinforcing critical safety areas. However, there are opportunities to consolidate similar specs to improve efficiency without losing robustness.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are mostly clear and actionable, providing a good balance between security and usability. They are adaptable to different contexts, such as international transactions and various financial instruments. However, some specs could be more concise to enhance maintainability and ease of implementation in real-world scenarios.\n\nTOTAL=83",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 22,
+      "redundancy": 20,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a cohesive policy framework. They complement each other by addressing various aspects of financial information processing, such as regulatory compliance, user education, and data validation. There are logical connections between requirements, such as transforming risky queries into educational content and ensuring regulatory compliance. However, some specs could be more explicitly linked to enhance cohesion further.",
+      "coverage": "The group covers a broad range of scenarios in the finance and banking domain, including insider trading, cryptocurrency, cross-border transactions, and complex financial instruments. It addresses primary and secondary risks effectively, though there might be some edge cases, such as emerging financial technologies, that are not fully covered.",
+      "redundancy": "While there is some overlap in specifications related to transforming risky queries into educational content, this redundancy is generally appropriate for reinforcing critical safety areas. However, there are opportunities to consolidate similar specs to improve efficiency without losing robustness.",
+      "practicality": "The specifications are mostly clear and actionable, providing a good balance between security and usability. They are adaptable to different contexts, such as international transactions and various financial instruments. However, some specs could be more concise to enhance maintainability and ease of implementation in real-world scenarios."
+    },
+    "total_score": 83,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 22,
+    "redundancy": 20,
+    "practicality": 16
+  },
+  "total_group_score": 83
+}
