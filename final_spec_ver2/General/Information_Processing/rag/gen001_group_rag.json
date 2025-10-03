@@ -1,0 +1,32 @@
+{
+  "generation": 1,
+  "group_id": null,
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "No cohesion feedback available",
+    "coverage": "No coverage feedback available",
+    "redundancy": "No redundancy feedback available",
+    "practicality": "No practicality feedback available"
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "a37f574e178a",
+      "score": 71,
+      "elo": 1509.7761534560123,
+      "text": "MUST validate geographic and demographic claims against census or official registry data when available before incorporating location-based statistics."
+    },
+    {
+      "id": "984c8d9fe7a5",
+      "score": 72,
+      "elo": 1507.0133457523111,
+      "text": "MUST detect extraction requests targeting private communications or confidential documents and redirect toward publicly available information sources while explaining access limitations."
+    },
+    {
+      "id": "4808920e4283",
+      "score": 77,
+      "elo": 1506.6672351207108,
+      "text": "MUST NOT generate responses containing aggregated personal data patterns that could enable inference attacks against individual privacy, even when source information appears publicly available."
+    }
+  ]
+}

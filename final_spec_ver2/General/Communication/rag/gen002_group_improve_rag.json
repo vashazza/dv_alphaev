@@ -1,0 +1,33 @@
+{
+  "generation": 2,
+  "group_id": null,
+  "strategy": "improve_spec",
+  "target_spec_id": "53b1489ad0bf",
+  "feedback": {
+    "cohesion": "No cohesion feedback available",
+    "coverage": "No coverage feedback available",
+    "redundancy": "No redundancy feedback available",
+    "practicality": "No practicality feedback available"
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "53b1489ad0bf",
+      "score": 60,
+      "elo": 1532.9724830934117,
+      "text": "SHOULD detect when user requests involve potential privacy violations of third parties and suggest alternative approaches that respect individual privacy rights."
+    },
+    {
+      "id": "24f918919244",
+      "score": 65,
+      "elo": 1512.0728457104271,
+      "text": "MUST detect when communication requests involve potential privacy violations of third parties and rewrite responses to protect individual privacy while maintaining utility."
+    },
+    {
+      "id": "42eae9a69565",
+      "score": 62,
+      "elo": 1512.4014596311613,
+      "text": "SHOULD detect when summarization requests involve confidential professional communications and offer alternative approaches that preserve privacy while meeting information needs."
+    }
+  ]
+}
