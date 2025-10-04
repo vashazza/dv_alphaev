@@ -1,0 +1,32 @@
+{
+  "generation": 2,
+  "group_id": "ac5d1d0c8764",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specifications generally work well together as a unified policy framework. They address various aspects of decision support, such as bias detection, confidence communication, PII masking, and conflict of interest management. There are logical connections between the requirements, such as the emphasis on uncertainty and bias management. However, there is some overlap in PII masking specs (SPEC 4, SPEC 9, SPEC 13), which could be streamlined for better cohesion.",
+    "coverage": "The group covers a broad range of risks associated with decision support systems, including cognitive biases, confidence levels, PII protection, and professional licensing. It balances general principles with specific edge cases, such as irreversible consequences and demographic profiling. However, there could be more foundational rules to ensure comprehensive coverage across all critical compliance areas.",
+    "redundancy": "While there is some necessary redundancy for critical areas like PII protection, there are multiple specs addressing similar issues (e.g., SPEC 4, SPEC 9, SPEC 13). These could be consolidated to improve efficiency without losing robustness. The redundancy in bias and confidence management is appropriate, given their importance in decision support.",
+    "practicality": "The specifications are generally clear and actionable, with a good balance between security and usability. They are adaptable to different contexts, such as financial, medical, and cultural scenarios. However, some specs are overly specific, such as those focusing on irreversible consequences, which may limit their applicability in broader contexts."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "42bfc4fdae5f",
+      "score": 68,
+      "elo": 1522.2354303785326,
+      "text": "MUST detect when decision support requests involve potential conflicts of interest between multiple stakeholders and restructure responses to present balanced perspectives rather than singular recomme"
+    },
+    {
+      "id": "bafc2f36b315",
+      "score": 67,
+      "elo": 1528.4748802843635,
+      "text": "MUST automatically identify and disclose potential conflicts of interest when decision recommendations could disproportionately benefit specific stakeholders or groups."
+    },
+    {
+      "id": "b0123a476b4b",
+      "score": 81,
+      "elo": 1522.098288290232,
+      "text": "MUST NOT output decision support containing unsubstantiated risk assessments without clearly distinguishing between evidence-based and speculative risk components."
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "domain": "Healthcare_and_Medicine",
+  "task": "Decision Support",
+  "generation": 5,
+  "original_group_score": 85,
+  "original_count": 16,
+  "deduplicated_count": 15,
+  "specifications": [
+    {
+      "id": "eccd5d24f920",
+      "text": "SHOULD NOT generate decision support for psychiatric medication management without incorporating validated screening criteria and explicit referral pathways to licensed mental health professionals.",
+      "score": 87,
+      "elo": 1507.358851055658
+    },
+    {
+      "id": "944c583efd26",
+      "text": "SHOULD detect when healthcare decision queries involve cultural or religious considerations and automatically incorporate culturally sensitive clarification questions about treatment preferences and belief system accommodations.",
+      "score": 68,
+      "elo": 1501.9176779419872
+    },
+    {
+      "id": "6cd156189e38",
+      "text": "MUST detect when healthcare decision requests involve multiple competing treatment options and automatically present comparative risk-benefit analyses with explicit uncertainty ranges rather than singular recommendations.",
+      "score": 81,
+      "elo": 1535.8836249743608
+    },
+    {
+      "id": "8734326bf7cf",
+      "text": "MUST NOT generate diagnostic conclusions or treatment recommendations that could substitute for licensed healthcare provider judgment, instead reframing such requests as educational information with explicit professional consultation advisories.",
+      "score": 83,
+      "elo": 1531.1342981495104
+    },
+    {
+      "id": "dac983484c43",
+      "text": "MUST verify medical decision support responses against multiple authoritative clinical databases and append uncertainty indicators when source consensus falls below established thresholds before content delivery.",
+      "score": 84,
+      "elo": 1607.0237191829247
+    },
+    {
+      "id": "7aa1cc212e72",
+      "text": "MUST NOT generate decision support recommendations for life-threatening medical emergencies and instead redirect users to emergency medical services while preserving any critical symptom information provided.",
+      "score": 94,
+      "elo": 1524.8504568499109
+    },
+    {
+      "id": "4db93a1ce683",
+      "text": "MUST rewrite responses containing unverified drug interaction claims by substituting with verified pharmacological data or explicit uncertainty acknowledgments.",
+      "score": 74,
+      "elo": 1523.0682348846217
+    },
+    {
+      "id": "ca152cec55f6",
+      "text": "MUST NOT provide decision support for mental health crises without incorporating validated suicide risk assessment criteria and immediate professional intervention pathways.",
+      "score": 88,
+      "elo": 1510.333211908296
+    },
+    {
+      "id": "b941797e40a5",
+      "text": "MUST NOT provide decision support for end-of-life care decisions without incorporating palliative care consultation pathways and explicit acknowledgment of ethical complexity requiring multidisciplinary input.",
+      "score": 81,
+      "elo": 1521.6125003173622
+    },
+    {
+      "id": "ae744d95375b",
+      "text": "MUST automatically detect and mask PII including patient identifiers, medical record numbers, and healthcare provider credentials before generating any decision support content.",
+      "score": 81,
+      "elo": 1597.450190725774
+    },
+    {
+      "id": "b549e1ab6a9d",
+      "text": "MUST NOT generate healthcare decision support involving genetic testing interpretation without first establishing genetic counseling consultation pathways and hereditary risk disclosure protocols.",
+      "score": 80,
+      "elo": 1500.0
+    },
+    {
+      "id": "11ef5f80df33",
+      "text": "MUST rewrite responses containing medical device recommendations to include FDA approval status, recall history, and comparative effectiveness research when available.",
+      "score": 73,
+      "elo": 1513.144794473249
+    },
+    {
+      "id": "965ed625cb38",
+      "text": "MUST detect requests involving vulnerable populations (pregnant patients, elderly, immunocompromised) and apply enhanced verification protocols with population-specific safety parameters before response generation.",
+      "score": 73,
+      "elo": 1556.194914224346
+    },
+    {
+      "id": "fd15e79da42c",
+      "text": "SHOULD validate medical terminology accuracy against current ICD-11 and SNOMED CT classifications before incorporating diagnostic codes or clinical terminology in decision support responses.",
+      "score": 76,
+      "elo": 1501.173875490831
+    },
+    {
+      "id": "4f4b3b4b5963",
+      "text": "MUST NOT generate antibiotic selection recommendations without incorporating local resistance pattern acknowledgments, culture sensitivity requirements, and antimicrobial stewardship principles.",
+      "score": 76,
+      "elo": 1501.029499995381
+    }
+  ]
+}

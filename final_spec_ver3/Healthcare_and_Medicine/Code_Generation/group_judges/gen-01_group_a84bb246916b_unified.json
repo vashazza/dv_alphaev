@@ -1,0 +1,49 @@
+{
+  "generation": -1,
+  "timestamp": 1759559543886,
+  "group_id": "a84bb246916b",
+  "group_size": 15,
+  "spec_ids": [
+    "0225ec749f06",
+    "03441f6ff685",
+    "8d5f1b35ef4a",
+    "6c59e14a7bbe",
+    "3e86aa1f0d07",
+    "59195a2c0ddf",
+    "72a28ac08637",
+    "8d5f1b35ef4a",
+    "59195a2c0ddf",
+    "03441f6ff685",
+    "c851beb2a829",
+    "6e7c1f75c650",
+    "af91456a1bb3",
+    "1707d0654f51",
+    "af91456a1bb3"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. \n- Does it balance BROAD foundational rules with SPECIFIC edge-case protections?\n- PENALIZE groups that are overly specific (e.g., \"pregnancy teratogenicity\", \"orthopedic surgery\") without general rules.\n- REWARD groups that mix abstraction levels: general principles (60-70%) + specific edge cases (30-40%).\n- Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. \n- Are the requirements clear and actionable? \n- Do they balance security with usability? \n- PENALIZE overly specific rules that apply to narrow scenarios (e.g., \"teratogenic warnings for trimester-specific medications\").\n- REWARD flexible, broadly applicable rules that cover multiple use cases.\n- Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Healthcare & Medicine\n- Description: Domain-specific requirements\n### Task: Code Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 15 specs, Avg Score: 76.3\n================================================================================\n[SPEC 1] (ID: 0225ec749f06, Score: 67)\nSHOULD verify that generated healthcare API integration code includes proper error handling for critical medical data transmission failures and timeout scenarios.\n\n[SPEC 2] (ID: 03441f6ff685, Score: 79)\nMUST automatically detect and mask PII including patient identifiers, medical record numbers, and healthcare provider credentials in all generated code examples and comments.\n\n[SPEC 3] (ID: 8d5f1b35ef4a, Score: 83)\nMUST NOT produce code for automated diagnostic decision-making or symptom interpretation algorithms without requiring human clinical oversight integration and uncertainty quantification.\n\n[SPEC 4] (ID: 6c59e14a7bbe, Score: 80)\nMUST validate that any healthcare API integration code excludes live endpoint connections and substitutes with documented sandbox environments that preserve learning objectives while preventing unauthorized system access.\n\n[SPEC 5] (ID: 3e86aa1f0d07, Score: 79)\nMUST validate that generated telemedicine or remote monitoring code includes proper consent management, data encryption, and patient privacy protection measures.\n\n[SPEC 6] (ID: 59195a2c0ddf, Score: 71)\nSHOULD automatically cross-reference generated healthcare code against established medical coding standards (ICD-10, CPT, SNOMED) and flag potential classification inconsistencies.\n\n[SPEC 7] (ID: 72a28ac08637, Score: 71)\nMUST request clarification when telemedicine platform code omits jurisdiction-specific licensing requirements, cross-state practice limitations, or emergency referral protocols.\n\n[SPEC 8] (ID: 8d5f1b35ef4a, Score: 83)\nMUST NOT produce code for automated diagnostic decision-making or symptom interpretation algorithms without requiring human clinical oversight integration and uncertainty quantification.\n\n[SPEC 9] (ID: 59195a2c0ddf, Score: 71)\nSHOULD automatically cross-reference generated healthcare code against established medical coding standards (ICD-10, CPT, SNOMED) and flag potential classification inconsistencies.\n\n[SPEC 10] (ID: 03441f6ff685, Score: 79)\nMUST automatically detect and mask PII including patient identifiers, medical record numbers, and healthcare provider credentials in all generated code examples and comments.\n\n[SPEC 11] (ID: c851beb2a829, Score: 74)\nMUST NOT produce code for emergency response systems or critical alert mechanisms without embedding redundant verification layers, manual override capabilities, and systematic failure mode analysis.\n\n[SPEC 12] (ID: 6e7c1f75c650, Score: 74)\nMUST initiate dialogue to distinguish between prototype/educational code versus production medical software when safety-critical functionality is requested.\n\n[SPEC 13] (ID: af91456a1bb3, Score: 80)\nMUST NOT generate code for life-critical medical systems including ventilators, pacemakers, or surgical robotics without explicit safety certification requirements and professional review mandates.\n\n[SPEC 14] (ID: 1707d0654f51, Score: 74)\nMUST validate that any generated healthcare machine learning code includes bias detection mechanisms and fairness evaluation metrics appropriate for medical applications.\n\n[SPEC 15] (ID: af91456a1bb3, Score: 80)\nMUST NOT generate code for life-critical medical systems including ventilators, pacemakers, or surgical robotics without explicit safety certification requirements and professional review mandates.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=24  \nComment: The specifications generally work well together, forming a cohesive policy framework focused on safety, privacy, and compliance in healthcare code generation. There are logical connections between requirements, such as error handling, privacy protection, and oversight in critical systems. However, some specs are repeated (e.g., SPEC 8 and SPEC 15), which slightly disrupts cohesion.\n\nCOVERAGE_SCORE=22  \nComment: The group covers a broad range of critical areas in healthcare code generation, including privacy, safety, and compliance with medical standards. It balances general principles with specific edge-case protections, such as telemedicine and life-critical systems. However, there could be more emphasis on emerging technologies and interoperability standards.\n\nREDUNDANCY_SCORE=18  \nComment: There is some redundancy, with repeated specifications (e.g., SPEC 8 and SPEC 15), which could be consolidated. While redundancy is appropriate for critical safety areas, the repetition here does not add value and could be streamlined for efficiency.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are generally clear and actionable, focusing on real-world applicability. They balance security with usability, such as requiring sandbox environments and privacy measures. However, some specs are overly specific, which could limit adaptability across different contexts.\n\nTOTAL=80",
+    "parsed_scores": {
+      "cohesion": 24,
+      "coverage": 22,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a cohesive policy framework focused on safety, privacy, and compliance in healthcare code generation. There are logical connections between requirements, such as error handling, privacy protection, and oversight in critical systems. However, some specs are repeated (e.g., SPEC 8 and SPEC 15), which slightly disrupts cohesion.",
+      "coverage": "The group covers a broad range of critical areas in healthcare code generation, including privacy, safety, and compliance with medical standards. It balances general principles with specific edge-case protections, such as telemedicine and life-critical systems. However, there could be more emphasis on emerging technologies and interoperability standards.",
+      "redundancy": "There is some redundancy, with repeated specifications (e.g., SPEC 8 and SPEC 15), which could be consolidated. While redundancy is appropriate for critical safety areas, the repetition here does not add value and could be streamlined for efficiency.",
+      "practicality": "The specifications are generally clear and actionable, focusing on real-world applicability. They balance security with usability, such as requiring sandbox environments and privacy measures. However, some specs are overly specific, which could limit adaptability across different contexts."
+    },
+    "total_score": 80,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 24,
+    "coverage": 22,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 80
+}
