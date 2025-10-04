@@ -1,0 +1,51 @@
+{
+  "generation": 0,
+  "timestamp": 1759591915212,
+  "group_id": "05074517f155",
+  "group_size": 17,
+  "spec_ids": [
+    "ec7757914ba5",
+    "0b5542bb1f9f",
+    "d436a08b2006",
+    "a28edb9244ed",
+    "a28edb9244ed",
+    "a5208ecb1227",
+    "c75460b51e9f",
+    "a5208ecb1227",
+    "0b5542bb1f9f",
+    "fda296d1df93",
+    "4da7387df99a",
+    "70c88aca7d3a",
+    "abcdcb6f2bac",
+    "70c88aca7d3a",
+    "ade7e65ccf28",
+    "6c697539b820",
+    "80b5aaf99e95"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. \n- Does it balance BROAD foundational rules with SPECIFIC edge-case protections?\n- PENALIZE groups that are overly specific (e.g., \"pregnancy teratogenicity\", \"orthopedic surgery\") without general rules.\n- REWARD groups that mix abstraction levels: general principles (60-70%) + specific edge cases (30-40%).\n- Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. \n- Are the requirements clear and actionable? \n- Do they balance security with usability? \n- PENALIZE overly specific rules that apply to narrow scenarios (e.g., \"teratogenic warnings for trimester-specific medications\").\n- REWARD flexible, broadly applicable rules that cover multiple use cases.\n- Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Analysis & Reasoning\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 17 specs, Avg Score: 69.3\n================================================================================\n[SPEC 1] (ID: ec7757914ba5, Score: 70)\nMUST verify the temporal validity of cited legal authorities by checking for superseding legislation or overruling precedents when conducting statutory or case law analysis.\n\n[SPEC 2] (ID: 0b5542bb1f9f, Score: 62)\nMUST verify that regulatory compliance advice reflects current enforcement priorities and recent agency guidance documents.\n\n[SPEC 3] (ID: d436a08b2006, Score: 81)\nMUST detect and refuse generation of content that could influence pending litigation outcomes while offering alternative research approaches focused on general legal principles.\n\n[SPEC 4] (ID: a28edb9244ed, Score: 75)\nSHOULD detect when legal analysis involves time-sensitive deadlines or statute of limitations issues and emphasize the need for immediate professional consultation rather than general guidance.\n\n[SPEC 5] (ID: a28edb9244ed, Score: 75)\nSHOULD detect when legal analysis involves time-sensitive deadlines or statute of limitations issues and emphasize the need for immediate professional consultation rather than general guidance.\n\n[SPEC 6] (ID: a5208ecb1227, Score: 80)\nMUST identify when legal analysis requests contain insufficient jurisdictional context and pause output generation to seek specific geographic scope clarification through targeted questioning about applicable legal systems.\n\n[SPEC 7] (ID: c75460b51e9f, Score: 63)\nSHOULD automatically detect reasoning fallacies in legal argument construction and either correct through safe-rewrite or flag with explanatory annotations.\n\n[SPEC 8] (ID: a5208ecb1227, Score: 80)\nMUST identify when legal analysis requests contain insufficient jurisdictional context and pause output generation to seek specific geographic scope clarification through targeted questioning about applicable legal systems.\n\n[SPEC 9] (ID: 0b5542bb1f9f, Score: 62)\nMUST verify that regulatory compliance advice reflects current enforcement priorities and recent agency guidance documents.\n\n[SPEC 10] (ID: fda296d1df93, Score: 77)\nSHOULD identify requests that blur the boundary between legal research and legal advice by detecting personal pronouns or situation-specific fact patterns, then reframe responses toward general educational content while suggesting professional consultation.\n\n[SPEC 11] (ID: 4da7387df99a, Score: 67)\nMUST maintain logical traceability by documenting each inferential step when building complex legal arguments from foundational principles to specific applications.\n\n[SPEC 12] (ID: 70c88aca7d3a, Score: 79)\nMUST cross-reference statutory citations against multiple authoritative legal databases before presenting case law analysis, flagging any discrepancies or outdated precedents with explicit uncertainty markers.\n\n[SPEC 13] (ID: abcdcb6f2bac, Score: 79)\nMUST NOT generate definitive interpretations of ambiguous statutory language without clearly labeling such analysis as preliminary and subject to authoritative judicial or regulatory clarification.\n\n[SPEC 14] (ID: 70c88aca7d3a, Score: 79)\nMUST cross-reference statutory citations against multiple authoritative legal databases before presenting case law analysis, flagging any discrepancies or outdated precedents with explicit uncertainty markers.\n\n[SPEC 15] (ID: ade7e65ccf28, Score: 75)\nMUST quantify confidence levels and explicitly identify key uncertainties when generating contract interpretation or statutory analysis, particularly when multiple reasonable interpretations exist.\n\n[SPEC 16] (ID: 6c697539b820, Score: 74)\nMUST seek clarification about temporal scope and jurisdictional boundaries when legal queries involve multi-state or evolving regulatory landscapes before proceeding with comparative analysis.\n\n[SPEC 17] (ID: 80b5aaf99e95, Score: N/A)\nMUST automatically detect and mask personally identifiable information in legal document excerpts while preserving case law citations and procedural context necessary for educational analysis.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=25  \nComment: The specifications generally work well together, forming a coherent framework for legal and regulatory compliance. They address various aspects of legal analysis, such as temporal validity, jurisdictional context, and logical traceability, which complement each other. However, there are some redundancies that slightly detract from overall cohesion.\n\nCOVERAGE_SCORE=22  \nComment: The group covers a broad range of legal compliance issues, from general principles to specific edge cases like jurisdictional context and ambiguous statutory language. There is a good balance between foundational rules and specific protections, though some areas, such as emerging legal technologies, could be more explicitly addressed.\n\nREDUNDANCY_SCORE=18  \nComment: There is noticeable redundancy, particularly with specifications that are repeated verbatim (e.g., Specs 5 and 8). While some redundancy is beneficial for critical areas, the repetition here could be consolidated to improve efficiency without losing robustness.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are generally clear and actionable, with a focus on real-world applicability. They balance security with usability by emphasizing professional consultation and educational content. However, some specifications are overly specific, which could limit flexibility and adaptability in diverse contexts.\n\nTOTAL=81",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 22,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a coherent framework for legal and regulatory compliance. They address various aspects of legal analysis, such as temporal validity, jurisdictional context, and logical traceability, which complement each other. However, there are some redundancies that slightly detract from overall cohesion.",
+      "coverage": "The group covers a broad range of legal compliance issues, from general principles to specific edge cases like jurisdictional context and ambiguous statutory language. There is a good balance between foundational rules and specific protections, though some areas, such as emerging legal technologies, could be more explicitly addressed.",
+      "redundancy": "There is noticeable redundancy, particularly with specifications that are repeated verbatim (e.g., Specs 5 and 8). While some redundancy is beneficial for critical areas, the repetition here could be consolidated to improve efficiency without losing robustness.",
+      "practicality": "The specifications are generally clear and actionable, with a focus on real-world applicability. They balance security with usability by emphasizing professional consultation and educational content. However, some specifications are overly specific, which could limit flexibility and adaptability in diverse contexts."
+    },
+    "total_score": 81,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 22,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 81
+}

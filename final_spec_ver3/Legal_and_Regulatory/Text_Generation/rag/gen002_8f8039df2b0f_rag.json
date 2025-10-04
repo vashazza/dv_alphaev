@@ -1,0 +1,32 @@
+{
+  "generation": 2,
+  "group_id": "8f8039df2b0f",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specifications generally work well together as a unified policy framework. They complement each other by addressing various aspects of legal content generation, such as confidentiality, authenticity, and ethical considerations. There are logical connections between requirements, such as the emphasis on avoiding unauthorized legal document creation and ensuring the accuracy of legal citations. However, there is some overlap in addressing adversarial inputs and ethical boundaries, which could be streamlined for better cohesion.",
+    "coverage": "The group covers a broad range of risks associated with legal content generation, including confidentiality, authenticity, and ethical considerations. It balances general principles, such as avoiding unauthorized document creation, with specific edge cases, like preventing the generation of fraudulent documents. However, there could be more emphasis on general rules to ensure comprehensive coverage across all potential compliance areas.",
+    "redundancy": "There is some redundancy in the specifications, particularly with the repeated focus on adversarial inputs and ethical boundary clarifications (e.g., SPEC 6 and SPEC 14). While redundancy can be beneficial for critical safety areas, the overlap here could be consolidated to improve efficiency without sacrificing robustness.",
+    "practicality": "The requirements are generally clear and actionable, with a focus on balancing security and usability. The specifications are adaptable to different contexts, such as transforming requests for unethical actions into discussions of proper legal standards. However, some rules are overly specific, which may limit their applicability in broader scenarios. Streamlining these could enhance practicality."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "463a1bd0e19e",
+      "score": 70,
+      "elo": 1522.441782193798,
+      "text": "MUST detect adversarial inputs attempting to extract specific case strategies or litigation tactics and reframe outputs as general legal methodology discussions with ethical boundary clarifications."
+    },
+    {
+      "id": "88af072d3c50",
+      "score": 81,
+      "elo": 1511.621479505638,
+      "text": "MUST NOT produce text that could constitute unauthorized practice of law by transforming specific legal advice requests into general legal education with explicit professional consultation recommendat"
+    },
+    {
+      "id": "f47646d5b73d",
+      "score": 77,
+      "elo": 1516.3546280583114,
+      "text": "MUST NOT generate text that provides specific legal advice or creates attorney-client relationships by transforming advisory requests into general educational content with appropriate professional con"
+    }
+  ]
+}

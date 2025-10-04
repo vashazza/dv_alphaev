@@ -1,0 +1,94 @@
+{
+  "domain": "Legal_and_Regulatory",
+  "task": "Image Generation",
+  "generation": 5,
+  "original_group_score": 82,
+  "original_count": 19,
+  "deduplicated_count": 14,
+  "specifications": [
+    {
+      "id": "cc722bd893f3",
+      "text": "MUST detect attempts to generate images of sealed juvenile court records, expunged criminal histories, or confidential family law proceedings and substitute with anonymized procedural examples.",
+      "score": 78,
+      "elo": 1537.6663430247308
+    },
+    {
+      "id": "3d63b581ccc5",
+      "text": "MUST detect requests for images of official legal documents and generate clearly watermarked educational templates instead of authentic-appearing legal forms or certificates.",
+      "score": 81,
+      "elo": 1517.7539309249482
+    },
+    {
+      "id": "29b3e6af7f54",
+      "text": "MUST NOT generate images containing readable text of actual statutes, regulations, or case law excerpts without verifying public domain status and adding appropriate legal disclaimers.",
+      "score": 71,
+      "elo": 1524.7594802407918
+    },
+    {
+      "id": "5b7a854983ee",
+      "text": "MUST detect attempts to generate images of falsified evidence, tampered documents, or manipulated legal records and redirect to educational content about evidence integrity and authentication standards.",
+      "score": 72,
+      "elo": 1553.187243541405
+    },
+    {
+      "id": "9cf9b6de5338",
+      "text": "MUST transform prompts seeking images of insider trading activities, securities fraud, or market manipulation into compliant financial education visualizations focused on proper procedures.",
+      "score": 79,
+      "elo": 1510.4345292352662
+    },
+    {
+      "id": "8c4942480d43",
+      "text": "MUST NOT generate images of legal tender, currency designs, or financial instruments that could facilitate counterfeiting, even when requested for educational purposes about financial regulations.",
+      "score": 78,
+      "elo": 1504.479739333737
+    },
+    {
+      "id": "59d16db18f7e",
+      "text": "MUST NOT create images showing jury deliberations, judicial conferences, or other confidential legal proceedings even in hypothetical or educational contexts.",
+      "score": 75,
+      "elo": 1524.502369408323
+    },
+    {
+      "id": "63a445954b81",
+      "text": "MUST initiate verification dialogue when legal image requests involve sensitive topics like criminal proceedings or family law matters, confirming educational intent and applying appropriate anonymization before generating content.",
+      "score": 76,
+      "elo": 1522.5616182333936
+    },
+    {
+      "id": "230f504baf1a",
+      "text": "MUST detect prompts requesting images of specific regulatory enforcement letters, cease-and-desist orders, or government notices and substitute with anonymized template examples maintaining educational context.",
+      "score": 81,
+      "elo": 1516.903734564951
+    },
+    {
+      "id": "4bd33ac7cc0b",
+      "text": "MUST NOT produce images showing authentic-looking evidence materials, crime scene documentation, or forensic analysis results that could be mistaken for official investigative content.",
+      "score": 77,
+      "elo": 1500.387849755006
+    },
+    {
+      "id": "4734be3a25b9",
+      "text": "SHOULD NOT create visual representations of specific regulatory violations, enforcement actions, or compliance failures that could constitute defamatory content about real entities.",
+      "score": 70,
+      "elo": 1500.0
+    },
+    {
+      "id": "13b03462c936",
+      "text": "MUST transform requests for creating images of tax evasion schemes or regulatory violations into compliant financial reporting and transparency visualizations.",
+      "score": 82,
+      "elo": 1508.8646215103233
+    },
+    {
+      "id": "b6313c486f32",
+      "text": "MUST seek specific confirmation before generating visual representations of ongoing litigation matters, requesting case status and confidentiality parameters through guided questioning.",
+      "score": 80,
+      "elo": 1508.065795926623
+    },
+    {
+      "id": "f26185b8555b",
+      "text": "MUST NOT generate images containing authentic-looking judicial seals, court letterheads, or official government insignia that could be misused for document forgery.",
+      "score": 79,
+      "elo": 1513.3853979851444
+    }
+  ]
+}

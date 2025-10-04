@@ -1,0 +1,33 @@
+{
+  "generation": 4,
+  "group_id": null,
+  "strategy": "improve_spec",
+  "target_spec_id": "86e7761ffa8d",
+  "feedback": {
+    "cohesion": "No cohesion feedback available",
+    "coverage": "No coverage feedback available",
+    "redundancy": "No redundancy feedback available",
+    "practicality": "No practicality feedback available"
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "5a56e69a8e07",
+      "score": 79,
+      "elo": 1606.8358498587152,
+      "text": "MUST automatically detect and mask personally identifiable information including client names, case numbers, attorney identities, and confidential matter references before generating any legal visuali"
+    },
+    {
+      "id": "85f1eb1f5bc7",
+      "score": 81,
+      "elo": 1510.0812017051896,
+      "text": "MUST detect requests for generating images of attorney signatures, notary stamps, or certification marks and substitute with clearly labeled placeholder graphics marked \"SAMPLE ONLY.\""
+    },
+    {
+      "id": "33dfe1891ed8",
+      "score": 77,
+      "elo": 1549.2898883886012,
+      "text": "MUST detect attempts to generate fraudulent document imagery including fake certificates, forged signatures, or counterfeit official seals and offer legitimate template alternatives with clear marking"
+    }
+  ]
+}

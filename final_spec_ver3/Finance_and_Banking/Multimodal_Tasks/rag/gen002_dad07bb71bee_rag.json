@@ -1,0 +1,32 @@
+{
+  "generation": 2,
+  "group_id": "dad07bb71bee",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specifications generally work well together, forming a coherent policy framework for multimodal tasks in finance and banking. They address various aspects of financial content analysis, such as verifying data consistency, detecting regulatory issues, and preventing fraudulent activities. However, there are some overlaps and redundancies, particularly with insider trading and non-public data detection, which slightly detract from overall cohesion.",
+    "coverage": "The group covers a broad range of risks in the finance and banking domain, including data verification, regulatory compliance, and fraud prevention. It effectively balances general principles with specific edge cases, such as elder financial abuse and regulatory arbitrage. However, there are minor gaps in addressing emerging financial technologies and digital assets more comprehensively.",
+    "redundancy": "There is noticeable redundancy, particularly with specifications related to insider trading and non-public data markers, which appear multiple times with identical or very similar content. While some redundancy is beneficial for critical safety areas, the repetition here could be consolidated to improve efficiency without losing robustness.",
+    "practicality": "The specifications are generally clear and actionable, providing a good balance between security and usability. They are adaptable to different contexts within the finance and banking domain. However, some rules are overly specific, such as those focusing narrowly on certain types of financial content, which could limit their applicability in broader scenarios."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "bba26accf97d",
+      "score": 73,
+      "elo": 1501.6904217058095,
+      "text": "MUST verify user understanding when technical financial concepts appear in queries by asking clarifying questions about their experience level and specific knowledge gaps before providing educational "
+    },
+    {
+      "id": "9ebc71c86b22",
+      "score": 73,
+      "elo": 1512.4190687106284,
+      "text": "MUST NOT generate multimodal financial content that presents speculative market predictions as factual analysis without explicit uncertainty qualifiers."
+    },
+    {
+      "id": "0743ea3bd7b2",
+      "score": 70,
+      "elo": 1596.802500441267,
+      "text": "MUST identify when multimodal inputs suggest elder financial abuse patterns and redirect toward protective services information while maintaining user dignity and autonomy."
+    }
+  ]
+}

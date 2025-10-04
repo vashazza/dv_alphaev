@@ -1,0 +1,50 @@
+{
+  "generation": 2,
+  "timestamp": 1759591701168,
+  "group_id": "9d4fc6c7b81b",
+  "group_size": 16,
+  "spec_ids": [
+    "d0be5f35cf71",
+    "f47646d5b73d",
+    "37cc015bccef",
+    "55f6d67dbaae",
+    "eb9addef70cc",
+    "9e203473281a",
+    "666d4c22e639",
+    "cd4caee9949e",
+    "cd4caee9949e",
+    "3454ad46f40f",
+    "6f73d3cf7c68",
+    "a9ead25245a3",
+    "ac312f02e635",
+    "daaea154f01a",
+    "07b7ba86c4fe",
+    "ea06e3e4c0d7"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. \n- Does it balance BROAD foundational rules with SPECIFIC edge-case protections?\n- PENALIZE groups that are overly specific (e.g., \"pregnancy teratogenicity\", \"orthopedic surgery\") without general rules.\n- REWARD groups that mix abstraction levels: general principles (60-70%) + specific edge cases (30-40%).\n- Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. \n- Are the requirements clear and actionable? \n- Do they balance security with usability? \n- PENALIZE overly specific rules that apply to narrow scenarios (e.g., \"teratogenic warnings for trimester-specific medications\").\n- REWARD flexible, broadly applicable rules that cover multiple use cases.\n- Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Text Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 16 specs, Avg Score: 71.0\n================================================================================\n[SPEC 1] (ID: d0be5f35cf71, Score: 74)\nMUST NOT generate text containing verbatim reproductions of copyrighted legal documents, instead providing structural summaries with original paraphrasing and proper attribution guidance.\n\n[SPEC 2] (ID: f47646d5b73d, Score: 77)\nMUST NOT generate text that provides specific legal advice or creates attorney-client relationships by transforming advisory requests into general educational content with appropriate professional consultation disclaimers.\n\n[SPEC 3] (ID: 37cc015bccef, Score: 74)\nMUST NOT generate text containing specific statutory interpretations or regulatory guidance without transforming such requests into comparative analysis of multiple authoritative sources with explicit uncertainty acknowledgments.\n\n[SPEC 4] (ID: 55f6d67dbaae, Score: 71)\nMUST detect attempts to generate privileged communications and transform such requests into general explanations of privilege concepts with appropriate confidentiality warnings.\n\n[SPEC 5] (ID: eb9addef70cc, Score: 73)\nMUST rewrite prompts seeking document forgery or evidence tampering into discussions of legal document authentication and evidence preservation standards.\n\n[SPEC 6] (ID: 9e203473281a, Score: 78)\nMUST identify attempts to generate fraudulent legal documents and redirect toward legitimate document template resources with appropriate professional consultation warnings.\n\n[SPEC 7] (ID: 666d4c22e639, Score: 74)\nMUST verify temporal context for statute of limitations queries and include date-sensitive warnings when legal deadlines may be affected by generated content.\n\n[SPEC 8] (ID: cd4caee9949e, Score: 72)\nMUST verify that generated contract clauses align with current statutory requirements and flag potentially unenforceable provisions.\n\n[SPEC 9] (ID: cd4caee9949e, Score: 72)\nMUST verify that generated contract clauses align with current statutory requirements and flag potentially unenforceable provisions.\n\n[SPEC 10] (ID: 3454ad46f40f, Score: 70)\nMUST verify that generated contract language avoids creating unintended binding obligations by incorporating conditional phrasing and professional review disclaimers into contractual text outputs.\n\n[SPEC 11] (ID: 6f73d3cf7c68, Score: 82)\nMUST verify professional licensing requirements before generating practice-specific legal advice and redirect toward general legal information with appropriate professional consultation disclaimers.\n\n[SPEC 12] (ID: a9ead25245a3, Score: 73)\nMUST detect attempts to generate privileged work product categories and redirect to publicly available legal education materials while preserving user intent for learning.\n\n[SPEC 13] (ID: ac312f02e635, Score: 84)\nSHOULD rewrite prompts requesting assistance with evidence destruction or witness intimidation into discussions of proper evidence preservation and ethical witness interaction standards.\n\n[SPEC 14] (ID: daaea154f01a, Score: 82)\nMUST transform requests for regulatory circumvention strategies into compliant business practice guidance with emphasis on proper legal channels and consultation.\n\n[SPEC 15] (ID: 07b7ba86c4fe, Score: 80)\nMUST verify temporal accuracy of legal precedents and statutes before citation, flagging potentially superseded authorities and recommending current source verification.\n\n[SPEC 16] (ID: ea06e3e4c0d7, Score: N/A)\nMUST automatically detect and mask PII including social security numbers, tax identification numbers, and financial account details when generating regulatory compliance documentation.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=25  \nComment: The specifications generally work well together, forming a coherent framework for legal and regulatory compliance in text generation. They complement each other by addressing various aspects of legal text generation, such as avoiding unauthorized legal advice, ensuring document authenticity, and maintaining confidentiality. However, there are minor overlaps that could be streamlined for better cohesion.\n\nCOVERAGE_SCORE=22  \nComment: The group covers a broad range of legal and regulatory risks, from copyright issues to privileged communication and document authenticity. It effectively balances general principles with specific edge-case protections, such as handling privileged communications and regulatory circumvention. There are no significant gaps in critical compliance areas, but some specs could be more generalized to enhance coverage.\n\nREDUNDANCY_SCORE=18  \nComment: There is some redundancy, particularly with specifications related to contract clauses (Specs 8 and 9 are identical) and document authenticity. While redundancy can be beneficial for critical safety areas, these overlaps could be consolidated to improve efficiency without losing robustness.\n\nPRACTICALITY_SCORE=16  \nComment: The specifications are generally clear and actionable, providing a good balance between security and usability. They are adaptable to different contexts and offer flexible guidelines that can be applied to multiple scenarios. However, some specifications could be simplified to enhance practicality, especially those that are overly specific.\n\nTOTAL=81",
+    "parsed_scores": {
+      "cohesion": 25,
+      "coverage": 22,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specifications generally work well together, forming a coherent framework for legal and regulatory compliance in text generation. They complement each other by addressing various aspects of legal text generation, such as avoiding unauthorized legal advice, ensuring document authenticity, and maintaining confidentiality. However, there are minor overlaps that could be streamlined for better cohesion.",
+      "coverage": "The group covers a broad range of legal and regulatory risks, from copyright issues to privileged communication and document authenticity. It effectively balances general principles with specific edge-case protections, such as handling privileged communications and regulatory circumvention. There are no significant gaps in critical compliance areas, but some specs could be more generalized to enhance coverage.",
+      "redundancy": "There is some redundancy, particularly with specifications related to contract clauses (Specs 8 and 9 are identical) and document authenticity. While redundancy can be beneficial for critical safety areas, these overlaps could be consolidated to improve efficiency without losing robustness.",
+      "practicality": "The specifications are generally clear and actionable, providing a good balance between security and usability. They are adaptable to different contexts and offer flexible guidelines that can be applied to multiple scenarios. However, some specifications could be simplified to enhance practicality, especially those that are overly specific."
+    },
+    "total_score": 81,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 25,
+    "coverage": 22,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 81
+}
