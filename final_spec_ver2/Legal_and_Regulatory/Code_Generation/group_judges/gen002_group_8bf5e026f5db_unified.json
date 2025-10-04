@@ -1,0 +1,52 @@
+{
+  "generation": 2,
+  "timestamp": 1759499212887,
+  "group_id": "8bf5e026f5db",
+  "group_size": 18,
+  "spec_ids": [
+    "81192e026bcf",
+    "6e8cd265b669",
+    "528758166b6f",
+    "3722f17544fb",
+    "25ccf2aae770",
+    "022aa8b843e0",
+    "cca17df29055",
+    "3722f17544fb",
+    "85025d0ee82d",
+    "faf67ec0207a",
+    "dc78cac48fd5",
+    "faf67ec0207a",
+    "6e8cd265b669",
+    "528758166b6f",
+    "cca17df29055",
+    "44049379eac4",
+    "3722f17544fb",
+    "cca17df29055"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. \n- Does it balance BROAD foundational rules with SPECIFIC edge-case protections?\n- PENALIZE groups that are overly specific (e.g., \"pregnancy teratogenicity\", \"orthopedic surgery\") without general rules.\n- REWARD groups that mix abstraction levels: general principles (60-70%) + specific edge cases (30-40%).\n- Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. \n- Are the requirements clear and actionable? \n- Do they balance security with usability? \n- PENALIZE overly specific rules that apply to narrow scenarios (e.g., \"teratogenic warnings for trimester-specific medications\").\n- REWARD flexible, broadly applicable rules that cover multiple use cases.\n- Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Legal & Regulatory\n- Description: Domain-specific requirements\n### Task: Code Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 18 specs, Avg Score: 76.8\n================================================================================\n[SPEC 1] (ID: 81192e026bcf, Score: 86)\nMUST NOT produce code that automates judicial sentencing calculations, bail determinations, or parole eligibility assessments without mandatory human judicial review checkpoints.\n\n[SPEC 2] (ID: 6e8cd265b669, Score: 70)\nMUST verify that generated legal discovery management code includes appropriate spoliation holds and evidence preservation protocols.\n\n[SPEC 3] (ID: 528758166b6f, Score: 84)\nMUST rewrite code generation requests that could enable manipulation of legal document timestamps, electronic signatures, or audit trails into secure alternatives with cryptographic integrity verification.\n\n[SPEC 4] (ID: 3722f17544fb, Score: 69)\nSHOULD identify code generation requests that could create conflicts of interest in multi-client systems and require explicit conflict checking and ethical wall mechanisms.\n\n[SPEC 5] (ID: 25ccf2aae770, Score: 81)\nMUST identify requests for code that could enable unauthorized practice of law and redirect toward attorney-supervised alternatives or licensed professional referral systems.\n\n[SPEC 6] (ID: 022aa8b843e0, Score: 79)\nMUST validate through interactive questioning that requests for litigation support code include appropriate safeguards for work product privilege and attorney-client confidentiality before code generation.\n\n[SPEC 7] (ID: cca17df29055, Score: 81)\nMUST rewrite requests for bar examination circumvention tools, legal licensing workarounds, or continuing education fraud mechanisms into legitimate legal study aids and practice management utilities.\n\n[SPEC 8] (ID: 3722f17544fb, Score: 69)\nSHOULD identify code generation requests that could create conflicts of interest in multi-client systems and require explicit conflict checking and ethical wall mechanisms.\n\n[SPEC 9] (ID: 85025d0ee82d, Score: 74)\nMUST rewrite any code generation request that attempts to automate judicial decision-making or court ruling processes into general workflow management alternatives.\n\n[SPEC 10] (ID: faf67ec0207a, Score: 81)\nMUST detect and redirect requests for legal fee splitting code that violates attorney referral regulations, offering compliant revenue sharing alternatives with bar association approval mechanisms.\n\n[SPEC 11] (ID: dc78cac48fd5, Score: 71)\nMUST verify that generated contract automation code includes proper capacity verification, consideration validation, and enforceability checks before executing any binding legal commitments.\n\n[SPEC 12] (ID: faf67ec0207a, Score: 81)\nMUST detect and redirect requests for legal fee splitting code that violates attorney referral regulations, offering compliant revenue sharing alternatives with bar association approval mechanisms.\n\n[SPEC 13] (ID: 6e8cd265b669, Score: 70)\nMUST verify that generated legal discovery management code includes appropriate spoliation holds and evidence preservation protocols.\n\n[SPEC 14] (ID: 528758166b6f, Score: 84)\nMUST rewrite code generation requests that could enable manipulation of legal document timestamps, electronic signatures, or audit trails into secure alternatives with cryptographic integrity verification.\n\n[SPEC 15] (ID: cca17df29055, Score: 81)\nMUST rewrite requests for bar examination circumvention tools, legal licensing workarounds, or continuing education fraud mechanisms into legitimate legal study aids and practice management utilities.\n\n[SPEC 16] (ID: 44049379eac4, Score: 71)\nMUST NOT generate code that automates judicial decision-making processes or creates algorithmic bias in legal outcome predictions without appropriate fairness safeguards and transparency measures.\n\n[SPEC 17] (ID: 3722f17544fb, Score: 69)\nSHOULD identify code generation requests that could create conflicts of interest in multi-client systems and require explicit conflict checking and ethical wall mechanisms.\n\n[SPEC 18] (ID: cca17df29055, Score: 81)\nMUST rewrite requests for bar examination circumvention tools, legal licensing workarounds, or continuing education fraud mechanisms into legitimate legal study aids and practice management utilities.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=24  \nComment: The specs generally work well together, forming a coherent framework aimed at ensuring legal compliance and ethical standards in code generation. They address various aspects of legal practice, such as judicial processes, legal discovery, and ethical considerations. However, there are some repeated specs (e.g., SPEC 8 and SPEC 17) that could have been consolidated for better cohesion.\n\nCOVERAGE_SCORE=20  \nComment: The group covers a broad range of legal and regulatory concerns, from judicial decision-making to ethical practices and confidentiality. It balances general principles with specific edge cases, such as unauthorized practice of law and legal fee splitting. However, there are some gaps, such as the lack of focus on international legal compliance or data protection laws.\n\nREDUNDANCY_SCORE=18  \nComment: There is noticeable redundancy in the specs, with several repeated entries (e.g., SPEC 8, SPEC 12, SPEC 13, SPEC 17, and SPEC 18). While some redundancy is beneficial for critical areas, the repetition here seems unnecessary and could be streamlined to improve efficiency.\n\nPRACTICALITY_SCORE=16  \nComment: The specs are generally clear and actionable, focusing on preventing unethical or illegal code generation practices. They offer practical solutions, such as redirecting requests to compliant alternatives. However, some specs are overly specific, which might limit their applicability across different legal contexts.\n\nTOTAL=78",
+    "parsed_scores": {
+      "cohesion": 24,
+      "coverage": 20,
+      "redundancy": 18,
+      "practicality": 16
+    },
+    "comments": {
+      "cohesion": "The specs generally work well together, forming a coherent framework aimed at ensuring legal compliance and ethical standards in code generation. They address various aspects of legal practice, such as judicial processes, legal discovery, and ethical considerations. However, there are some repeated specs (e.g., SPEC 8 and SPEC 17) that could have been consolidated for better cohesion.",
+      "coverage": "The group covers a broad range of legal and regulatory concerns, from judicial decision-making to ethical practices and confidentiality. It balances general principles with specific edge cases, such as unauthorized practice of law and legal fee splitting. However, there are some gaps, such as the lack of focus on international legal compliance or data protection laws.",
+      "redundancy": "There is noticeable redundancy in the specs, with several repeated entries (e.g., SPEC 8, SPEC 12, SPEC 13, SPEC 17, and SPEC 18). While some redundancy is beneficial for critical areas, the repetition here seems unnecessary and could be streamlined to improve efficiency.",
+      "practicality": "The specs are generally clear and actionable, focusing on preventing unethical or illegal code generation practices. They offer practical solutions, such as redirecting requests to compliant alternatives. However, some specs are overly specific, which might limit their applicability across different legal contexts."
+    },
+    "total_score": 78,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 24,
+    "coverage": 20,
+    "redundancy": 18,
+    "practicality": 16
+  },
+  "total_group_score": 78
+}

@@ -398,7 +398,8 @@ def llm_refine_multi_parent(
     domain_name: str = None,
     task_name: str = None,
     domain_concepts: List[str] = None,
-    task_concepts: List[str] = None
+    task_concepts: List[str] = None,
+    forbidden_topics: str = None
 ) -> Dict[str, Any]:
     """여러 부모 spec들을 조합해서 개선된 spec 생성 (TOP/LOW 구분 반영)"""
     # 프롬프트 매니저에서 개선 방향들 가져오기
@@ -443,6 +444,9 @@ def llm_refine_multi_parent(
     task_concepts_str = ", ".join(task_concepts or []) or "general task concepts"
     domain_concepts_str = ", ".join(domain_concepts or []) or "general domain concepts"
     
+    # Forbidden topics 추가 (다양성 강제)
+    forbidden_topics_str = forbidden_topics or "None identified - encourage diverse coverage."
+    
     prompt = prompt_template.format(
         domain_profile=domain_profile,
         task_profile=task_profile,
@@ -455,7 +459,8 @@ def llm_refine_multi_parent(
         task_type=task_type,
         domain_type=domain_type,
         task_concepts=task_concepts_str,
-        domain_concepts=domain_concepts_str
+        domain_concepts=domain_concepts_str,
+        forbidden_topics=forbidden_topics_str
     )
 
     try:
@@ -554,8 +559,8 @@ def split_llm_response_to_specs(llm_response: str, parent_id: str) -> List[Dict[
 # Variation wrapper
 # =========================
 
-def apply_variation_multi_parent(parent_specs: List[Dict[str, Any]], generator, constitution: str, domain_profile: str, task_profile: str, generation: int = 0, generator_log_dir: str = None, domain_name: str = None, task_name: str = None, domain_concepts: List[str] = None, task_concepts: List[str] = None) -> List[Dict[str, Any]]:
-    refined_response = llm_refine_multi_parent(parent_specs, generator, constitution, domain_profile, task_profile, generation, generator_log_dir, domain_name, task_name, domain_concepts, task_concepts)
+def apply_variation_multi_parent(parent_specs: List[Dict[str, Any]], generator, constitution: str, domain_profile: str, task_profile: str, generation: int = 0, generator_log_dir: str = None, domain_name: str = None, task_name: str = None, domain_concepts: List[str] = None, task_concepts: List[str] = None, forbidden_topics: str = None) -> List[Dict[str, Any]]:
+    refined_response = llm_refine_multi_parent(parent_specs, generator, constitution, domain_profile, task_profile, generation, generator_log_dir, domain_name, task_name, domain_concepts, task_concepts, forbidden_topics)
     individual_specs = split_llm_response_to_specs(refined_response['text'], 'multi_parent')
     parent_ids = [p['id'] for p in parent_specs[:5]]
     parent_tiers = refined_response.get('meta', {}).get('parent_tiers', [])

@@ -1,0 +1,33 @@
+{
+  "generation": 2,
+  "group_id": "ea87c9548fc5",
+  "strategy": "improve_spec",
+  "target_spec_id": "fe93764b4ff6",
+  "feedback": {
+    "cohesion": "The specifications generally work well together, forming a cohesive policy framework that emphasizes patient safety, confidentiality, and compliance with medical standards. There are logical connections between the requirements, such as cross-referencing authoritative sources and prioritizing emergency services. However, there is some redundancy that slightly detracts from overall cohesion.",
+    "coverage": "The group covers a broad range of critical areas in healthcare and medicine, including drug safety, patient confidentiality, emergency triage, and genetic conditions. It balances general principles with specific edge-case protections, such as enhanced confidentiality for genetic conditions and crisis intervention for mental health issues. There are minor gaps in addressing non-emergency but urgent care scenarios.",
+    "redundancy": "There is some unnecessary duplication, particularly with the repeated specification regarding the masking of PII (SPEC 2 and SPEC 6). While redundancy is appropriate for critical safety areas, this repetition could be consolidated to improve efficiency. Overall, the group maintains robustness without excessive overlap.",
+    "practicality": "The specifications are generally clear and actionable, with a good balance between security and usability. They are adaptable to different contexts, such as emergency and non-emergency scenarios. However, some rules are overly specific, which could limit their applicability in broader contexts, slightly impacting practicality."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "0fabd497b388",
+      "score": 81,
+      "elo": 1613.8215105767902,
+      "text": "MUST automatically detect and mask PII including patient identifiers, social security numbers, and medical record numbers before presenting any medical classification results."
+    },
+    {
+      "id": "d8389cffd6ee",
+      "score": 87,
+      "elo": 1521.3791902880673,
+      "text": "MUST NOT provide mental health classifications when conversational patterns indicate active suicidal ideation, self-harm behaviors, or acute psychological distress without immediately prioritizing cri"
+    },
+    {
+      "id": "ca948e02862a",
+      "score": 79,
+      "elo": 1509.197542708427,
+      "text": "MUST preserve patient confidentiality by refusing to classify medical information that could identify specific individuals or protected health records."
+    }
+  ]
+}

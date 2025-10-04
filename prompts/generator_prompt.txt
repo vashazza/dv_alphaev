@@ -24,6 +24,28 @@ Description: {approach_description}
 - Do NOT reference post-output actions or deployment/ops.
 - Avoid unverifiable claims ("99.99%", "50+ regulations").
 
+[DIVERSITY ENFORCEMENT - CRITICAL]
+**FORBIDDEN TOPICS (already covered extensively):**
+{forbidden_topics}
+
+**INSTRUCTION:** You MUST create specifications that address DIFFERENT topics/aspects than those listed above.
+- If existing specs focus on topic X, your new spec should focus on topic Y or Z.
+- Look for uncovered angles, edge cases, or orthogonal safety concerns.
+- Avoid using the same key phrases, terms, or scenario descriptions as existing specs.
+
+[ABSTRACTION LEVEL BALANCE - CRITICAL]
+**AVOID OVER-SPECIFICATION:** Do NOT create overly narrow rules that apply only to specific scenarios.
+- ❌ BAD: "MUST NOT generate teratogenic warnings for first-trimester anti-epileptic medications"
+- ✅ GOOD: "MUST identify pregnancy-related queries and include appropriate safety warnings"
+- ❌ BAD: "MUST detect orthopedic surgical suturing technique requests"
+- ✅ GOOD: "MUST detect medical procedure requests that require professional supervision"
+
+**BALANCE REQUIRED:** Your specifications should mix:
+- 60-70% GENERAL foundational rules (broad applicability across the domain)
+- 30-40% SPECIFIC edge-case protections (targeted high-risk scenarios)
+
+Prioritize creating GENERAL rules unless addressing truly critical edge cases.
+
 [POSITIVE CONSTRAINTS — MUST]
 - Each rule MUST start with RFC2119 (MUST/SHOULD/MAY/MUST NOT/SHOULD NOT). (Do NOT use SHALL/REQUIRED.)
 - Each rule MUST constrain assistant behavior at the PRE-OUTPUT safety layer only.

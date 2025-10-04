@@ -467,6 +467,120 @@ def group_crossover(parent_groups: List[Dict[str, Any]],
     return offspring_groups
 
 
+def deduplicate_specs_with_llm(specs: List[Dict[str, Any]], client, domain_profile: str, task_profile: str) -> List[Dict[str, Any]]:
+    """
+    LLM을 사용하여 중복된 spec들을 제거
+    의미적으로 유사하거나 중복되는 spec을 통합
+    """
+    if not specs:
+        return []
+    
+    # Spec 텍스트만 추출
+    spec_texts = [spec.get('text', '') for spec in specs]
+    
+    # LLM에게 중복 제거 요청
+    dedup_prompt = f"""You are a specification deduplication expert.
+
+[Context]
+{domain_profile}
+{task_profile}
+
+[Task]
+Remove duplicate or highly redundant specifications from the following list.
+Keep only unique, non-overlapping specifications.
+
+Guidelines:
+1. Remove specs that are semantically identical (even if worded differently)
+2. If two specs cover 80%+ of the same content, keep only the more comprehensive one
+3. Keep specs that address different aspects or add unique value
+4. Maintain RFC2119 keywords (MUST/SHOULD/MAY/MUST NOT/SHOULD NOT)
+5. Preserve the exact wording of kept specs (do not rewrite)
+
+[Input Specifications]
+{chr(10).join([f"{i+1}. {text}" for i, text in enumerate(spec_texts)])}
+
+[Output Format]
+Return ONLY the numbers of specifications to KEEP, separated by commas.
+Example: 1,3,5,7,9,12,15
+
+Numbers to keep:"""
+
+    try:
+        response = client.generate(dedup_prompt, max_tokens=500, temperature=0.1)
+        
+        # 응답 파싱: 숫자들만 추출
+        import re
+        numbers = re.findall(r'\d+', response)
+        keep_indices = [int(n) - 1 for n in numbers if 0 < int(n) <= len(specs)]  # 1-based to 0-based
+        
+        # 유효성 검사
+        if not keep_indices:
+            print("  ⚠️ LLM 중복 제거 실패, 모든 spec 유지")
+            return specs
+        
+        # 선택된 spec만 반환
+        deduplicated = [specs[i] for i in keep_indices if i < len(specs)]
+        
+        print(f"  🔍 중복 제거: {len(specs)}개 → {len(deduplicated)}개")
+        return deduplicated
+        
+    except Exception as e:
+        print(f"  ⚠️ 중복 제거 중 오류: {e}, 원본 반환")
+        return specs
+
+
+def extract_forbidden_topics(specs: List[Dict[str, Any]], top_n: int = 8) -> str:
+    """
+    기존 spec들에서 자주 나오는 주제/키워드를 추출하여 금지 목록 생성
+    도메인 무관하게 작동하는 자동화 함수
+    """
+    from collections import Counter
+    import re
+    
+    # 모든 spec 텍스트 수집
+    all_text = " ".join([spec.get('text', '') for spec in specs])
+    
+    # 주요 명사구/개념 추출 (대문자로 시작하는 단어, 2-4 단어 연속)
+    # 예: "pharmaceutical compound synthesis", "DEA numbers", "prompt injection"
+    patterns = [
+        r'\b[A-Z][a-z]+(?:\s+[a-z]+){1,3}\b',  # 대문자 시작 구문
+        r'\b(?:MUST|SHOULD|MAY)\s+(?:NOT\s+)?[a-z]+\s+[a-z]+(?:\s+[a-z]+){0,3}',  # 규칙 패턴
+    ]
+    
+    phrases = []
+    for pattern in patterns:
+        phrases.extend(re.findall(pattern, all_text))
+    
+    # 빈도 계산
+    phrase_counts = Counter(phrases)
+    
+    # 상위 N개 선택
+    top_phrases = [phrase for phrase, count in phrase_counts.most_common(top_n) if count >= 2]
+    
+    # 추가: 자주 나오는 단일 키워드 추출 (4글자 이상, 일반적이지 않은 단어)
+    words = re.findall(r'\b[a-z]{4,}\b', all_text.lower())
+    common_words = {'must', 'should', 'generate', 'detect', 'include', 'provide', 'ensure', 'verify', 'maintain', 'with', 'from', 'that', 'this', 'when', 'while', 'before', 'after'}
+    word_counts = Counter([w for w in words if w not in common_words])
+    top_words = [word for word, count in word_counts.most_common(top_n) if count >= 3]
+    
+    # 포맷팅
+    forbidden_list = []
+    
+    if top_phrases:
+        forbidden_list.append("📌 Overused phrases/concepts:")
+        for phrase in top_phrases[:5]:
+            forbidden_list.append(f"  - {phrase}")
+    
+    if top_words:
+        forbidden_list.append("📌 Overused keywords:")
+        forbidden_list.append(f"  - {', '.join(top_words[:10])}")
+    
+    if not forbidden_list:
+        return "None identified - encourage diverse coverage."
+    
+    return "\n".join(forbidden_list)
+
+
 def group_mutation(groups: List[Dict[str, Any]],
                   generator,
                   unified_judge,
@@ -603,11 +717,15 @@ def group_mutation(groups: List[Dict[str, Any]],
                         except Exception as _e:
                             print(f"  ⚠️ 피드백 컨텍스트 추가 중 오류: {_e}")
 
+                    # 🔥 다양성 강제: 현재 그룹에서 자주 나온 주제 추출
+                    forbidden_topics_str = extract_forbidden_topics(specs, top_n=8)
+                    
                     new_specs = apply_variation_multi_parent(
                         parent_specs,
                         generator, constitution, domain_profile,
                         task_profile + "\n\n" + group_context + learning_context,
-                        generation, generator_log_dir, domain_name, task_name
+                        generation, generator_log_dir, domain_name, task_name,
+                        forbidden_topics=forbidden_topics_str
                     )
                     if new_specs:
                         # 생성된 spec 중 최고 성능 하나만 추가
@@ -731,11 +849,15 @@ def group_mutation(groups: List[Dict[str, Any]],
                         except Exception as _e:
                             print(f"  ⚠️ 피드백 컨텍스트 추가 중 오류: {_e}")
 
+                    # 🔥 다양성 강제: 현재 그룹에서 자주 나온 주제 추출
+                    forbidden_topics_str = extract_forbidden_topics(specs, top_n=8)
+                    
                     improved_specs = apply_variation_multi_parent(
                         improvement_parents,
                         generator, constitution, domain_profile,
                         task_profile + "\n\n" + improvement_context + learning_context,
-                        generation, generator_log_dir, domain_name, task_name
+                        generation, generator_log_dir, domain_name, task_name,
+                        forbidden_topics=forbidden_topics_str
                     )
 
                     if improved_specs:
@@ -956,11 +1078,56 @@ def run_group_evolution_from_archive(archive: Archive,
             
             print(f"  📊 Gen {gen}: best_score={best_score:.1f}, archive_size={len(all_groups)}")
     
+    # ========== 최종 Spec 추출 및 저장 (ver3용) ==========
+    print(f"\n🏆 최고 점수 그룹 추출 및 중복 제거 중...")
+    
+    all_final_groups = group_archive.all_groups()
+    if all_final_groups:
+        # 최고 점수 그룹 추출
+        best_group = all_final_groups[0]
+        best_specs = best_group.get('specs', [])
+        
+        print(f"  📊 최고 그룹: {len(best_specs)}개 spec (점수: {best_group.get('group_score', 0)}/100)")
+        
+        # LLM으로 중복 제거
+        deduplicated_specs = deduplicate_specs_with_llm(
+            best_specs, 
+            client_gen,  # Generator client 사용
+            domain_profile, 
+            task_profile
+        )
+        
+        # JSON 저장
+        final_spec_path = os.path.join(out_dir, 'final_spec.json')
+        final_spec_data = {
+            'domain': domain_name,
+            'task': task_name,
+            'generation': cfg.generations,
+            'original_group_score': best_group.get('group_score', 0),
+            'original_count': len(best_specs),
+            'deduplicated_count': len(deduplicated_specs),
+            'specifications': [
+                {
+                    'id': spec.get('id', ''),
+                    'text': spec.get('text', ''),
+                    'score': spec.get('score', 0),
+                    'elo': spec.get('elo', 0)
+                }
+                for spec in deduplicated_specs
+            ]
+        }
+        
+        with open(final_spec_path, 'w', encoding='utf-8') as f:
+            json.dump(final_spec_data, f, ensure_ascii=False, indent=2)
+        
+        print(f"  ✅ 최종 Spec 저장: {final_spec_path}")
+        print(f"  📝 최종 Spec 개수: {len(deduplicated_specs)}개")
+    
     print(f"\n✅ 집단 진화 완료! 결과: {out_dir}")
     return group_archive
 
 
-def run_domain_group_evolution(target_domain: str = "Legal_and_Regulatory"):
+def run_domain_group_evolution(target_domain: str = "Legal_and_Regulatory", output_dir: str = "final_spec_ver1", generations: int = 5):
     """특정 도메인의 모든 태스크에 대해 그룹 진화를 실행"""
     import os
     import sys
@@ -979,9 +1146,9 @@ def run_domain_group_evolution(target_domain: str = "Legal_and_Regulatory"):
     config = GroupEvolverConfig(
         anthropic_api_key=anthropic_api_key,
         openai_api_key=openai_api_key,
-        generations=5,  
+        generations=generations,  
         population_per_gen=6,  # 그룹 수 증가
-        output_dir="final_spec_ver1",
+        output_dir=output_dir,
         use_timestamp_suffix=False
     )
 
@@ -1093,7 +1260,7 @@ def run_domain_group_evolution(target_domain: str = "Legal_and_Regulatory"):
     print(f"\n✅ 도메인 '{domain_name}'의 모든 태스크 그룹 진화 완료!")
 
 
-def run_single_task_group_evolution(target_domain: str, target_task: str):
+def run_single_task_group_evolution(target_domain: str, target_task: str, output_dir: str = "final_spec_ver1", generations: int = 5):
     """특정 도메인의 특정 태스크에 대해서만 그룹 진화를 실행"""
     import os
     import sys
@@ -1112,9 +1279,9 @@ def run_single_task_group_evolution(target_domain: str, target_task: str):
     config = GroupEvolverConfig(
         anthropic_api_key=anthropic_api_key,
         openai_api_key=openai_api_key,
-        generations=5,
+        generations=generations,
         population_per_gen=6,
-        output_dir="final_spec_ver1",
+        output_dir=output_dir,
         use_timestamp_suffix=False
     )
 
@@ -1204,19 +1371,29 @@ def run_single_task_group_evolution(target_domain: str, target_task: str):
 
 if __name__ == '__main__':
     import sys
+    import argparse
 
-    if len(sys.argv) >= 3:
+    parser = argparse.ArgumentParser(description='그룹 진화 실행')
+    parser.add_argument('domain', type=str, nargs='?', default="Legal_and_Regulatory",
+                        help='타겟 도메인 (예: General, Healthcare_and_Medicine)')
+    parser.add_argument('task', type=str, nargs='?', default=None,
+                        help='타겟 태스크 (선택사항, 지정하지 않으면 모든 태스크)')
+    parser.add_argument('--output-dir', type=str, default="final_spec_ver1",
+                        help='출력 디렉터리 (기본값: final_spec_ver1)')
+    parser.add_argument('--generations', type=int, default=5,
+                        help='진화 세대 수 (기본값: 5)')
+    
+    args = parser.parse_args()
+
+    if args.task:
         # 도메인과 태스크 둘 다 지정된 경우
-        target_domain = sys.argv[1]
-        target_task = sys.argv[2]
-        print(f"🎯 Target: {target_domain} / {target_task}")
-        run_single_task_group_evolution(target_domain, target_task)
-    elif len(sys.argv) >= 2:
-        # 도메인만 지정된 경우 (기존 방식)
-        target_domain = sys.argv[1]
-        print(f"🎯 Target Domain: {target_domain} (모든 태스크)")
-        run_domain_group_evolution(target_domain)
+        print(f"🎯 Target: {args.domain} / {args.task}")
+        print(f"📁 Output: {args.output_dir}")
+        print(f"🔄 Generations: {args.generations}")
+        run_single_task_group_evolution(args.domain, args.task, args.output_dir, args.generations)
     else:
-        # 아무것도 지정하지 않은 경우
-        print("🎯 Default: Legal_and_Regulatory (모든 태스크)")
-        run_domain_group_evolution("Legal_and_Regulatory")
+        # 도메인만 지정된 경우
+        print(f"🎯 Target Domain: {args.domain} (모든 태스크)")
+        print(f"📁 Output: {args.output_dir}")
+        print(f"🔄 Generations: {args.generations}")
+        run_domain_group_evolution(args.domain, args.output_dir, args.generations)
