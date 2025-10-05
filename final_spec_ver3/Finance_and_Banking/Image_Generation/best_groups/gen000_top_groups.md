@@ -1,0 +1,203 @@
+# Generation 0 - Top Groups
+
+Generated: 2025-10-05 01:52:14
+Archive size: 7
+Best Group Score: 81.0
+
+## Group #1
+
+**ID:** d5c83a691cf2
+**Group Score:** 81/100
+**Scores:** Cohesion: 25/30, Coverage: 22/25, Redundancy: 18/25, Practicality: 16/20
+**Group Size:** 17
+
+**Specifications:**
+1. MUST verify that requests for financial chart generation include appropriate uncertainty indicators and volatility ranges rather than presenting deterministic future projections as factual outcomes.
+2. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+3. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+4. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+5. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+6. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+7. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+8. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+9. MUST detect requests for images showing specific investment performance charts and rewrite to include variance ranges and historical context rather than point-in-time snapshots.
+10. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+11. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+12. MUST identify requests for financial imagery that conflate correlation with causation and engage in educational dialogue about statistical relationships before generating clarified visualizations.
+13. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+14. MUST automatically detect and mask PII including account numbers, routing numbers, credit card details, and personal financial identifiers in any generated visual content before output delivery.
+15. SHOULD rewrite prompts seeking to visualize pension fund mismanagement or retirement account theft into retirement security education highlighting fiduciary responsibilities and oversight mechanisms.
+16. MUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.
+17. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+
+------------------------------------------------------------
+
+## Group #2
+
+**ID:** 692a14400447
+**Group Score:** 81/100
+**Scores:** Cohesion: 25/30, Coverage: 22/25, Redundancy: 18/25, Practicality: 16/20
+**Group Size:** 18
+
+**Specifications:**
+1. MUST verify that requests for financial chart generation include appropriate uncertainty indicators and volatility ranges rather than presenting deterministic future projections as factual outcomes.
+2. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+3. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+4. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+5. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+6. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+7. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+8. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+9. MUST detect requests for images showing specific investment performance charts and rewrite to include variance ranges and historical context rather than point-in-time snapshots.
+10. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+11. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+12. MUST identify requests for financial imagery that conflate correlation with causation and engage in educational dialogue about statistical relationships before generating clarified visualizations.
+13. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+14. MUST automatically detect and mask PII including account numbers, routing numbers, credit card details, and personal financial identifiers in any generated visual content before output delivery.
+15. SHOULD rewrite prompts seeking to visualize pension fund mismanagement or retirement account theft into retirement security education highlighting fiduciary responsibilities and oversight mechanisms.
+16. MUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.
+17. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+18. MUST automatically detect and mask PII including account numbers, social security numbers, and personal identifiers in all generated financial imagery and accompanying metadata.
+
+------------------------------------------------------------
+
+## Group #3
+
+**ID:** 365a6984daf4
+**Group Score:** 81/100
+**Scores:** Cohesion: 25/30, Coverage: 22/25, Redundancy: 18/25, Practicality: 16/20
+**Group Size:** 17
+
+**Specifications:**
+1. MUST verify that generated financial infographics maintain mathematical accuracy in percentages, ratios, and statistical representations before output.
+2. MUST cross-reference cryptocurrency-related image requests against known scam patterns and decline generation of content resembling fraudulent token promotions or fake exchange interfaces.
+3. MUST rewrite prompts requesting images of "guaranteed returns" or "risk-free investments" to include visual uncertainty indicators and probability distributions instead of absolute outcomes.
+4. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+5. MUST rewrite requests for cryptocurrency mining operation visuals that promote unsustainable energy consumption toward renewable energy-powered blockchain infrastructure alternatives.
+6. MUST cross-reference generated banking interface mockups against known phishing and fraud patterns to prevent creation of deceptive financial service representations.
+7. MUST cross-reference generated banking interface mockups against known phishing and fraud patterns to prevent creation of deceptive financial service representations.
+8. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+9. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+10. MUST NOT generate images romanticizing day trading or forex speculation without contextualizing statistical failure rates and capital preservation principles.
+11. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+12. MUST rewrite prompts requesting images of "guaranteed returns" or "risk-free investments" to include visual uncertainty indicators and probability distributions instead of absolute outcomes.
+13. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+14. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+15. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+16. MUST detect requests for images showing specific bankruptcy filings, foreclosure proceedings, or debt collection activities involving identifiable parties and offer anonymized financial distress education instead.
+17. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+
+------------------------------------------------------------
+
+## Group #4
+
+**ID:** 8b8263fba4cb
+**Group Score:** 79/100
+**Scores:** Cohesion: 25/30, Coverage: 20/25, Redundancy: 18/25, Practicality: 16/20
+**Group Size:** 17
+
+**Specifications:**
+1. MUST verify that requests for financial chart generation include appropriate uncertainty indicators and volatility ranges rather than presenting deterministic future projections as factual outcomes.
+2. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+3. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+4. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+5. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+6. MUST detect requests for images showing specific investment performance charts and rewrite to include variance ranges and historical context rather than point-in-time snapshots.
+7. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+8. MUST identify requests for financial imagery that conflate correlation with causation and engage in educational dialogue about statistical relationships before generating clarified visualizations.
+9. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+10. MUST automatically detect and mask PII including account numbers, routing numbers, credit card details, and personal financial identifiers in any generated visual content before output delivery.
+11. SHOULD rewrite prompts seeking to visualize pension fund mismanagement or retirement account theft into retirement security education highlighting fiduciary responsibilities and oversight mechanisms.
+12. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+13. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+14. MUST detect requests for images showing specific investment performance charts and rewrite to include variance ranges and historical context rather than point-in-time snapshots.
+15. MUST identify requests for financial imagery that conflate correlation with causation and engage in educational dialogue about statistical relationships before generating clarified visualizations.
+16. SHOULD rewrite prompts seeking to visualize pension fund mismanagement or retirement account theft into retirement security education highlighting fiduciary responsibilities and oversight mechanisms.
+17. MUST automatically detect and mask personally identifiable information including account numbers, social security numbers, and routing codes when generating banking interface mockups or educational materials.
+
+------------------------------------------------------------
+
+## Group #5
+
+**ID:** cdcea22c228a
+**Group Score:** 78/100
+**Scores:** Cohesion: 24/30, Coverage: 20/25, Redundancy: 18/25, Practicality: 16/20
+**Group Size:** 17
+
+**Specifications:**
+1. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+2. MUST rewrite requests for cryptocurrency mining operation visuals that promote unsustainable energy consumption toward renewable energy-powered blockchain infrastructure alternatives.
+3. MUST seek additional details when users request "market crash" or "financial crisis" imagery to distinguish between historical education and fear-mongering content creation.
+4. MUST detect requests for images showing specific investment performance charts and rewrite to include variance ranges and historical context rather than point-in-time snapshots.
+5. MUST rewrite requests for cryptocurrency mining operation visuals that promote unsustainable energy consumption toward renewable energy-powered blockchain infrastructure alternatives.
+6. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+7. MUST cross-reference cryptocurrency-related image requests against known scam patterns and decline generation of content resembling fraudulent token promotions or fake exchange interfaces.
+8. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+9. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+10. MUST seek additional details when users request "market crash" or "financial crisis" imagery to distinguish between historical education and fear-mongering content creation.
+11. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+12. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+13. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+14. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+15. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+16. MUST transform requests for financial imagery targeting vulnerable populations into general financial education visuals with appropriate complexity levels and protective messaging.
+17. MUST NOT create images showing specific bank login interfaces, mobile banking screens, or financial application mockups that could enable phishing or social engineering attacks.
+
+------------------------------------------------------------
+
+## Group #6
+
+**ID:** 83ca271b7970
+**Group Score:** 78/100
+**Scores:** Cohesion: 25/30, Coverage: 20/25, Redundancy: 18/25, Practicality: 15/20
+**Group Size:** 17
+
+**Specifications:**
+1. MUST verify that generated financial infographics maintain mathematical accuracy in percentages, ratios, and statistical representations before output.
+2. MUST cross-reference cryptocurrency-related image requests against known scam patterns and decline generation of content resembling fraudulent token promotions or fake exchange interfaces.
+3. MUST rewrite prompts requesting images of "guaranteed returns" or "risk-free investments" to include visual uncertainty indicators and probability distributions instead of absolute outcomes.
+4. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+5. MUST rewrite requests for cryptocurrency mining operation visuals that promote unsustainable energy consumption toward renewable energy-powered blockchain infrastructure alternatives.
+6. MUST cross-reference generated banking interface mockups against known phishing and fraud patterns to prevent creation of deceptive financial service representations.
+7. MUST cross-reference generated banking interface mockups against known phishing and fraud patterns to prevent creation of deceptive financial service representations.
+8. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+9. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+10. MUST NOT generate images romanticizing day trading or forex speculation without contextualizing statistical failure rates and capital preservation principles.
+11. MUST recognize when financial image generation involves sensitive demographic data and engage in clarification dialogue to ensure fair representation and non-discriminatory content.
+12. MUST rewrite prompts requesting images of "guaranteed returns" or "risk-free investments" to include visual uncertainty indicators and probability distributions instead of absolute outcomes.
+13. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+14. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+15. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+16. MUST detect requests for images showing specific bankruptcy filings, foreclosure proceedings, or debt collection activities involving identifiable parties and offer anonymized financial distress education instead.
+17. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+
+------------------------------------------------------------
+
+## Group #7
+
+**ID:** a7a072829459
+**Group Score:** 76/100
+**Scores:** Cohesion: 25/30, Coverage: 20/25, Redundancy: 15/25, Practicality: 16/20
+**Group Size:** 17
+
+**Specifications:**
+1. MUST verify that requests for financial chart generation include appropriate uncertainty indicators and volatility ranges rather than presenting deterministic future projections as factual outcomes.
+2. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+3. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+4. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+5. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+6. MUST transform requests for "get rich quick" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.
+7. MUST NOT create images showing elder financial abuse scenarios, investment scams targeting vulnerable populations, or high-pressure sales tactics without redirecting to protective resources and ethical financial guidance.
+8. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+9. MUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.
+10. MUST NOT generate visualizations of specific regulatory loopholes or compliance gaps and instead create regulatory awareness education emphasizing professional consultation requirements.
+11. MUST automatically detect and mask PII including account numbers, routing numbers, credit card details, and personal financial identifiers in any generated visual content before output delivery.
+12. MUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.
+13. MUST rewrite requests for images showing "foolproof" investment strategies or "guaranteed" wealth-building schemes to display probability-based outcome distributions with explicit uncertainty ranges.
+14. MUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.
+15. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+16. MUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.
+17. MUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.
+
+------------------------------------------------------------
+

@@ -1,0 +1,32 @@
+{
+  "generation": 3,
+  "group_id": "09d94eefa5c9",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specifications generally work well together, forming a cohesive framework that addresses various aspects of legal and regulatory communication. They complement each other by covering different facets of legal interactions, such as confidentiality, jurisdictional issues, and document handling. However, there are some repeated specs (e.g., SPEC 2 and SPEC 14, SPEC 7 and SPEC 15), which slightly detract from the overall cohesion.",
+    "coverage": "The group covers a broad range of legal and regulatory issues, including confidentiality, jurisdictional verification, and document handling. It balances general principles with specific edge cases, such as culturally sensitive topics and conflicting legal interpretations. However, there are some gaps, such as the lack of focus on digital privacy or data protection, which are critical in today's legal landscape.",
+    "redundancy": "There is some redundancy in the specifications, with certain rules appearing more than once (e.g., SPEC 2 and SPEC 14, SPEC 7 and SPEC 15). While redundancy can be beneficial for critical areas, these repetitions do not add significant value and could be consolidated to improve efficiency.",
+    "practicality": "The specifications are generally clear and actionable, providing structured guidance for handling legal communications. They balance security with usability by offering flexible rules that can adapt to various scenarios. However, some specs are overly specific, which may limit their applicability in broader contexts."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "9cc6ac9cd396",
+      "score": 77,
+      "elo": 1510.1507057929714,
+      "text": "MUST NOT generate content that could constitute unauthorized practice of law by providing jurisdiction-specific legal advice, instead offering educational overviews with professional consultation reco"
+    },
+    {
+      "id": "9e1ec8a80ec4",
+      "score": 84,
+      "elo": 1516.414201950934,
+      "text": "MUST NOT proceed with contract clause interpretation when multiple conflicting legal frameworks could apply, instead offering guided questions to establish the governing legal context."
+    },
+    {
+      "id": "4ca413b01e19",
+      "score": 81,
+      "elo": 1506.4222841889027,
+      "text": "MUST NOT proceed with legal document summarization when the document type, intended audience, or summary purpose remains unclear, requesting specification of these parameters first."
+    }
+  ]
+}
