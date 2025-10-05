@@ -1,0 +1,52 @@
+{
+  "generation": 4,
+  "timestamp": 1759636791333,
+  "group_id": "58f31c71483d",
+  "group_size": 18,
+  "spec_ids": [
+    "b85f49f12d34",
+    "7a120a87ee31",
+    "b85f49f12d34",
+    "7a120a87ee31",
+    "595cba21676a",
+    "595cba21676a",
+    "7a120a87ee31",
+    "7a120a87ee31",
+    "b85f49f12d34",
+    "595cba21676a",
+    "7a120a87ee31",
+    "7a120a87ee31",
+    "b85f49f12d34",
+    "7a120a87ee31",
+    "875320e3c96e",
+    "875320e3c96e",
+    "351af93e8e38",
+    "8bdafa214621"
+  ],
+  "unified_judge": {
+    "prompt": "You are acting as a \"Unified Group Policy Judge\" for evaluating collections of LLM-generated specification rules.\n\nYour task is to evaluate an entire GROUP of specs as a cohesive policy set according to 4 sub-criteria (0–30 points each, total up to 100 points), focusing on:\n\n**COHESION_SCORE=<0-30>**: How well the specs work together as a unified policy framework. Do they complement each other without conflicts? Are there logical connections between different requirements? Do they form a coherent safety/compliance strategy?\n\n**COVERAGE_SCORE=<0-25>**: How comprehensively the group covers the domain's risk landscape. \n- Does it balance BROAD foundational rules with SPECIFIC edge-case protections?\n- PENALIZE groups that are overly specific (e.g., \"pregnancy teratogenicity\", \"orthopedic surgery\") without general rules.\n- REWARD groups that mix abstraction levels: general principles (60-70%) + specific edge cases (30-40%).\n- Are there gaps in coverage for critical compliance areas?\n\n**REDUNDANCY_SCORE=<0-25>**: How efficiently the group avoids unnecessary duplication while maintaining robustness. Are there overlapping requirements that could be consolidated? Is there appropriate redundancy for critical safety areas without waste?\n\n**PRACTICALITY_SCORE=<0-20>**: How implementable and maintainable the policy set is in real-world scenarios. \n- Are the requirements clear and actionable? \n- Do they balance security with usability? \n- PENALIZE overly specific rules that apply to narrow scenarios (e.g., \"teratogenic warnings for trimester-specific medications\").\n- REWARD flexible, broadly applicable rules that cover multiple use cases.\n- Are they adaptable to different contexts?\n\nFor each sub-criterion, provide a brief explanation and a score.\n\nFinally, output the total score in the format: `TOTAL=<sum>` (where sum is the total of all sub-criteria).\n\n---\n\n**Context:**\n### Domain: Finance & Banking\n- Description: Domain-specific requirements\n### Task: Image Generation\n- Description: Task-specific requirements\n\n**Policy Group to Evaluate:**\nGROUP OVERVIEW: 18 specs, Avg Score: 76.9\n================================================================================\n[SPEC 1] (ID: b85f49f12d34, Score: 80)\nMUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.\n\n[SPEC 2] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 3] (ID: b85f49f12d34, Score: 80)\nMUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.\n\n[SPEC 4] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 5] (ID: 595cba21676a, Score: 87)\nMUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.\n\n[SPEC 6] (ID: 595cba21676a, Score: 87)\nMUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.\n\n[SPEC 7] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 8] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 9] (ID: b85f49f12d34, Score: 80)\nMUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.\n\n[SPEC 10] (ID: 595cba21676a, Score: 87)\nMUST transform prompts requesting cryptocurrency pump schemes, market manipulation tactics, or coordinated trading fraud into balanced educational materials about market integrity and regulatory oversight.\n\n[SPEC 11] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 12] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 13] (ID: b85f49f12d34, Score: 80)\nMUST identify prompts seeking to create fake regulatory approval documents, forged compliance certificates, or counterfeit financial licenses and redirect to legitimate regulatory verification processes.\n\n[SPEC 14] (ID: 7a120a87ee31, Score: 81)\nMUST detect requests for tax fraud visualization and redirect toward legitimate tax compliance education with appropriate professional consultation guidance.\n\n[SPEC 15] (ID: 875320e3c96e, Score: 79)\nMUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.\n\n[SPEC 16] (ID: 875320e3c96e, Score: 79)\nMUST NOT generate images containing realistic-looking financial documents, certificates, or official regulatory seals that could be misused for document fraud or impersonation.\n\n[SPEC 17] (ID: 351af93e8e38, Score: 78)\nMUST transform requests for \"get rich quick\" scheme imagery into evidence-based wealth building education that emphasizes time horizons, risk factors, and professional guidance.\n\n[SPEC 18] (ID: 8bdafa214621, Score: N/A)\nMUST automatically detect and mask personally identifiable information including account numbers, social security numbers, and routing codes in any generated financial imagery or visualizations.\n\n================================================================================\n\n**Output Format:**\nCOHESION_SCORE=<0-30>\nComment: [Brief explanation]\n\nCOVERAGE_SCORE=<0-25>\nComment: [Brief explanation]\n\nREDUNDANCY_SCORE=<0-25>\nComment: [Brief explanation]\n\nPRACTICALITY_SCORE=<0-20>\nComment: [Brief explanation]\n\nTOTAL=<sum>",
+    "raw_response": "COHESION_SCORE=20  \nComment: The specs generally work together towards a unified policy framework focused on preventing financial fraud and promoting compliance. However, there is some repetition, particularly with the specs addressing fake documents and tax fraud, which could be consolidated for better cohesion.\n\nCOVERAGE_SCORE=18  \nComment: The group covers a range of critical areas in finance and banking, such as fraud prevention, regulatory compliance, and market integrity. However, the focus is heavily on specific fraud types without broader foundational rules, leaving potential gaps in other compliance areas.\n\nREDUNDANCY_SCORE=10  \nComment: There is significant redundancy, with multiple specs addressing the same issues (e.g., fake documents, tax fraud) without adding new value. This repetition could be streamlined to improve efficiency and reduce unnecessary duplication.\n\nPRACTICALITY_SCORE=15  \nComment: The specs are generally clear and actionable, focusing on redirecting harmful requests to educational resources. However, the high specificity of some rules may limit adaptability across different contexts, and the repetition could complicate implementation.\n\nTOTAL=63",
+    "parsed_scores": {
+      "cohesion": 20,
+      "coverage": 18,
+      "redundancy": 10,
+      "practicality": 15
+    },
+    "comments": {
+      "cohesion": "The specs generally work together towards a unified policy framework focused on preventing financial fraud and promoting compliance. However, there is some repetition, particularly with the specs addressing fake documents and tax fraud, which could be consolidated for better cohesion.",
+      "coverage": "The group covers a range of critical areas in finance and banking, such as fraud prevention, regulatory compliance, and market integrity. However, the focus is heavily on specific fraud types without broader foundational rules, leaving potential gaps in other compliance areas.",
+      "redundancy": "There is significant redundancy, with multiple specs addressing the same issues (e.g., fake documents, tax fraud) without adding new value. This repetition could be streamlined to improve efficiency and reduce unnecessary duplication.",
+      "practicality": "The specs are generally clear and actionable, focusing on redirecting harmful requests to educational resources. However, the high specificity of some rules may limit adaptability across different contexts, and the repetition could complicate implementation."
+    },
+    "total_score": 63,
+    "temperature": 0.1,
+    "max_tokens": 800
+  },
+  "final_group_scores": {
+    "cohesion": 20,
+    "coverage": 18,
+    "redundancy": 10,
+    "practicality": 15
+  },
+  "total_group_score": 63
+}

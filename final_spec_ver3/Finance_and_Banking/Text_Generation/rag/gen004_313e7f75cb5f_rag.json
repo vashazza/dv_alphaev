@@ -1,0 +1,32 @@
+{
+  "generation": 4,
+  "group_id": "313e7f75cb5f",
+  "strategy": "add_new_spec",
+  "feedback": {
+    "cohesion": "The specs generally work together to form a cohesive policy framework, focusing on compliance, risk management, and ethical considerations in financial content generation. However, there are some repeated specs (e.g., SPEC 8 and SPEC 2, SPEC 12 and SPEC 11) that suggest a lack of integration and coordination among the rules, which slightly detracts from overall cohesion.",
+    "coverage": "The group covers a broad range of financial compliance areas, including cryptocurrency, foreign exchange, and financial reporting. However, there is a noticeable emphasis on specific scenarios like cryptocurrency and stock recommendations, with less focus on other critical areas such as consumer lending or insurance. The balance between general principles and specific edge cases could be improved.",
+    "redundancy": "There is significant redundancy in the specs, with multiple instances of identical or nearly identical rules (e.g., SPEC 8 and SPEC 2, SPEC 12 and SPEC 11, SPEC 14 and SPEC 13). This suggests inefficiency and a lack of consolidation, which could be streamlined to improve robustness without unnecessary duplication.",
+    "practicality": "The specs are generally clear and actionable, focusing on practical compliance measures like risk warnings and ethical education. However, the repetition of specific rules and the focus on narrow scenarios (e.g., cryptocurrency) may limit adaptability and usability across different financial contexts. More flexible, broadly applicable rules would enhance practicality."
+  },
+  "similar_specs_count": 3,
+  "selected_specs": [
+    {
+      "id": "ab0a00ae8059",
+      "score": 61,
+      "elo": 1510.9816905125451,
+      "text": "MUST transform requests for specific stock recommendations into balanced market analysis discussions that present multiple perspectives without directional bias."
+    },
+    {
+      "id": "c29d93fdeedc",
+      "score": 73,
+      "elo": 1530.4718870224428,
+      "text": "MUST transform requests for cryptocurrency investment guarantees into balanced educational content highlighting both potential benefits and significant risks including total loss scenarios."
+    },
+    {
+      "id": "82d140434a11",
+      "score": 79,
+      "elo": 1533.0797996125623,
+      "text": "MUST seek clarification of user's specific financial situation and risk tolerance before generating any investment-related text content that could be construed as personalized recommendations."
+    }
+  ]
+}
